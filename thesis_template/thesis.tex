@@ -1,0 +1,98 @@
+\documentclass[12pt]{report}
+
+\usepackage{graphics}
+\usepackage{thesis}
+\usepackage{latexsym}
+\usepackage[dvips]{epsfig}
+%\usepackage{color}
+
+\topmargin	0.0cm
+\textheight    21cm
+%\renewcommand{\arraystretch}{1.2}
+
+%=======================================================
+\begin{document}
+
+%set double line spacing
+\linespread{2}
+
+%cover page information
+
+\thesistitle{A Serious Research}
+\authorname{CHAN Tai-Man}
+\degree{Master of Philosophy}
+\programme{Computer Science and Engineering}
+\supervisor{Prof. PAN Peter}
+\submitdate{June 2004}
+\coverpage
+
+
+%=======================================================
+
+\pagenumbering{roman}
+
+%abstract
+
+\abstractpage
+
+%=======================================================
+
+%acknowledgement
+
+\acknowledgementpage
+
+%=======================================================
+
+%dedication
+
+\dedicationpage
+
+%=======================================================
+
+%preamble sections
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+%=======================================================
+
+%initialization
+
+\newpage
+\setcounter{page}{0}
+\pagenumbering{arabic}
+\pagestyle{headings}
+
+
+%=======================================================
+
+%insert the chapters
+
+\input ./introduction/introduction.tex
+\input ./background/background.tex
+\input ./conclusion/conclusion.tex
+
+
+%=======================================================
+
+%appendix
+
+\appendix
+\input ./proof/proof.tex
+
+
+%=======================================================
+
+%bibliography
+
+\newpage
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{ieee}
+\bibliography{database}
+
+
+
+\end{document}
+
