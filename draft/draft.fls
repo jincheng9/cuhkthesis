@@ -1,7 +1,7 @@
-PWD d:\MATH\Mphil Thesis
+PWD c:\Users\46537\Documents\GitHub\cuhkthesis\draft
 INPUT C:\Users\46537\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\MATH\Mphil Thesis\draft.tex
-OUTPUT d:\MATH\Mphil Thesis\draft.log
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.tex
+OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.log
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\base\report.cls
@@ -417,7 +417,7 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\pgf\frontendlayer\tikz\libraries\tikzlibraryfadings.code.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\pgf\libraries\pgflibraryfadings.code.tex
-OUTPUT d:\MATH\Mphil Thesis\draft.pdf
+OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.pdf
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\tools\calc.sty
@@ -685,10 +685,10 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT d:\MATH\Mphil Thesis\draft.aux
-INPUT d:\MATH\Mphil Thesis\draft.aux
-INPUT d:\MATH\Mphil Thesis\draft.aux
-OUTPUT d:\MATH\Mphil Thesis\draft.aux
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux
+OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -733,17 +733,17 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\ge
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\generic\gettitlestring\gettitlestring.sty
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
-OUTPUT d:\MATH\Mphil Thesis\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
@@ -786,9 +786,9 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
-INPUT d:\MATH\Mphil Thesis\draft.aux
-INPUT d:\MATH\Mphil Thesis\draft.out
-INPUT d:\MATH\Mphil Thesis\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
+INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb

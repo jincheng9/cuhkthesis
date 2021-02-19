@@ -4,3 +4,4 @@
 \contentsline {chapter}{\numberline {2}Background Study}{4}{chapter.2}%
 \contentsline {chapter}{\numberline {3}Conclusion}{5}{chapter.3}%
 \contentsline {chapter}{\numberline {A}Equation Derivation}{6}{appendix.A}%
+\contentsline {chapter}{Bibliography}{7}{appendix.A}%

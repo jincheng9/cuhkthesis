@@ -1,12 +1,5 @@
 # Fdb version 3
-["bibtex draft"] 1610420489 "draft.aux" "draft.bbl" "draft" 1610420492
-  "C:/Users/46537/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/acm.bst" 1291864147 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "draft.aux" 1610420491 1518 1d937307ab03412091ef482cf6766f10 "pdflatex"
-  "isotropic.bib" 0 -1 0 ""
-  (generated)
-  "draft.blg"
-  "draft.bbl"
-["pdflatex"] 1610420489 "d:/MATH/Mphil Thesis/draft.tex" "d:/MATH/Mphil Thesis/draft.pdf" "draft" 1610420492
+["pdflatex"] 1613726454 "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex" "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.pdf" "draft" 1613726459
   "C:/Users/46537/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1607662847 9258547 5fa478d944cf08e5c20a81787ff7f202 ""
   "C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map" 1608961464 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
@@ -183,16 +176,15 @@
   "C:/Users/46537/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/46537/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1463135581 57049 34128738f682d033422ca125f82e5d62 ""
   "C:/Users/46537/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1606298686 4902 efb3d66683a2da2a232f71e3a571a899 ""
-  "d:/MATH/Mphil Thesis/draft.aux" 1610420491 1518 1d937307ab03412091ef482cf6766f10 ""
-  "d:/MATH/Mphil Thesis/draft.tex" 1610420484 23918 9bab32d3daf8ca5a207bf0f4f8b47163 ""
-  "draft.aux" 1610420491 1518 1d937307ab03412091ef482cf6766f10 "pdflatex"
-  "draft.bbl" 0 -1 0 "bibtex draft"
-  "draft.out" 1610420491 326 baa89d88a4a1d18147a9c576d074a28d "pdflatex"
-  "draft.tex" 1610420484 23918 9bab32d3daf8ca5a207bf0f4f8b47163 ""
+  "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.aux" 1613726458 1483 23049b94b72c4803940b5abaf42fe00b ""
+  "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex" 1613726448 23869 c8f96fc9e3369c2a7d06ea4e880cff46 ""
+  "draft.aux" 1613726458 1483 23049b94b72c4803940b5abaf42fe00b "pdflatex"
+  "draft.out" 1613726458 326 baa89d88a4a1d18147a9c576d074a28d "pdflatex"
+  "draft.tex" 1613726448 23869 c8f96fc9e3369c2a7d06ea4e880cff46 ""
   (generated)
-  "d:/MATH/Mphil Thesis/draft.log"
-  "draft.pdf"
-  "d:/MATH/Mphil Thesis/draft.pdf"
-  "draft.log"
+  "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.pdf"
   "draft.aux"
+  "draft.pdf"
+  "draft.log"
   "draft.out"
+  "c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.log"

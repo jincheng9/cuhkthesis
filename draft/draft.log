@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  12 JAN 2021 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  19 FEB 2021 17:20
 entering extended mode
-**"d:/MATH/Mphil Thesis/draft.tex"
-("d:/MATH/Mphil Thesis/draft.tex"
+**c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex
+(c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex
 LaTeX2e <2020-10-01> patch level 2
 L3 programming layer <2020-12-03> xparse <2020-03-03> (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2020/04/10 v1.4m Standard LaTeX document class
@@ -491,7 +491,7 @@ File: pgflibraryarrows.meta.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count307
 \l__pdf_internal_box=\box60
-) ("d:/MATH\Mphil Thesis\draft.aux")
+) (c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux)
 \openout1 = `draft.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
@@ -540,7 +540,7 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 61.
 LaTeX Info: Redefining \pageref on input line 61.
 LaTeX Info: Redefining \nameref on input line 61.
- ("d:/MATH\Mphil Thesis\draft.out") ("d:/MATH\Mphil Thesis\draft.out")
+ (c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out) (c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.out)
 \@outlinefile=\write4
 \openout4 = `draft.out'.
 
@@ -577,22 +577,20 @@ Overfull \hbox (25.00003pt too wide) detected at line 238
 []
  []
 
-[5] [6] [7]
-No file draft.bbl.
-[8] ("d:/MATH\Mphil Thesis\draft.aux")
+[5] [6] [7] [8] (c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux)
 Package rerunfilecheck Info: File `draft.out' has not changed.
 (rerunfilecheck)             Checksum: BAA89D88A4A1D18147A9C576D074A28D;326.
  ) 
 Here is how much of TeX's memory you used:
- 18996 strings out of 479697
- 373131 string characters out of 2867132
+ 18994 strings out of 479697
+ 373506 string characters out of 2867132
  680605 words of memory out of 3000000
- 35662 multiletter control sequences out of 15000+200000
+ 35661 multiletter control sequences out of 15000+200000
  412030 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,18n,98p,855b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,18n,98p,881b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "d:/MATH\Mphil Thesis\draft.pdf" (9 pages, 223629 bytes).
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.pdf (9 pages, 223917 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)

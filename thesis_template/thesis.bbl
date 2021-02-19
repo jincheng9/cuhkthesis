@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{lyle88}
+J.~R. Lyle and C.~Lu.
+\newblock Load balancing from a {\sc unix} shell.
+\newblock In {\em Proc. 13th Conf. Local Computer Networks}, pages 181--183,
+  Oct. 1988.
+
+\bibitem{theimer89}
+M.~M. Theimer and K.~A. Lantz.
+\newblock Finding idle machines in a workstation-based distributed systems.
+\newblock {\em IEEE Trans. Softw. Eng.}, 15(11), Nov. 1989.
+
+\end{thebibliography}
