@@ -1,14 +1,56 @@
 %
 % chapter background study
 
-\chapter{Background Study}
+\chapter{Covariant Formulation of the Mean Curvature Flow}
 
 \note{Summary}
 {
 Background study comes here.
 }
 
-In the past, \cite{theimer89}...
+From the previous chapter, we can see that Huisken considered a family of maps $F_t$ from an open set $U \subset \R^n$ to $\R^{n+1}$ which evolve along the mean curvature vector of their images. In this way, we can fix a local coordinate system and analyze geometric quantities of the images along the flow using this invariant coordinate system. The advantages include that the structure of the general evolution equation is clearer which enables us to prove the short-time existence of the flow using the theory of quasilinear parabolic differential equations. On the other hand, one needs to carefully choose the local coordinate system to simplify the computation without losing the important information. More modern treatment is to consider a rather invariant form of evolution equations independent of the local coordinates. In particular, we consider the metrics and connections on vector bundles over the space-time domain and derive structure equations and evolution equations for geometric quantities in such new vector bundle machinery.
+
+\section{Subbundles}
+
+\begin{definition}
+    Let $K, E$ be two vector bundles over a manifold $M$. We say $K$ is a subbundle of $E$ if there exists an injective vector bundle homomorphism $\iota_K : K \to E$ covering the identity map on $M$.
+\end{definition}
+
+Now let $E$ be a vector bundle over a manifold $M$. We can consider two complementary subbundles $K$ and $L$ of $E$ , in the sense that for each $x \in M,$ the fiber $E_x=\iota_K(K_x) \oplus \iota_L(L_x)$. Let $\pi _K : E \to K$ and $\pi _L : E \to L$ be the correseponding projections from $E$ onto $K$ and $L$ where we have the following relations
+\begin{gather*}
+    \pi _K \circ \iota _K= \mathrm{Id}_K \quad \pi _L \circ \iota _L=\mathrm{Id}_L\\
+    \pi _K \circ \iota _L=0 \quad \pi _L \circ \iota _K=0\\
+    \iota _K \circ \pi _K + \iota _L \circ \pi _L = \mathrm{Id}_E.
+\end{gather*}
+
+Similar to the way of defining the second fundamental form for submanifolds, we can extend a connection $\nabla$  on $E$ to a connection $\overset{K}{\nabla_{}} $ on its subbundle $K$ and define the second fundamental form $h^K \in \Gamma (T^*(M) \otimes K^* \otimes L)$ of $K$ where
+\begin{equation}
+    \overset{K}{\nabla_{u}} \xi = \pi _K(\nabla_{u}^{} (\iota _K \xi )) \qquad 
+    h^K(u,\xi )=\pi _L(\nabla_{u}^{} (\iota _K \xi )),
+\end{equation}
+for any $\xi \in \Gamma (K)$ and $u \in TM.$
+
+Then we can derive the following Gauss equation relating the curvature $R^K$ of $\overset{K}{\nabla_{}} $ to the curvature $R_{\nabla }$ of $\nabla $ and the second fundamental forms $h^L$ and $h^K$:
+\begin{equation}
+    R^K(u,v)\xi = \pi _k(R_{\nabla }(u,v)\iota _K \xi )+h^L(u,h^K(v,\xi ))-h^L(v,h^K(u,\xi ))
+\end{equation} 
+for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. If we also have a connection defined on $TM $, then we can define the covariant derivative of the second fundamental form $h_K$ by 
+\begin{equation}
+    \nabla_{u}^{} h^K(v,\xi) = \overset{L}{\nabla_{u}} (h^K(v,\xi ))-h^K(\nabla_{u}^{} v,\xi )-h^K(v, \overset{K}{\nabla_{u}} \xi )
+\end{equation}
+for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. Assume in addition that the connection on $TM $ is symmetric, we have the following Codazzi identity:
+\begin{equation}
+    \nabla_{u}^{} h^K(v, \xi )-  \nabla_{v}^{} h^K(u, \xi ) =\pi _L(R_{\nabla }(u,v)(\iota _K \xi )).
+\end{equation}
+
+Furthermore, if $E$ admits a metric $g$ compatible with $\nabla $ and $K,L$ are orthogonal with respect to the metric in the sense that 
+\begin{equation}
+    g(\iota _K \xi ,\iota _L \eta  )=0
+\end{equation}
+for any $\xi \in \Gamma (K)$ and $\eta \in \Gamma (L)$. Then the metric $g$ induces naturally metrics $g_K, g_L$ on subbundles $K,L$ respectively and gives us the Weingarten relation associating the second fundamental forms $h^K$ and $h^L$ by 
+\begin{equation}
+    g^L(h^K(u,\xi ), \eta )+g^K(\xi ,h^L(u,\eta ))=0.
+\end{equation}
 
 \chapterend
 

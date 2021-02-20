@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  19 FEB 2021 17:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  20 FEB 2021 10:37
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
@@ -433,7 +433,7 @@ File: pgflibraryarrows.meta.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 \c@lemma=\count297
 \c@cor=\count298
 \c@conj=\count299
-\c@defn=\count300
+\c@definition=\count300
  (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count301
@@ -495,7 +495,23 @@ LaTeX Info: Redefining \nameref on input line 61.
 
 {C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\abstract.tex) [1] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\acknowledgement.tex) [2
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\dedication.tex) [3] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc)
+] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\dedication.tex) [3] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc
+Overfull \hbox (14.00926pt too wide) in paragraph at lines 4--4
+ [] [][][]\OT1/cmr/bx/n/14.4 Covariant For-mu-la-tion of the Mean Cur-va-ture Flow[][] []  
+ []
+
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
+(C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
@@ -521,52 +537,60 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.25 T
       ype your content here. [1
 
-]
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 57.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 57.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 57.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.58 
       [2]) (chap2/chap2.tex [3]
 Chapter 2.
-) (chap3/chap3.tex [4
+[4
 
 ]
+Overfull \hbox (61.31915pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 2.  COVARIANT FORMULATION OF THE MEAN CURVATURE FLOW \OT1/cmr/m/n/12 5
+ []
+
+[5]
+Overfull \hbox (61.31915pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 2.  COVARIANT FORMULATION OF THE MEAN CURVATURE FLOW \OT1/cmr/m/n/12 6
+ []
+
+[6]
+Overfull \hbox (61.31915pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 2.  COVARIANT FORMULATION OF THE MEAN CURVATURE FLOW \OT1/cmr/m/n/12 7
+ []
+
+[7]) (chap3/chap3.tex
+Overfull \hbox (61.31915pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 2.  COVARIANT FORMULATION OF THE MEAN CURVATURE FLOW \OT1/cmr/m/n/12 8
+ []
+
+[8]
 Chapter 3.
-) (proof/proof.tex [5
+) (proof/proof.tex [9
 
 ]
 Appendix A.
-) [6
+) [10
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl) [7
+] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl) [11
 
 ] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 29CD2A9A0D63318F3F9B8AAECDC6BFCD;340.
+(rerunfilecheck)             Checksum: 7B35702BDD0F207B5A4681D9723BC96C;428.
  ) 
 Here is how much of TeX's memory you used:
- 17657 strings out of 479697
- 350344 string characters out of 2867132
- 610571 words of memory out of 3000000
+ 17668 strings out of 479697
+ 350507 string characters out of 2867132
+ 614561 words of memory out of 3000000
  34343 multiletter control sequences out of 15000+200000
  409505 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,6n,98p,510b,410s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\46537\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (15 pages, 121517 bytes).
+ 93i,8n,98p,1151b,413s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\46537\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (19 pages, 153867 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 69 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 195 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 77 words of extra memory for PDF output out of 10000 (max. 10000000)
 
