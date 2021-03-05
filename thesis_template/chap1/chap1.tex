@@ -8,51 +8,228 @@
 The introduction comes here.
 }
 
-This research...
+The last few decades have witnessed a significant development in the field of geometric flow, which leads to many remarkable accomplishments in geometry, topology, physics and computer vision. Among various geometric flows, the Mean Curvature Flow is one of the most important geometric flows for submanifolds of Riemannian manifolds. One way of understanding the Mean Curvature Flow is to regard it as the negative gradient flow for area. In other words, a surface is deforming along the Mean Curvature Flow to decrease its area as fast as possible.
 
-Type your content here.
+The study of mean curvature flow and the related field is a critical area of mathematics. Not only does it lead to a series of significant results in physics and mathematics, but it is also expected to solve some long-standing conjectures in geometry and topology. In 1994, Andrews [And94] applied the harmonic mean curvature flow to provide a new proof for the topological sphere theorem and improve the result of homeomorphism to a weaker version of diffeomorphism. Moreover, regarded as possible evidence to the cosmic censorship conjecture, the Riemannian Penrose inequality in general relativity was solved by Huisken and Ilmanen [HI01] using the method of inverse mean curvature flow. For further applications, inspired by similarities between Ricci flow and mean curvature flow and the resolution of Thurston's geometrization conjecture by Perelman using the Ricci flow, mathematicians believe that the mean curvature flow could be a possible way of solving the Schoenflies Conjecture in geometric topology.
 
-Type your content here.
+Mullins [Mul56] first formulated the mean curvature flow equation to model grain boundaries during metal annealing. Before the 1990s, most results on mean curvature flow concern hypersurfaces without boundary. However, although being considerably more challenging than the no boundary case, the study of mean curvature flow for hypersurfaces with boundaries is of great significance. It is a more natural way of describing physical phenomena. For instance, the deformation of grain boundaries usually happens in some containers which provide constraints for the evolution. Such a scenario can be best described by mean curvature flow with boundaries. Possible applications of mean curvature flow with boundaries also include describing the motion of soap film whose boundary moves freely in a fixed surface.
 
-Type your content here.
+To define the mean curvature flow for surfaces with boundaries properly, one needs to prescribe certain geometric boundary conditions. One of the most extensively studied boundary conditions is the Neumann boundary condition where the hypersurface's boundary could move freely in a prescribed barrier surface. Moreover, the angle between the hypersurface and the barrier is fixed. When the fixed contact angle is 90 degrees, the flow is then called Mean Curvature Flow with free boundary. For simplicity, it will be referred to as MCF with free boundary in the rest of the proposal.
+ 
+The convergence theory for MCF has been developed rapidly due to the efforts of mathematicians including Gerhard Huisken, Ben Andrews and Charles Baker. In 1984, Huisken [Hui84] published his seminal paper and proved that closed convex hypersurfaces in Euclidean spaces of dimension at least three would converge under mean curvature flow to a round point in finite time. A few years later, Huisken [Hui86] managed to extend the result for hypersurfaces in a general Riemannian manifold where the hypersurface need to be convex enough to overcome the obstruction caused by the curvature of the ambient manifold to converge to a round point. However, in the particular case of spherical space form, Huisken [Hui87] observed that the hypersurface could converge to a round point without the initial convexity condition. Similarly, the result obtained by Andrews and Baker [AB10] for the converge of higher-codimension submanifold also allows some non-convex condition to be preserved. Both non-convex conditions involve a pinching inequality where the norm of the second fundamental form is bounded by the norm of the mean curvature.
 
-Type your content here.
+Such non-convex initial conditions appear not only in the field of MCF. In 1972, Okumura [O74] applied Simon's identity to prove that a constant mean curvature surface satisfying similar pinching inequalities is a sphere. Related results are obtained and improved by Chen and Okumura [CO73], Chern, do Carmo and Kobayashi [CdCK70], and Alencar and do Carmo [AdC94].
 
-Type your content here.
+For MCF with free boundary, Stahl [St96] showed that if the barrier surface in the Euclidean space is a flat hyperplane for a round hypersphere, any convex hypersurface with free boundary on the barrier will converge to a round half point. Later in 2020, Hirsch and Li [HL20] managed to generalize the above result to non-umbilic barriers in $R^3$. They proved that if the barrier surface satisfies a uniform bound on the exterior and interior ball curvature and certain bounds on the first and second derivative of the second fundamental form, then sufficiently convex free boundary hypersurfaces will converge to a round half point.
 
-Type your content here.
+We want to explore two scenarios further based on the previous results. First, for the free boundary MCF with barriers on the standard hypersphere, it is known that any convex free boundary hypersurface will converge to a round half-point [St96]. Considering Huisken's study on MCF in spherical spaceforms [Hui87], it is natural to ask whether some non-convex curvature pinching condition can replace the convexity condition. Second, Hirsch and Li [HL20] have improved Stahl's result [St96] for a more general barrier, but the barrier is still defined in the Euclidean space. Hence, we would like to consider the case where the barrier is defined in a general 3-manifold and study the behaviour of free boundary MCF to obtain some convergence result.
 
-Type your content here.
+To prove that a free boundary hypersurface converges to a round half-point under the MCF, the standard argument from Huisken [Hui84] also works. Hence, it suffices to prove the pinching estimate and the gradient estimate by the Stampachia's iteration. 
 
-Type your content here.
+However, for a general barrier in a 3-manifold, two difficulties need to be overcome. First, as the prerequisite of proving pinching and gradient estimates, the initial convexity condition is expected to be preserved along the flow. The boundary derivatives are also essential for applying maximum principles to prove the preservation of properties. The problem is that the barrier is not umbilic in the current case, where some cross terms will appear in the boundary derivatives. Such cross-terms are very hard to control; thus, the maximum principle could not be applied as usual.
 
-Type your content here.
+One way to cancel out the problematic cross-term is the method of perturbing the second fundamental form introduced by Huisken and Sinestrari [HS99]. When the barrier is in the Euclidean space of dimension three, Hirsch and Li [HL20] defined a perturbation tensor which kills off the cross-terms on the boundary and enables them to apply the maximum principle. To obtain information on the original second fundamental form, controlling the perturbed form is necessary. In Hirsch and Li's [HL20] work, one major factor influencing the estimates of the perturbed form is the ball curvature of the barrier. Such property can be well defined in the Euclidean space, but in a 3-manifold, we only have locally defined balls. Brendle [Br13] introduced the method of using local balls to define ball curvatures in Riemannian manifolds. By combining ideas from Hirsch and Li [HL20], and Brendle [Br13], it is believed that the difficulty of estimating boundary derivatives could be overcome.
 
-Type your content here.
+The second difficulty is the reformulation of Stampacchia's iteration in a more general setting. As discussed previously, Edelen [Ed16] has introduced the free boundary version of Stampacchia's iteration, but the iteration argument only works when the barrier is in the Euclidean space. To further extend the iteration argument to the Riemannian manifold, we first need to extend the Michael-Simon inequality for Riemannian manifold by Hoffman and Spruck [HS74] to the free boundary case. Then by the arguments in [Ed16], the Stampacchia's iteration could be applied once the Poincare-like inequality and the evolution-like inequality are established.
 
-Type your content here.
+In this thesis, our goal is to build a theoretical fundation for the convergence theory of the free boundary MCF. We managed to prove a Stampacchia's iteration scheme for the free boundary MCF in a general Riemannian manifold and computed the boundary derivative.
 
-Type your content here.
+\section{Stampacchia's iteration}
+\subsection{Michael-Simon with free boundary}
 
-Type your content here.
+\begin{lemma}\label{BoundaryIntegral}
+    There exists a constant $c=c(n,S)$ such that for any $\Sigma $ meeting $S$ orthogonally, and any $f \in C^1(\bar{\Sigma })$ 
+    \[
+        \frac{1}{c}\int_{\partial \Sigma } \left| f \right| =\int_{ \Sigma} \left| \nabla f \right| + \int_{ \Sigma} \left| Hf \right| + \int_{ \Sigma} \left| f \right| .   
+    \]
+\end{lemma}
 
-Type your content here.
+\begin{proof}
+    Fix $X \in \mathfrak{X} (\R^{n+1})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
+    \begin{equation}
+    \begin{split}
+        \int_{\partial \Sigma} \left| f \right| 
+        & = \int_{\partial \Sigma} \left(\left| f \right| X \right) \cdot \nu \\
+    &=  \int_{\Sigma} \mathrm{div}  _{\Sigma } \left( \left| f \right| X^T \right)  \\
+    &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X^T).
+    \end{split}
+    \end{equation}
 
-Type your content here.
+    Since $X=X^T+X^\bot $ and $\mathrm{div}_{\Sigma }(X^\bot)=(X \cdot N)H $, we can conclude that
 
-Type your content here.
+    \begin{equation}
+        \begin{split}
+            \int_{\partial \Sigma} \left| f \right| 
+        &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X^T)\\
+        &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X) - \left| f \right| \left(X \cdot N \right)H\\
+        &\leq \max \left| X \right| \int_{\Sigma} \left| \nabla f \right| + n \max \left| \nabla X \right| \int_{\Sigma} \left| f \right| + \max \left| X \right| \int_{\Sigma} \left| Hf \right| .
+        \end{split}
+        \end{equation} 
+\end{proof}
 
-Type your content here.
+Let $\left( \Sigma _t \right) _{t \in [0,T)}$ be a class of hypersurfaces following the free boundary MCF with barrier $S$. Assme $T<\infty $. Let $f_{\alpha }$ be a non-negative function on $\Sigma _t$ where $\alpha = \alpha (S, \Sigma _0,T,n)$. Then we consider another two functions $\tilde{H}>0,\tilde{G}\geq 0$ on $\Sigma _t$ such that 
+\[
+    H=O(\tilde{H}) \qquad \nabla \tilde{H}=O(\tilde{G}).    
+\]
+Finally, for another two positve constant $\sigma$ and $k$, we let $f=f_{\alpha }\tilde{H}^{\sigma }$, $f_k=\left( f-k \right) _{+}$ and $A(k)=\left\{ f \geq k \right\} $, $A(k,t)=A(k)\cap \Sigma _t$.
 
-Type your content here.
+We say the function $f$ satisfies the condition $(\star)$ if there exist constants $c=c(S, \Sigma_0,T,n,\alpha )$ and $C=C(S,\Sigma _0,T,n,\alpha ,p,\sigma )$ such that the following two inequalities hold:\\
+(Poincare-like)
+\begin{equation} \label{PLE}
+\begin{split}
+    \frac{1}{c}\int_{\Sigma_t} f^p \tilde{H}^2 
+\leq &  p \left( 1+\frac{1}{\beta } \right) \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2  \\
+&+\left( 1+\beta p \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+&+\int_{\Sigma_t} f^p+\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }
+\end{split}
+\end{equation}
+(Evolution-like)
+\begin{equation} \label{ELE}
+    \begin{split}
+        \partial_t \int_{\Sigma_t} f_k^p
+    \leq &  -\frac{1}{3}p^2 \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2  \\
+    &-\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}\\
+    &+C \int_{A(k,t)} f^p+cp\int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma }\\
+    &+cp \sigma \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p}+C \left| A(k) \right| 
+    \end{split}
+    \end{equation}
 
-Type your content here.
+for any $p>p_0(n,\alpha ,c), \sigma <\frac{1}{2}, k>0, \beta >0$. 
 
-Type your content here.
+Now we state the main theorem.
 
-Type your content here.
+\begin{theorem}
+    If $f$ satisfies $(\star)$, then for sufficiently small $\sigma $ depending on sufficiently large $p$, $f=f_{\alpha }\tilde{H}^{\sigma }$ is uniformly bounded in spacetime by a constant depending on $(S,\Sigma _0,T,n,\alpha ,p,\sigma )$. 
+\end{theorem}
 
-This is a new page. 
+The proof of the main theorem splits into three parts. First, we find a way to handle the boundary term. Then we obtain a higher $L^p$ bound for $f$ by rearranging and combining the inequalities. Finally, using the higher $L^p$ bound and the Michael-Simon inequality, we establish the iteration scheme which leads to the conclusion.
+
+\subsection{Boundary Integral Estimate}
+
+The following two lemmas are needed to handle the boundary integral.
+
+\begin{lemma}\label{HSquare}
+    Let $g$ be any non-negative funciton on $Sigma_t.$ If $r \in (0,2)$, $0<q<p$ with $\frac{rp }{q}<2,$ then for any $\mu >0,$ 
+    \[
+        \int_{\Sigma_t} g^q \tilde{H}^r \leq \frac{1}{\mu }\int_{\Sigma_t} g^p \tilde{H}^2+C(\mu ,r,q,p )\int_{\Sigma_t} g^p + \left| \mathrm{spt } g \right|.    
+    \]
+\end{lemma}
+\begin{proof}
+    By Young's inequality, since $0<q<p$, we have that 
+    \begin{equation}
+    \begin{split}
+        \int_{\Sigma_t} g^q \tilde{H}^r 
+    &\leq \int_{\Sigma_t} (g^q \tilde{H}^r)^{\frac{p}{q}}+1  \\
+    &= \int_{\Sigma_t} g^p \tilde{H}^{\frac{rp }{q}}+\left| \mathrm{spt } g \right|.
+    \end{split}
+    \end{equation} 
+    Since $\eta := \frac{rp }{2q}<1$, again by Young's inequality, we can deduce that
+    \begin{equation}
+    \begin{split}
+        g^p \tilde{H}^{2\eta} 
+    &= g^{p \eta }\tilde{H}^{2\eta}g^{p \left( 1-\eta \right) } \\
+    &= \left( \frac{1}{\mu \eta  }g^{p}\tilde{H}^2 \right) ^{\eta} \left( (\mu \eta )^{\frac{\eta}{1-\eta } }g^p\right)^{1-\eta }\\
+    & \leq \frac{1}{\mu }g^p\tilde{H}^2+C(\mu ,r,q,p)g^p
+    \end{split}
+    \end{equation} 
+    where $C(\mu ,r,q,p)=\frac{(\mu \eta )^{\frac{\eta}{1-\eta } }}{1-\eta }$.
+    The conclusion follows by combining the two inequalities above.
+\end{proof}
+
+The \autoref{BoundaryIntegral} which associates integrals on the boundary and the interior for free boundary surfaces is also needed.
+
+Now we can prove the following lemma which estimates the boundary integral.
+
+\begin{lemma} \label{BoundaryFH}
+    For any $\sigma <\frac{1}{2}, p>4$ and $\mu >0$, there exists constants $c=c(n,S)$ and $C=C(n,s,\mu ,p)$ such that
+    \begin{equation}
+    \begin{split}
+        \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\Sigma } 
+    \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } f_{k}^{p-1} } \\
+    &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| .
+    \end{split}
+    \end{equation} 
+\end{lemma}
+
+\begin{proof}
+    By \autoref{BoundaryIntegral}, we have that 
+    \[
+        \frac{1}{c(n,S)}\int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  \leq \int_{\Sigma_t} \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| + \int_{\Sigma_t} \left| H f_{k}^{p-1} \tilde{H}^{\sigma } \right| + \int_{\Sigma_t} \left| f_{k}^{p-1} \tilde{H}^{\sigma } \right|.
+    \]
+    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangular ineuqality, we have that
+    \[
+        \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| \leq p f_{k}^{p-2} \tilde{H}^{\sigma } \left| \nabla f \right| +c(n,S) \sigma f_{k}^{p-1} \tilde{H}^{\sigma -1} \tilde{G}^{} .
+    \]
+
+    Combining the ineuqalities above, we have that, for some constant $c=c(n,S)$ and $\sigma < \frac{1}{2}$,
+    \begin{equation}
+    \begin{split}
+        \int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  
+    \leq &c \int_{\Sigma_t} f_{k}^{p-2} \left| \nabla f \right| ^2 +cp^2 \int_{\Sigma_t} 
+    f_{k}^{p-2} \tilde{H}^{2 \sigma } \\
+    &+c \sigma \int_{\Sigma_t} f_{k}^{p-1} \frac{\tilde{G}^{^2} }{\tilde{H}^{\sigma -2} }+c \int_{\Sigma_t} f_{k}^{p-1} \left( \tilde{H}^{\sigma } +\tilde{H}^{\sigma +1}  \right) 
+    \end{split}
+    \end{equation} 
+
+    Finally, since $\sigma < \frac{1}{2}$ and $p>4$, for any $\mu >0$, we can apply \autoref{HSquare} for $\int_{\Sigma_t} f_{k}^{p-2} \tilde{H}^{2 \sigma }  $, $\int_{\Sigma_t} f_{k}^{p-1} \tilde{H}^{ \sigma }  $ and $\int_{\Sigma_t} f_{k}^{p-1} \tilde{H}^{1+ \sigma }  $; thus concluding that
+    \begin{equation}
+        \begin{split}
+            \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\Sigma } 
+        \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } f_{k}^{p-1} } \\
+        &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right|
+        \end{split}
+        \end{equation}
+        for constants $c=c(n,S)$ and $C=C(n,s,\mu ,p)$.
+\end{proof}
+
+\subsection{Higher $L^p$ Estimate}
+Next, we establish the higher $L^p$ bound for $f$.
+
+\begin{lemma}
+    Suppose $f$ satisfies $(\star)$. Then for $p>p_0(c)$ and $\sigma < c_{\sigma }(c)p^{\frac{1}{2}}$,
+    \[\int_{0}^{T}\int_{\Sigma_t} f^p<\infty .\]  
+\end{lemma}
+
+\begin{proof}
+    By \autoref{ELE}, for $k=0$, we have that
+    \begin{equation}
+    \begin{split}
+        \partial_t \int_{\Sigma_t} f^p
+        &\leq   -\frac{1}{3}p^2 \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2  \\
+        & \quad -\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+        &\quad +C \int_{\Sigma_t} f^p+cp\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }\\
+        &\quad +cp \sigma \int_{\Sigma_t}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f^{p}+C \left| \Sigma_t \right| \\
+        &\leq   -\frac{1}{3}p^2 \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2  \\
+        & \quad -\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+        &\quad +C \int_{\Sigma_t} f^p+cp\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }\\
+        &\quad -\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f^{p}+C \left| \Sigma_t \right| \\
+        &\quad +cp \sigma [ p \left( 1+\frac{1}{\beta } \right) \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2   \\
+        &\quad +\left( 1+\beta p \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1} \\
+        &\quad +\int_{\Sigma_t} f^p+\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma } ] 
+    \end{split}
+    \end{equation} 
+    where we use \autoref{PLE} to estimate the term $cp \sigma \int_{\Sigma_t}^{}\tilde{H}^2f^p$.
+    For the boundary integral $\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }$, we apply the previous estimate \autoref{BoundaryFH} and conclude that 
+    \begin{equation}
+    \begin{split}
+        \partial _t \int_{\Sigma_t} f^p 
+    &\leq \left[ -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \right] \int_{\Sigma_t} f_{}^{p-2} \left| \nabla f \right|   \\
+    &\quad + \left[ -\frac{p}{c}+cp \sigma (1+\beta p)+cp \sigma  \right] \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+    &\quad + \left( \frac{cp^3}{\mu }-\frac{1}{5} \right) \int_{\Sigma_t} \tilde{H}^2f^{p}\\
+    &\quad + C \left| \Sigma _t \right| + C \int_{\Sigma_t} f^p
+    \end{split}
+    \end{equation} 
+    For $p$ sufficient large depending only on $c$, we can choose constants $\mu , \beta , \sigma $ such that
+    \begin{cases}
+        -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \leq 0\\
+        -\frac{p}{c}+cp \sigma (1+\beta p)+cp \sigma \leq 0\\
+        \frac{cp^3}{\mu }-\frac{1}{5} \leq 0.
+    \end{cases}
+    Therefore $\int_{0}^{T}\int_{\Sigma_t} f^p<\infty$ as $T$ is finite.
+\end{proof}
+
+
+
 
 \chapterend
 
