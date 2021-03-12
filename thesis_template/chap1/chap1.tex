@@ -40,12 +40,12 @@ In this thesis, our goal is to build a theoretical fundation for the convergence
 \begin{lemma}\label{BoundaryIntegral}
     There exists a constant $c=c(n,S)$ such that for any $\Sigma $ meeting $S$ orthogonally, and any $f \in C^1(\bar{\Sigma })$ 
     \[
-        \frac{1}{c}\int_{\partial \Sigma } \left| f \right| =\int_{ \Sigma} \left| \nabla f \right| + \int_{ \Sigma} \left| Hf \right| + \int_{ \Sigma} \left| f \right| .   
+        \frac{1}{c}\int_{\partial \Sigma } \left| f \right| \leq \int_{ \Sigma} \left| \nabla f \right| + \int_{ \Sigma} \left| Hf \right| + \int_{ \Sigma} \left| f \right| .   
     \]
 \end{lemma}
 
 \begin{proof}
-    Fix $X \in \mathfrak{X} (\R^{n+1})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
+    Fix $X \in \mathfrak{X} (\R^{n+1})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $\nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
     \begin{equation}
     \begin{split}
         \int_{\partial \Sigma} \left| f \right| 
@@ -93,7 +93,6 @@ We say the function $f$ satisfies the condition $(\star)$ if there exist constan
     &+cp \sigma \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p}+C \left| A(k) \right| 
     \end{split}
     \end{equation}
-
 for any $p>p_0(n,\alpha ,c), \sigma <\frac{1}{2}, k>0, \beta >0$. 
 
 Now we state the main theorem.
@@ -144,8 +143,8 @@ Now we can prove the following lemma which estimates the boundary integral.
     For any $\sigma <\frac{1}{2}, p>4$ and $\mu >0$, there exists constants $c=c(n,S)$ and $C=C(n,s,\mu ,p)$ such that
     \begin{equation}
     \begin{split}
-        \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\Sigma } 
-    \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } f_{k}^{p-1} } \\
+        \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma } 
+    \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma }  }f_{k}^{p-1} \\
     &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| .
     \end{split}
     \end{equation} 
@@ -156,12 +155,12 @@ Now we can prove the following lemma which estimates the boundary integral.
     \[
         \frac{1}{c(n,S)}\int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  \leq \int_{\Sigma_t} \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| + \int_{\Sigma_t} \left| H f_{k}^{p-1} \tilde{H}^{\sigma } \right| + \int_{\Sigma_t} \left| f_{k}^{p-1} \tilde{H}^{\sigma } \right|.
     \]
-    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangular ineuqality, we have that
+    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangular inequality, we have that
     \[
         \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| \leq p f_{k}^{p-2} \tilde{H}^{\sigma } \left| \nabla f \right| +c(n,S) \sigma f_{k}^{p-1} \tilde{H}^{\sigma -1} \tilde{G}^{} .
     \]
 
-    Combining the ineuqalities above, we have that, for some constant $c=c(n,S)$ and $\sigma < \frac{1}{2}$,
+    Combining the inequalities above, we have that, for some constant $c=c(n,S)$ and $\sigma < \frac{1}{2}$,
     \begin{equation}
     \begin{split}
         \int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  
@@ -182,7 +181,7 @@ Now we can prove the following lemma which estimates the boundary integral.
         for constants $c=c(n,S)$ and $C=C(n,s,\mu ,p)$.
 \end{proof}
 
-\subsection{Higher $L^p$ Estimate}
+\subsection{Higher $L^p$ bound}
 Next, we establish the higher $L^p$ bound for $f$.
 
 \begin{lemma}
@@ -220,14 +219,91 @@ Next, we establish the higher $L^p$ bound for $f$.
     \end{split}
     \end{equation} 
     For $p$ sufficient large depending only on $c$, we can choose constants $\mu , \beta , \sigma $ such that
+    \[
     \begin{cases}
         -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \leq 0\\
         -\frac{p}{c}+cp \sigma (1+\beta p)+cp \sigma \leq 0\\
         \frac{cp^3}{\mu }-\frac{1}{5} \leq 0.
     \end{cases}
+    \]
     Therefore $\int_{0}^{T}\int_{\Sigma_t} f^p<\infty$ as $T$ is finite.
 \end{proof}
 
+\subsection{Iteration Scheme and the Uniform bound}
+
+\begin{proof}
+    By rewriting the boundary integral in \autoref{ELE} using \autoref{BoundaryFH}, we have that
+    \begin{equation}
+        \begin{split}
+            \partial_t \int_{\Sigma_t} f_k^p
+        \leq &  -\frac{1}{3}p^2 \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2+C \int_{A(k,t)} f^p  \\
+        &-\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}+C \left| A(k) \right|\\
+        &+cp \sigma \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p} \\
+        &+cp \bigg[  \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} + \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } } f_{k}^{p-1} \\
+        &+ \frac{p^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right|\bigg]\\
+        \leq & \left( cp-\frac{1}{3}p^2 \right) \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2+C \int_{A(k,t)} f^p  \\
+        &+ p\left( c\sigma - \frac{1}{c} \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}+C \left| A(k) \right|\\
+        &+ cp\left(  \sigma + \frac{p^2}{\mu } \right) \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p}\\
+        \end{split}
+        \end{equation}
+\end{proof}
+
+By Michael-Simon inequality in the freeboundary settings, for each $n \geq 2$, there exist some $q>1$ and $c=c(n,q,\left| \Sigma_0 \right| )$ such that
+\[\left( \int_{\Sigma} v^{2q} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma} \left| \nabla v \right| ^2 + c \int_{\Sigma} v^2 H^2 + c \int_{\Sigma} v^2.\]
+
+Take $v=f_{k}^{\frac{p}{2}} $, then
+\begin{equation} \label{MSF}
+    \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \int_{\Sigma_t} f_{k}^{p} H^2 + c \int_{\Sigma_t} f_{k}^{p}.
+\end{equation}
+
+\begin{theorem}
+    Suppose there are constants $p_0$ and $\sigma _0$ independent of $p, \sigma , k$ such that for $p>p_0$ and $\sigma < \frac{\sigma _0}{\sqrt[]{p}}$, we have that 
+    \[\int_{0}^{T}\int_{\Sigma_t} f^p < \infty \]
+    and
+    \begin{equation} \label{ELEFP}
+        \partial _t \int_{\Sigma_t} f^p + \frac{1}{c} \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}}  \right| ^2 \leq C \int_{A(k,t)}^{} \tilde{H}^2 f^p +C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| 
+    \end{equation}
+    for any $k>0$ where $C,c$ are constants independent of $k$.
+    Then $f$ is uniformly bounded in spacetime and the bound will depend on.
+\end{theorem}
+
+\begin{proof}
+    Integrating \autoref{ELEFP} and \autoref{MSF} over $[0,T)$ yields that 
+    \begin{equation*}
+        \sup _{t \in [0,T)} \int_{\Sigma_t} f^p + \frac{1}{c} \int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}}  \right| ^2 \leq C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right| 
+    \end{equation*}
+    and
+    \begin{equation*}
+        \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \iint_{A(k)} f_{k}^{p} H^2 + c \iint_{A(k)} f_{k}^{p}.
+    \end{equation*}
+    Then by adjust the constants to absorb the term $\int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2$, we have that
+    \begin{equation}
+        \max \left\{ \sup _{t \in [0,T)} \int_{\Sigma_t} f_{k}^{p}, \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}}  \right\} \leq C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right|.
+    \end{equation}
+    Hence by Holder's inequality,
+    \begin{equation} \label{SIE}
+    \begin{split}
+        \int_{0}^{T} \int_{\Sigma_t} f_{k}^{p \frac{2q-1}{q}}  
+    &\leq  \int_{0}^{T} \int_{\Sigma_t} f_{k}^{p} f_{k}^{p \frac{q-1}{q}}  \\
+    & \leq \int_{0}^{T} \left( \int_{\Sigma_t} f_{k}^{pq}  \right) ^{\frac{1}{q}} \left( \int_{\Sigma_t} f_{k}^{p}  \right) ^{\frac{q-1}{q}}\\
+    & \leq \left( \sup _{t \in [0,T)} \int_{\Sigma_t} f_{k}^{p} \right) ^{\frac{q-1}{q}}  \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \\
+    & \leq \left( C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right| \right) ^{\frac{2q-1}{q}}.
+    \end{split}
+    \end{equation}
+    For any function $g$ defined on $A(k)$, for any $r>1$, we can apply the Holder's inequality and have that \[\iint_{A(k)}^{}g \leq \left| A(k) \right| ^{1-\frac{1}{r}}\left( \iint_{A(k)}^{} g^r \right) ^{\frac{1}{r}}.\]
+    Hence
+    \[\int_{0}^{T} \int_{\Sigma_t} f_{k}^{p \frac{2q-1}{q}} \leq C \left| A(k) \right| ^{\frac{2q-1}{q}\left( 1-\frac{1}{r} \right) } \left( \left( \iint_{A(k)}^{}f_{}^{pr}  \right) ^{\frac{1}{r}} + \left( \iint_{A(k)}^{}\tilde{H}^{2r} f_{}^{pr }  \right) ^{\frac{1}{r}}+\left| A(k) \right| ^{\frac{1}{r}} \right) ^{\frac{2q-1}{q}}. \]
+    For $p$ sufficiently large relative to $r$, we have that 
+    \[\iint_{A(k)}^{}f_{}^{pr } < + \infty \] and \[\iint_{A(k)}^{}\left( \tilde{H}^2f^p \right) ^r = \iint_{A(k)}^{}\left( f_{\alpha }\tilde{H}^{\sigma + \frac{2}{p}} \right) ^{pr}< + \infty .\]
+
+    By fixing $r$ sufficiently large, we let $\alpha = \frac{2q-1}{q}\left( 1- \frac{1}{r} \right)>1 $ and $\beta = p \frac{2q-1}{q}>0 $.
+    
+    Thus, for any $l>k$, \autoref{SIE} implies that
+    \[\left| l-k \right| ^{\beta }\left| A(k) \right| \leq \iint_{A(l)}^{}f_{k}^{\beta }  \leq C \left| A(k) \right| ^{\alpha }\]
+    where the constant $C$ is independent of $l$ and $k$.
+
+    Therefore, by ???, $A(k)=0$ for $k>k_1(\alpha , \beta , C)$. 
+\end{proof}
 
 
 
