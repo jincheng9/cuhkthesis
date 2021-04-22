@@ -1,16 +1,32 @@
 %
 % chapter background study
 
-\chapter{Covariant Formulation of the Mean Curvature Flow}
+\chapter{Free Boundary MCF in Riemannian Manifolds}
+
+
 
 \note{Summary}
 {
 Background study comes here.
 }
 
-From the previous chapter, we can see that Huisken considered a family of maps $F_t$ from an open set $U \subset \R^n$ to $\R^{n+1}$ which evolve along the mean curvature vector of their images. In this way, we can fix a local coordinate system and analyze geometric quantities of the images along the flow using this invariant coordinate system. The advantages include that the structure of the general evolution equation is clearer which enables us to prove the short-time existence of the flow using the theory of quasilinear parabolic differential equations. On the other hand, one needs to carefully choose the local coordinate system to simplify the computation without losing the important information. More modern treatment is to consider a rather invariant form of evolution equations independent of the local coordinates. In particular, we consider the metrics and connections on vector bundles over the space-time domain and derive structure equations and evolution equations for geometric quantities in such new vector bundle machinery.
+\section{Definitions and Notations}
 
-\section{Subbundles}
+Let $(M, \bar{g})$ be an $(n+1)$-dimensional Riemannian manifold with the Levi-Civita connection $\bar{\nabla }$. We denote by $\sigma _x(P)$ the sectional curvature of a 2-plane $P$ at $x \in M$ and by $i_x(M)$ the injectivity radius of $M$ at $x$. 
+
+Consider a properly embedded, orientable, smooth hypersurface $S \subset M$ without boundary. We refer to $S$ as the \textit{barrier surface} or the \textit{barrier}. We write $f=O(g)$ to indicate that $\left| f \right| \leq c(n,S,M)\left| g \right| $. By fixing a smooth global unit normal $\nu _S$ on $S$, we can define the second fundamental form $A^S: TS \times TS \to \R$ by
+\[A^S(u,v)=-\bar{g}(\bar{\nabla }_u v, \nu _S).\]
+
+Let $\Sigma $ be a two-sided smooth $n$-dimensional manifold with non-empty boundary $\partial \Sigma $. A smooth immersion $F : \Sigma \to  M$ defines a free boundary hypersurface if $F(\partial \Sigma ) \subset S$ and $F_* N = \nu _S \circ F$ where $N$ is the outward unit normal of $\partial \Sigma \subset \Sigma $ with respect to the metric induced from $M$ by $F$.
+
+
+
+
+\section{Covariant Formulation of the Mean Curvature Flow}
+
+From the previous chapter, we can see that Huisken considered a family of maps $F_t$ from an open set $U \subset \R^n$ to $\R^{n+1}$ which evolve along the mean curvature vector of their images. In this way, we can fix a local coordinate system and analyze geometric quantities of the images along the flow using this invariant coordinate system. The advantages include that the structure of the general evolution equation is clearer which enables us to prove the short-time existence of the flow using the theory of quasilinear parabolic differential equations. On the other hand, one needs to carefully choose the local coordinate system to simplify the computation without losing the important information. A more modern treatment is to consider a rather invariant form of evolution equations independent of the local coordinates. In particular, we consider the metrics and connections on vector bundles over the space-time domain and derive structure equations and evolution equations for geometric quantities in such new vector bundle machinery.
+
+\subsection{Subbundles}
 
 \begin{definition}
     Let $K, E$ be two vector bundles over a manifold $M$. We say $K$ is a subbundle of $E$ if there exists an injective vector bundle homomorphism $\iota_K : K \to E$ covering the identity map on $M$.
@@ -39,7 +55,7 @@ for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. If we also have a connection de
     \nabla_{u}^{} h^K(v,\xi) = \overset{L}{\nabla_{u}} (h^K(v,\xi ))-h^K(\nabla_{u}^{} v,\xi )-h^K(v, \overset{K}{\nabla_{u}} \xi )
 \end{equation}
 for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. Assume in addition that the connection on $TM $ is symmetric, we have the following Codazzi identity:
-\begin{equation}
+\begin{equation} \label{Codazzi}
     \nabla_{u}^{} h^K(v, \xi )-  \nabla_{v}^{} h^K(u, \xi ) =\pi _L(R_{\nabla }(u,v)(\iota _K \xi )).
 \end{equation}
 
@@ -51,6 +67,506 @@ for any $\xi \in \Gamma (K)$ and $\eta \in \Gamma (L)$. Then the metric $g$ indu
 \begin{equation}
     g^L(h^K(u,\xi ), \eta )+g^K(\xi ,h^L(u,\eta ))=0.
 \end{equation}
+
+\subsection{Time-dependent Immersion}
+Let $I$ be a real interval. Then the tangent bundle $T(\Sigma \times I)$ splits into $\mathcal{H} \oplus \R \partial t$ where $\calH := \left\{ u \in T(\Sigma \times I) : dt(u)=0\right\} $  is the 'spatial' tangent bundle.
+
+Let $F: \Sigma \times I \to M$ be a smooth map such that $F(\cdot,t) : \Sigma \to M $ defines a free boundary hypersurface with respect to the barrier $S$. Note that the pullback bundle $F^*TM$ is equipped with a metric $\bar{g}_F$ and a connection ${}^F \bar{\nabla }$ induced from the ambient manifold $M$. 
+
+The pushforward map of the spatial tangent vector $F_* : \calH \to F^*TM $ defines a subbundle of $F^*TM$ of rank $n$ . We denote by $\mathcal{N} $ the orthogonal complement of $F_*(\calH)$ in $F^*TM$. Then $\mathcal{N} $ is a subbundle of $F^*TM $ of rank $1$, which is referred to as the (spacetime) normal bundle.
+
+Now $\mathcal{H} $ and $\mathcal{N} $ are subbundles of $F^*TM $ with inclusion maps
+\[F_*: \mathcal{H} \to F^*TM \qquad \iota : \mathcal{N} \to F^*TM \]
+and projection maps
+\[\pi : F^*TM \to \mathcal{H} \qquad \overset{\perp }{\pi} : F^*TM \to \mathcal{N} .\]
+
+Then from the previous section we can define the metric $g(u,v):=\bar{g}_F(F_* u, F_* v)$, the connection $\nabla := \pi \circ {}^F \bar{\nabla } \circ F_*$ on the bundle $\mathcal{H} $ and the metric $\overset{\perp }{g} (\xi , \eta ):=\bar{g}_F(\iota \xi , \iota \eta )$, the connection $\overset{\perp }{\nabla} := \overset{\perp }{\pi} \circ {}^F \bar{\nabla } \circ \iota $ on the bundle $\mathcal{N} $.
+
+By restricting the first argument of the second fundamental form $h^{\mathcal{H} }=\overset{\perp }{\pi} \circ {}^F \bar{\nabla } \circ F_* \in \Gamma (T(\Sigma \times I)^* \otimes \mathcal{H} ^* \otimes \mathcal{N} )$ to $\mathcal{H} $, we can define the symmetric bilinear form $h \in \Gamma (\mathcal{H} ^* \otimes \mathcal{H} ^* \otimes \mathcal{N})$ on $\mathcal{H} $ with values in $\mathcal{N} $. The mean curvature vector $\vec{H} \in \Gamma (\mathcal{N} )$ on $\Sigma $ is thus defined as $\vec{H} := \mathrm{Tr}_g(h)$.
+
+Let $I=[0,T)$. We say a time-dependent immersion $F: \Sigma \times I \to M$ is a solution to the free boundary mean curvature flow if \[F_* \partial t = \iota \vec{H}.\]
+
+Note that in the case of free boundary mean curvature flow, the remaining components of $h^{\mathcal{H} }$ are given by
+\begin{equation}
+\begin{split}
+    h^{\mathcal{H} }(\partial_t, v) 
+&= \overset{\perp }{\pi} ({}^F \bar{\nabla }_{\partial _t} F_* v)  \\
+&= \overset{\perp }{\pi} ({}^F \bar{\nabla }_{v} F_* \partial _t+F_*([\partial_t,v]))  \\
+&= \overset{\perp }{\nabla} _v \vec{H}  \\
+\end{split}
+\end{equation} 
+where $\overset{\perp }{\pi} \circ  F_*([\partial_t,v])=0$ for $[\partial _t, v]=(\partial _t v^i) \partial _i \in \mathcal{H} $.
+
+\section{Boundary Derivatives}
+
+Since $\mathcal{N} $ is a subbundle of $F^*TM $  of rank $1$, we can fix a global unit section $\nu \in \Gamma (\mathcal{N} )$. Let $H$ be a function over $\Sigma \times I$ defined by $H:=-\overset{\perp }{g} (\vec{H},\nu )$. Then $\vec{H}=-H \nu $.
+
+\begin{theorem}
+    $N(H)=H A^S(\iota \nu , \iota \nu )$ 
+\end{theorem}
+
+\begin{proof}
+
+    \begin{equation}
+    \begin{split}
+        N(H)
+    &= - \overset{\perp }{g} (\overset{\perp }{\nabla} _{N}\vec{H}, \nu )\\
+    &= - \overset{\perp }{g} (h^{\mathcal{H} }(\partial _t, N), \nu )\\
+    &=- \bar{g}_F({}^F \bar{\nabla } _{\partial_t }F_*N, \iota \nu)\\
+    &= - \bar{g}_F({}^F \bar{\nabla } _{\partial_t } \nu _S \circ F, \iota \nu)\\
+    &= - \bar{g}(\bar{\nabla }_{F_* \partial_t} \nu _S,\iota \nu )\\
+    &= - \bar{g}(\bar{\nabla }_{-H \iota \nu } \nu _S,\iota \nu )\\
+    &= H A^S(\iota \nu , \iota \nu )
+    \end{split}
+    \end{equation}  
+\end{proof}
+
+In the rest of the section, we fix a time $t_0 \in I$. Then the restrictions of $\mathcal{H} $ and $\mathcal{N} $  to $\Sigma \times \left\{ t_0 \right\} $ are the usual tangent and the normal bundle of $F_{t_0}$. Moreover, $\nabla $ agrees with the Levi-Civita connection of $g(t_0)$ and $h$ agrees with the usual second fundamental form of the immersion $F_{t_0}$. 
+
+Let $p \in \partial \Sigma $. Then for any $u \in T_p \Sigma $, we can extend $u$ to a section of $\mathcal{H} $ in an open neighborhood of $(p,t_0) \in \Sigma \times I$. \textbf{Since the quantities we are going to work with in the rest of the section are all tensorial}, we can further assume that $\nabla u = \pi \circ {}^F \bar{\nabla } \circ F_* u = 0$ without affecting the values of the quantities. \textit{But for vectors in the tangent space of the boundary of Sigma, such extension would make the vector leave the tangent space of the boundary.} What we could do is to extend the vector to the interior of $\Sigma $ along the normal direction $N$. Then we have that $\nabla _N u=0$.  
+
+Before computing the boundary derivative of the second fundamental form $h$ on $\mathcal{H} $. We first derive a relationship between $h$ and $A^S$ on $F(\partial \Sigma \times \left\{ t_0 \right\} ) \subset S $.
+
+\begin{lemma} \label{htoas}
+    For $u \in T_p \partial \Sigma $, we have that 
+    \[h(u,N)=A^S(F_{*}u, \iota \nu ) \nu. \] 
+\end{lemma}
+
+\begin{proof}
+    Since $u \in T_p \partial \Sigma$, then $\bar{g}(F_* u, \nu _S)=\bar{g}_F(F_* u, F_* N)=0$. By construction, we also have that $\bar{g}(\iota \nu , \nu _S)=\bar{g}_F(\iota \nu , F_* N)=0$. Hence $\iota \nu $ and $F_*u$ is tangent to the barrier $S$ and 
+    \[A^S(F_{*}u, \iota \nu )=\bar{g}(\iota \nu , \bar{\nabla }_{F_*u}\nu _S)=\bar{g}_F(\iota \nu ,{}^F \bar{\nabla } _u F_* N).\]
+    Therefore,
+    \[h(u,N)=\overset{\perp }{\pi} ({}^F \bar{\nabla } _u F_* N)= \bar{g}_F(\iota \nu ,{}^F \bar{\nabla } _u F_* N) \nu = A^S(F_{*}u, \iota \nu ) \nu .\] 
+\end{proof}
+
+\begin{theorem}
+    For $u,v \in T_p \partial \Sigma $, 
+    \begin{equation*}
+        \begin{split}
+            \nabla _N h(u,v)
+            =& \left( \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)  \right)   \nu \\
+            & +A^S(F_*u, F_* v)h(N,N)-h(\nabla_u N, v) \\
+            & + A^S(\iota  \nu  , \iota \nu )h(u,v) +\overset{\perp }{\pi} (F^*R_{\nabla }(u,N)(F_* v)).
+    \end{split}
+    \end{equation*}    
+\end{theorem}
+
+\begin{proof}
+    By the Codazzi identity \autoref{Codazzi}, we have that 
+    \[\nabla _N h(u,v)-\nabla _u h(N,v)=\overset{\perp }{\pi} (F^*R_{\nabla }(u,N)(F_* v))\]
+    where 
+    \[\nabla _u h(N,v)=\overset{\perp }{\nabla} _u(h(N,v))-h(\nabla_u N, v)-h(N, \nabla _u v).\]
+
+    Since $v \in T_p \partial \Sigma $, by \autoref{htoas}, we have that
+    \begin{equation}
+    \begin{split}
+        \overset{\perp }{\nabla} _u(h(N,v)) 
+    &=  \overset{\perp }{\nabla} _u(A^S(F_{*}v, \iota \nu ) \nu)\\
+    &= F_*u(A^S(F_{*}v, \iota \nu )) \nu.
+    \end{split}
+    \end{equation} 
+    Since the equation we need to derive is tensorial, we can extend the vectors $u,v$ parallel on $\partial \Sigma $ and along the direction $N$ to the interior of $\Sigma $ where 
+    \[\nabla _u v=g(\nabla _u v,N) N.\]
+    Hence,
+    \begin{equation}
+    \begin{split}
+        h(N, \nabla _u v) 
+    &= g(\nabla _u v,N) h(N,N)  \\
+    &= \bar{g}_F({}^F \bar{\nabla } _u F_* v , F_*N) h(N,N)  \\
+    &= \bar{g}(\bar{\nabla } _{F_*u} F_* v , \nu_S)h(N,N)  \\
+    &= -A^S(F_*u, F_* v)h(N,N).
+    \end{split}
+    \end{equation}
+    Moreover, the pushforward $F_*u, F_* v \in T_pS$ can be extended to vector fields on the barrier $S$ where $\bar{\nabla }^{S}_{F_*u} F_*v=\iota h(u,v)$ and
+    \begin{equation}
+    \begin{split}
+        &F_*u(A^S(\iota \nu , F_*v)) \\
+    =& \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)+A^S(\iota \nu , \bar{\nabla }^{S}_{F_*u} F_*v)\\
+    =& \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)+A^S(\iota  h(u,v) , \iota \nu )
+    \end{split}
+    \end{equation}
+    where $\bar{\nabla }^{S}$ is the connection on $S$ induced from $\bar{\nabla }$.
+
+    Since $A^S(\iota  h(u,v) , \iota \nu ) \nu =A^S(\iota  \nu  , \iota \nu )h(u,v)$, combining all equations above, we can conclude that 
+    \begin{equation*}
+        \begin{split}
+            \nabla _N h(u,v)
+            =& \left( \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)  \right)   \nu \\
+            & +A^S(F_*u, F_* v)h(N,N)-h(\nabla_u N, v) \\
+            & + A^S(\iota  \nu  , \iota \nu )h(u,v) +\overset{\perp }{\pi} (F^*R_{\nabla }(u,N)(F_* v)).
+    \end{split}
+    \end{equation*} 
+\end{proof}
+
+\section{Stampacchia's Iteration}
+In this section, we assume that the ambient manifold $M$ satisfies uniform bounds
+\[\sigma _x(P) \leq K, \quad i_x(M) \geq i(M)\]
+for constants $K \geq 0$ and $i(M)>0$.
+
+\subsection{Michael-Simon with free boundary}
+
+\begin{lemma}\label{BoundaryIntegral}
+    There exists a constant $c=c(n,S,M)$ such that for any $\Sigma $ meeting $S$ orthogonally, and any $f \in C^1(\bar{\Sigma })$ 
+    \[
+        \frac{1}{c}\int_{\partial \Sigma } \left| f \right| \leq \int_{ \Sigma} \left| \nabla f \right| + \int_{ \Sigma} \left| Hf \right| + \int_{ \Sigma} \left| f \right| .   
+    \]
+\end{lemma}
+
+\begin{proof}
+    Fix $X \in \mathfrak{X} (\R^{n+1})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $\nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
+    \begin{equation*}
+    \begin{split}
+        \int_{\partial \Sigma} \left| f \right| 
+        & = \int_{\partial \Sigma} \left(\left| f \right| X \right) \cdot \nu \\
+    &=  \int_{\Sigma} \mathrm{div}  _{\Sigma } \left( \left| f \right| X^T \right)  \\
+    &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X^T).
+    \end{split}
+    \end{equation*}
+
+    Since $X=X^T+X^\bot $ and $\mathrm{div}_{\Sigma }(X^\bot)=(X \cdot N)H $, we can conclude that
+
+    \begin{equation*}
+        \begin{split}
+            \int_{\partial \Sigma} \left| f \right| 
+        &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X^T)\\
+        &= \int_{\Sigma} \nabla \left| f \right| \cdot X^T + \left| f \right| \mathrm{div}  _{\Sigma } (X) - \left| f \right| \left(X \cdot N \right)H\\
+        &\leq \max \left| X \right| \int_{\Sigma} \left| \nabla f \right| + n \max \left| \nabla X \right| \int_{\Sigma} \left| f \right| + \max \left| X \right| \int_{\Sigma} \left| Hf \right| .
+        \end{split}
+        \end{equation*} 
+\end{proof}
+
+\begin{lemma} \label{MSRie}
+    Let $f$ be a Lipschitz function on $\Sigma $ vanishing on $\partial \Sigma $. Then
+    \[\left( \int_{\Sigma }^{}\left| f \right| ^{\frac{n}{n-1}} \right) ^{\frac{n-1}{n}}\leq c(n)\left( \int_{\Sigma} \left| \nabla f \right| + \int_{\Sigma} H \left| f \right|  \right) \]
+    provided
+    \[K^2(1-\alpha )^{-\frac{2}{n}}(\omega^{-1}\left| \mathrm{supp} \ f \right| ^{\frac{2}{n}}) \leq 1\]
+    and
+    \[2 \rho _0 \leq i(N)\]
+    where $\omega_n$ is the volume of the unit ball and
+    \[\rho_0=K^{-1}\arcsin \left\{ K(1-\alpha )^{-\frac{1}{n}}\left( \omega _n^{-1}\left|\mathrm{supp}\ f  \right|  \right) ^{\frac{1}{n}} \right\}. \]
+    Here $0<\alpha<1 $ is a free parameter and
+    \[c(n)=\pi 2^{n-1}\alpha ^{-1}\left( 1-\alpha  \right) ^{-\frac{1}{n}} \frac{n}{n-1} \omega _n^{-\frac{1}{n}}.\]
+\end{lemma}
+
+\begin{theorem} \label{MSwithextra}
+    There exists a constant $c=c(n)$ such that for any $\Sigma $ meeting $S$ orthogonally and any $f \in C_{C}^{1}(\bar{\Sigma})$ satisfying the conditions in \autoref{MSRie},
+    \[\frac{1}{c}(\int_{\Sigma} \left| f \right| ^{\frac{n}{n-1}})^{\frac{n-1}{n}}\leq \int_{\Sigma} \left| \nabla f \right| +\int_{\Sigma} \left| Hf \right| +\int_{\partial \Sigma} \left| f \right| .\]
+\end{theorem}
+
+\begin{proof}
+    Without loss of generality, we assume that $f>0$.
+    
+    Let $d:\Sigma \times \Sigma \to \R$ be the distance function on $\Sigma $. Let $\Omega=\left\{ x \in \Sigma : d(x,\partial \Sigma ) \leq \epsilon \right\}$. Then for sufficiently small $\epsilon >0$, we can find the diffeomorphism $\phi : [0,\epsilon ] \times \partial \Sigma \to \Omega $ with bounded Jacobian $\left| J \phi  \right| \in [\frac{1}{2}, 2] $.
+    
+    Hence
+    \begin{equation} \label{bdyest}
+    \begin{split}
+        \int_{\Omega }^{}f 
+    &= \int_{0}^{\epsilon }\int_{\partial \Sigma} f \left| J \phi  \right|  \\
+    & \leq 2 \int_{0}^{\epsilon }\int_{\partial \Sigma} f(t,x)  \\
+    & \leq \epsilon ^2 \left| \partial \Sigma  \right| \sup _{\Sigma }\left| \nabla f \right| +2 \epsilon \int_{\partial \Sigma} f
+    \end{split}
+    \end{equation} 
+    where the last inequality follows from the Taylor expansion $f(t,x)=f(0,x)+t \frac{\partial }{\partial t} f (t^*(x),x)$ for some $t^*(x) \in (0,\epsilon )$ depending on $x \in \partial \Sigma .$
+    
+    Let $\eta : \Sigma \to \R$ be a smooth function such that $\eta |_{\partial \Sigma } \equiv 0$ , $\eta |_{ \Sigma - \Omega } \equiv 1$ and $\left| \nabla \eta  \right| \leq \frac{2}{\epsilon }$. By \autoref{bdyest}, we have that 
+    \begin{equation*}
+    \begin{split}
+        \int_{\Sigma} \left( \left( 1-\eta  \right) f \right) ^{\frac{n}{n-1}}
+    &\leq \int_{\Omega }^{} f_{}^{\frac{n}{n-1}}   \\
+    &\leq \epsilon ^2 \left| \partial \Sigma  \right| \sup _{\Sigma }\left| \nabla \left( f_{}^{\frac{n}{n-1}} \right)  \right| +2 \epsilon \int_{\partial \Sigma} f_{}^{\frac{n}{n-1}} \\
+    &\leq \epsilon C
+    \end{split}
+    \end{equation*}
+    for $C$ independent of $\epsilon $. For the function $\eta f$ which vanishes on $\partial \Sigma $, we can apply \autoref{MSRie} and conclude that 
+    \[\left\| \eta  f \right\| _{\frac{n}{n-1}} \leq  c(n) \left( \int_{\Sigma} \left| \nabla (\eta f) \right| + \int_{\Sigma} \left| H  \right|\eta f  \right). \] 
+    Therefore, for $c=c(n)$ and all sufficiently small $\epsilon >0$,
+    \begin{equation*}
+    \begin{split}
+        \left\| f \right\| _{\frac{n}{n-1}} 
+    &\leq \left\| \eta  f \right\| _{\frac{n}{n-1}}+\left\| (1-\eta )f \right\| _{\frac{n}{n-1}}  \\
+    & \leq c \int_{\Sigma} \eta \left| \nabla f \right| +c \int_{\Sigma} \left| H \right| \eta f + c \int_{\Sigma} \left| \nabla \eta  \right| f + \epsilon ^{\frac{n-1}{n}}C\\
+    &\leq c \int_{\Sigma}  \left| \nabla f \right| +c \int_{\Sigma} \left| H \right| f + \frac{2c}{\epsilon } \int_{\Omega }  f + \epsilon ^{\frac{n-1}{n}}C\\
+    &\leq c \int_{\Sigma}  \left| \nabla f \right| +c \int_{\Sigma} \left| H \right| f +4c \int_{\partial \Sigma} f\\
+    &\quad + 2c \epsilon  \left| \partial \Sigma  \right| \sup _{\Sigma }\left| \nabla f \right|+ \epsilon ^{\frac{n-1}{n}}C.\\
+    \end{split}
+    \end{equation*}
+    The conclusion follows by taking $\epsilon \to 0$.
+\end{proof}
+
+Finally, by combining \autoref{BoundaryIntegral} and \autoref{MSwithextra}, we can derive the following Michael-Simon inequality for free boundary hypersurfaces in Riemannian manifold using the argument identical to the proof of Theorem 2.3 in [ref:Edelen].
+
+\begin{theorem} \label{MSfree}
+    For any $\Sigma $ meeting $S$ orthogonally, any $f \in C^{1}(\bar{\Sigma })$ satisfying the conditions in \autoref{MSRie}, and any positive integer $p<n$, there exists a constant $c=c(n,p,S)$ such that 
+    \[\left\| f \right\| _{\frac{np}{n-p};\Sigma } \leq c(\left\| \nabla f \right\| _{p;\Sigma }+\left\| Hf \right\| _{p;\Sigma }+\left\|  f \right\| _{p;\Sigma }).\] 
+\end{theorem}
+
+\subsection{Main theorem and the idea of proof}
+
+Let $\left( \Sigma _t \right) _{t \in [0,T)}$ be a class of hypersurfaces following the free boundary MCF with barrier $S$. Assume $T<\infty $. Let $f_{\alpha }$ be a non-negative function on $\Sigma _t$ where $\alpha = \alpha (S, \Sigma _0,T,n)$. Then we consider another two functions $\tilde{H}>0,\tilde{G}\geq 0$ on $\Sigma _t$ such that 
+\[
+    H=O(\tilde{H}) \qquad \nabla \tilde{H}=O(\tilde{G}).    
+\]
+Finally, for another two positve constant $\sigma$ and $k$, we let $f=f_{\alpha }\tilde{H}^{\sigma }$, $f_k=\left( f-k \right) _{+}$ and $A(k)=\left\{ f \geq k \right\} $, $A(k,t)=A(k)\cap \Sigma _t$.
+
+We say the function $f$ satisfies the condition $(\star)$ if there exist constants $c=c(S, \Sigma_0,M,T,n,\alpha )$ and $C=C(S,\Sigma _0,M,T,n,\alpha ,p,\sigma )$ such that the following two inequalities hold:\\
+(Poincare-like)
+\begin{equation} \label{PLE}
+\begin{split}
+    \frac{1}{c}\int_{\Sigma_t} f^p \tilde{H}^2 
+\leq &  p \left( 1+\frac{1}{\beta } \right) \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2  \\
+&+\left( 1+\beta p \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+&+\int_{\Sigma_t} f^p+\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }
+\end{split}
+\end{equation}
+(Evolution-like)
+\begin{equation} \label{ELE}
+    \begin{split}
+        \partial_t \int_{\Sigma_t} f_k^p
+    \leq &  -\frac{1}{3}p^2 \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2  \\
+    &-\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}\\
+    &+C \int_{A(k,t)} f^p+cp\int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma }\\
+    &+cp \sigma \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p}+C \left| A(k) \right| 
+    \end{split}
+    \end{equation}
+for any $p>p_0(n,\alpha ,c), \sigma <\frac{1}{2}, k>0, \beta >0$. 
+
+Now we state the main theorem.
+
+\begin{theorem}
+    If $f$ satisfies $(\star)$, then for sufficiently small $\sigma $ depending on sufficiently large $p$, $f=f_{\alpha }\tilde{H}^{\sigma }$ is uniformly bounded in spacetime by a constant depending on $(S,\Sigma _0,T,n,\alpha ,p,\sigma )$. 
+\end{theorem}
+
+The proof of the main theorem splits into three parts. First, we find a way to handle the boundary term. Then we obtain a higher $L^p$ bound for $f$ by rearranging and combining the inequalities. Finally, using the higher $L^p$ bound and the Michael-Simon inequality, we establish the iteration scheme which leads to the conclusion.
+
+\subsection{Boundary Integral Estimate}
+
+The following two lemmas are needed to handle the boundary integral.
+
+\begin{lemma}\label{HSquare}
+    Let $g$ be any non-negative funciton on $\Sigma_t.$ If $r \in (0,2)$, $0<q<p$ with $\frac{rp }{q}<2,$ then for any $\mu >0,$ 
+    \[
+        \int_{\Sigma_t} g^q \tilde{H}^r \leq \frac{1}{\mu }\int_{\Sigma_t} g^p \tilde{H}^2+C(\mu ,r,q,p )\int_{\Sigma_t} g^p + \left| \mathrm{spt } g \right|.    
+    \]
+\end{lemma}
+\begin{proof}
+    By Young's inequality, since $0<q<p$, we have that 
+    \begin{equation*}
+    \begin{split}
+        \int_{\Sigma_t} g^q \tilde{H}^r 
+    &\leq \int_{\Sigma_t} (g^q \tilde{H}^r)^{\frac{p}{q}}+1  \\
+    &= \int_{\Sigma_t} g^p \tilde{H}^{\frac{rp }{q}}+\left| \mathrm{spt } g \right|.
+    \end{split}
+    \end{equation*} 
+    Since $\eta := \frac{rp }{2q}<1$, again by Young's inequality, we can deduce that
+    \begin{equation*}
+    \begin{split}
+        g^p \tilde{H}^{2\eta} 
+    &= g^{p \eta }\tilde{H}^{2\eta}g^{p \left( 1-\eta \right) } \\
+    &= \left( \frac{1}{\mu \eta  }g^{p}\tilde{H}^2 \right) ^{\eta} \left( (\mu \eta )^{\frac{\eta}{1-\eta } }g^p\right)^{1-\eta }\\
+    & \leq \frac{1}{\mu }g^p\tilde{H}^2+C(\mu ,r,q,p)g^p
+    \end{split}
+    \end{equation*} 
+    where $C(\mu ,r,q,p)=\frac{(\mu \eta )^{\frac{\eta}{1-\eta } }}{1-\eta }$.
+    The conclusion follows by combining the two inequalities above.
+\end{proof}
+
+The \autoref{BoundaryIntegral} which associates integrals on the boundary and the interior for free boundary surfaces is also needed.
+
+Now we can prove the following lemma which estimates the boundary integral.
+
+\begin{lemma} \label{BoundaryFH}
+    For any $\sigma <\frac{1}{2}, p>4$ and $\mu >0$, there exists constants $c=c(n,S,M)$ and $C=C(n,S,M,\mu ,p)$ such that
+    \begin{equation}
+    \begin{split}
+        \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma } 
+    \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma }  }f_{k}^{p-1} \\
+    &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| .
+    \end{split}
+    \end{equation} 
+\end{lemma}
+
+\begin{proof}
+    By \autoref{BoundaryIntegral}, we have that 
+    \begin{equation*}
+    \begin{split}
+        \frac{1}{c(n,S,M)}\int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  &\leq \int_{\Sigma_t} \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| + \int_{\Sigma_t} \left| H f_{k}^{p-1} \tilde{H}^{\sigma } \right|\\ 
+        & \quad + \int_{\Sigma_t} \left| f_{k}^{p-1} \tilde{H}^{\sigma } \right|. 
+    \end{split}
+    \end{equation*} 
+    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangular inequality, we have that
+    \[
+        \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| \leq p f_{k}^{p-2} \tilde{H}^{\sigma } \left| \nabla f \right| +c(n,S,M) \sigma f_{k}^{p-1} \tilde{H}^{\sigma -1} \tilde{G}^{} .
+    \]
+
+    Combining the inequalities above, we have that, for some constant $c=c(n,S,M)$ and $\sigma < \frac{1}{2}$,
+    \begin{equation*}
+    \begin{split}
+        \int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  
+    \leq &c \int_{\Sigma_t} f_{k}^{p-2} \left| \nabla f \right| ^2 +cp^2 \int_{\Sigma_t} 
+    f_{k}^{p-2} \tilde{H}^{2 \sigma } \\
+    &+c \sigma \int_{\Sigma_t} f_{k}^{p-1} \frac{\tilde{G}^{^2} }{\tilde{H}^{\sigma -2} }+c \int_{\Sigma_t} f_{k}^{p-1} \left( \tilde{H}^{\sigma } +\tilde{H}^{\sigma +1}  \right) 
+    \end{split}
+    \end{equation*} 
+
+    Finally, since $\sigma < \frac{1}{2}$ and $p>4$, for any $\mu >0$, we can apply \autoref{HSquare} for $\int_{\Sigma_t} f_{k}^{p-2} \tilde{H}^{2 \sigma }  $, $\int_{\Sigma_t} f_{k}^{p-1} \tilde{H}^{ \sigma }  $ and $\int_{\Sigma_t} f_{k}^{p-1} \tilde{H}^{1+ \sigma }  $; thus concluding that
+    \begin{equation*}
+        \begin{split}
+            \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma } 
+        \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } f_{k}^{p-1} } \\
+        &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right|
+        \end{split}
+        \end{equation*}
+        for constants $c=c(n,S,M)$ and $C=C(n,S,M,\mu ,p)$.
+\end{proof}
+
+\subsection{Higher $L^p$ bound}
+Next, we establish the higher $L^p$ bound for $f$.
+
+\begin{lemma} \label{hlp}
+    Suppose $f$ satisfies $(\star)$. Then there exist constants $p_0(c)$ and $c_\sigma (c)$ depending on some $c=c(S, \Sigma_0,M,T,n,\alpha )$ such that for $p>p_0(c)$ and $\sigma < \frac{c_{\sigma }(c)}{\sqrt[]{p}}$,
+    \[\int_{0}^{T}\int_{\Sigma_t} f^p \leq C_1 <\infty .\]  
+\end{lemma}
+
+\begin{proof}
+    By \autoref{ELE}, for $k=0$, we have that
+    \begin{equation*}
+    \begin{split}
+        \partial_t \int_{\Sigma_t} f^p
+        &\leq   -\frac{1}{3}p^2 \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2   -\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+        &\quad +C \int_{\Sigma_t} f^p+cp\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }\\
+        &\quad +cp \sigma \int_{\Sigma_t}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f^{p}+C \left| \Sigma_t \right| \\
+        &\leq   -\frac{1}{3}p^2 \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2   -\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+        &\quad +C \int_{\Sigma_t} f^p+cp\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma } -\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f^{p}+C \left| \Sigma_t \right| \\
+        &\quad +cp \sigma [ p \left( 1+\frac{1}{\beta } \right) \int_{\Sigma_t} f^{p-2}\left| \nabla f \right| ^2   \\
+        &\quad +\left( 1+\beta p \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1} +\int_{\Sigma_t} f^p+\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma } ] 
+    \end{split}
+    \end{equation*} 
+    where we use \autoref{PLE} to estimate the term $cp \sigma \int_{\Sigma_t}^{}\tilde{H}^2f^p$.
+    For the boundary integral $\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }$, we apply the previous estimate \autoref{BoundaryFH} and conclude that 
+    \begin{equation}
+    \begin{split}
+        \partial _t \int_{\Sigma_t} f^p 
+    &\leq \left[ -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \right] \int_{\Sigma_t} f_{}^{p-2} \left| \nabla f \right|   \\
+    &\quad + \left[ -\frac{p}{c}+cp \sigma (1+\beta p)+cp \sigma  \right] \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f^{p-1}\\
+    &\quad + \left( \frac{cp^3}{\mu }-\frac{1}{5} \right) \int_{\Sigma_t} \tilde{H}^2f^{p}\\
+    &\quad + C \left| \Sigma _t \right| + C \int_{\Sigma_t} f^p
+    \end{split}
+    \end{equation} 
+    For $p$ sufficient large depending only on $c$, we can choose constants $\mu , \beta , \sigma $ such that
+    \[
+    \begin{cases}
+        -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \leq 0\\
+        -\frac{p}{c}+cp \sigma (1+\beta p)+cp \sigma \leq 0\\
+        \frac{cp^3}{\mu }-\frac{1}{5} \leq 0.
+    \end{cases}
+    \]
+    Therefore $\int_{0}^{T}\int_{\Sigma_t} f^p<\infty$ as $T$ is finite.
+\end{proof}
+
+We can also simplify the evolution-like equation for $f_k$ and obtain the following lemma.
+
+\begin{lemma}
+    Suppose $f$ satisfies $(\star )$. Then for $\sigma , p$ satisfying the same bounds as \autoref{hlp} and $C=C()$,
+    \begin{equation*}
+    \begin{split}
+        \partial_t \int_{\Sigma_t} f_k^p \leq &  -\frac{p^2}{12} \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2+C \int_{A(k,t)} f^p +C \left| A(k) \right|\\ \quad &+ C \int_{A(k,t)}^{}\tilde{H}^2f^p\\
+    \end{split}
+    \end{equation*}  
+\end{lemma}
+
+\begin{proof}
+    By rewriting the boundary integral in \autoref{ELE} using \autoref{BoundaryFH}, we have that
+    \begin{equation*}
+        \begin{split}
+            \partial_t \int_{\Sigma_t} f_k^p
+        \leq &  -\frac{1}{3}p^2 \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2+C \int_{A(k,t)} f^p  \\
+        &-\frac{p}{c} \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}+C \left| A(k) \right|\\
+        &+cp \sigma \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p} \\
+        &+cp \bigg[  \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} + \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma } } f_{k}^{p-1} \\
+        &+ \frac{p^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right|\bigg]\\
+        \leq & \left( cp-\frac{1}{3}p^2 \right) \int_{\Sigma_t} f_{k}^{p-2}\left| \nabla f \right| ^2+C \int_{A(k,t)} f^p  \\
+        &+ p\left( c\sigma - \frac{1}{c} \right) \int_{\Sigma_t} \frac{\tilde{G}^2}{\tilde{H}^{2-\sigma }}f_{k}^{p-1}+C \left| A(k) \right|\\
+        &+ cp\left(  \sigma + \frac{p^2}{\mu } \right) \int_{A(k,t)}^{}\tilde{H}^2f^p-\frac{1}{5}\int_{\Sigma_t} \tilde{H}^2f_{k}^{p}\\
+        \end{split}
+        \end{equation*}
+\end{proof}
+The conclusion follows by choosing the value of $p,\sigma ,\mu $ as in the proof of \autoref{hlp}. 
+
+\subsection{Iteration Scheme and the Uniform bound}
+
+By \autoref{MSfree}, for each $n \geq 2$, there exist some $q>1$ and $c=c(n,q,\left| \Sigma_0 \right|,S )$ such that
+\[\left( \int_{\Sigma} v^{2q} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma} \left| \nabla v \right| ^2 + c \int_{\Sigma} v^2 H^2 + c \int_{\Sigma} v^2.\]
+For $n>2$, we let $q=\frac{n}{n-2}$. For $n=2$, we apply Corollary 2.4 and Remark 2.5 in [ref:Edelen].
+
+Take $v=f_{k}^{\frac{p}{2}} $, then by \autoref{hlp}, we have that 
+\[\left| \mathrm{supp}  \  v \right|=\left| A(k,t) \right| \leq \frac{1}{k} \int_{\Sigma_t} f \leq \frac{1}{k} C  \]
+where $C$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Hence for sufficent large $k$,
+\begin{equation} \label{MSF}
+    \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \int_{\Sigma_t} f_{k}^{p} H^2 + c \int_{\Sigma_t} f_{k}^{p}.
+\end{equation}
+
+\begin{theorem}
+    Suppose there are constants $p_0$ and $\sigma _0$ independent of $p, \sigma , k$ such that for $p>p_0$ and $\sigma < \frac{\sigma _0}{\sqrt[]{p}}$, we have that 
+    \[\int_{0}^{T}\int_{\Sigma_t} f^p < \infty \]
+    and
+    \begin{equation} \label{ELEFP}
+        \partial _t \int_{\Sigma_t} f^p + \frac{1}{c} \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}}  \right| ^2 \leq C \int_{A(k,t)}^{} \tilde{H}^2 f^p +C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| 
+    \end{equation}
+    for any $k>0$ where $C,c$ are constants independent of $k$.
+    Then $f$ is uniformly bounded in spacetime and the bound will depend on.
+\end{theorem}
+
+\begin{proof}
+    Integrating \autoref{ELEFP} and \autoref{MSF} over $[0,T)$ yields that 
+    \begin{equation*}
+        \sup _{t \in [0,T)} \int_{\Sigma_t} f^p + \frac{1}{c} \int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}}  \right| ^2 \leq C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right| 
+    \end{equation*}
+    and
+    \begin{equation*}
+        \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \iint_{A(k)} f_{k}^{p} H^2 + c \iint_{A(k)} f_{k}^{p}.
+    \end{equation*}
+    Then by adjust the constants to absorb the term $\int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2$, we have that
+    \begin{equation*}
+    \begin{split}
+        &\max \left\{ \sup _{t \in [0,T)} \int_{\Sigma_t} f_{k}^{p}, \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}}  \right\} \\
+        \leq &C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right|. 
+    \end{split}
+    \end{equation*} 
+    Hence by Holder's inequality,
+    \begin{equation} \label{SIE}
+    \begin{split}
+        \int_{0}^{T} \int_{\Sigma_t} f_{k}^{p \frac{2q-1}{q}}  
+    &\leq  \int_{0}^{T} \int_{\Sigma_t} f_{k}^{p} f_{k}^{p \frac{q-1}{q}}  \\
+    & \leq \int_{0}^{T} \left( \int_{\Sigma_t} f_{k}^{pq}  \right) ^{\frac{1}{q}} \left( \int_{\Sigma_t} f_{k}^{p}  \right) ^{\frac{q-1}{q}}\\
+    & \leq \left( \sup _{t \in [0,T)} \int_{\Sigma_t} f_{k}^{p} \right) ^{\frac{q-1}{q}}  \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \\
+    & \leq \left( C \iint_{A(k)}^{} \tilde{H}^2 f^p +C \iint_{A(k)}^{}f^p + C \left| A(k) \right| \right) ^{\frac{2q-1}{q}}.
+    \end{split}
+    \end{equation}
+    For any function $g$ defined on $A(k)$, for any $r>1$, we can apply the Holder's inequality and have that \[\iint_{A(k)}^{}g \leq \left| A(k) \right| ^{1-\frac{1}{r}}\left( \iint_{A(k)}^{} g^r \right) ^{\frac{1}{r}}.\]
+    Hence
+    \begin{equation*}
+    \begin{split}
+        \int_{0}^{T} \int_{\Sigma_t} f_{k}^{p \frac{2q-1}{q}} \leq &C \left| A(k) \right| ^{\frac{2q-1}{q}\left( 1-\frac{1}{r} \right) } [ \left( \iint_{A(k)}^{}f_{}^{pr}  \right) ^{\frac{1}{r}} \\
+        &+ \left( \iint_{A(k)}^{}\tilde{H}^{2r} f_{}^{pr }  \right) ^{\frac{1}{r}}+\left| A(k) \right| ^{\frac{1}{r}} ] ^{\frac{2q-1}{q}}.
+    \end{split}
+    \end{equation*} 
+    For $p$ sufficiently large relative to $r$, we have that 
+    \[\iint_{A(k)}^{}f_{}^{pr } < + \infty \] and \[\iint_{A(k)}^{}\left( \tilde{H}^2f^p \right) ^r = \iint_{A(k)}^{}\left( f_{\alpha }\tilde{H}^{\sigma + \frac{2}{p}} \right) ^{pr}< + \infty .\]
+
+    By fixing $r$ sufficiently large, we let $\alpha = \frac{2q-1}{q}\left( 1- \frac{1}{r} \right)>1 $ and $\beta = p \frac{2q-1}{q}>0 $.
+    
+    Thus, for any $l>k$, \autoref{SIE} implies that
+    \[\left| l-k \right| ^{\beta }\left| A(k) \right| \leq \iint_{A(l)}^{}f_{k}^{\beta }  \leq C \left| A(k) \right| ^{\alpha }\]
+    where the constant $C$ is independent of $l$ and $k$.
+
+    Therefore, by \autoref{SIalg}, $A(k)=0$ for $k>k_1(\alpha , \beta , C)$. 
+\end{proof}
+
+
+
+
+
 
 
 

@@ -758,7 +758,11 @@ INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
 OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
 INPUT chap1\chap1.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
+INPUT chap3\chap3.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti7.tfm
+INPUT chap2\chap2.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
@@ -766,8 +770,6 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
-INPUT chap2\chap2.tex
-INPUT chap3\chap3.tex
 INPUT proof\proof.tex
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl

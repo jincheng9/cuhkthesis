@@ -1,14 +1,449 @@
 %
 % chapter conclusion
 
-\chapter{Conclusion}
+\chapter{Classical Results of the MCF}
 
 \note{Summary}
 {
 Conclusion comes here.
 }
 
-In conclusion, ...
+Throughout this section, we let $M$ be a compact uniformly convex $n$-dimensional surface smoothly embedded in $\R^{n+1}$. Then $M$ can be represented by the following local diffeomorphism:
+\[
+	F: U \subset \R^n \rightarrow M \subset \R^{n+1}.
+\]
+Then the metric $g= \left\{ g_{ij} \right\}  $ and the second fundamental form $A= \left\{ h_{ij} \right\}  $ at $F(\vec{x}) \in M$ can be written as
+\[
+	g_{ij}(\vec{x})=\left( \frac{\partial F(\vec{x})}{\partial x_i}, \frac{\partial F(\vec{x})}{\partial x_j} \right) ,\quad h_{ij}(\vec{x})=\left( -\nu (\vec{x}), \frac{\partial^2 F(\vec{x})}{\partial x_i \partial x_j} \right)
+\]
+where $\left( \cdot , \cdot \right) $ is the standard inner product in $\R^{n+1}$ and $\nu (\vec{x}) \in \R^{n+1}$ is the outward normal to $M$ at $F(\vec{x})$. The Levi-Civita connection on $M$ induced from the standard connection on $\R^{n+1}$ is given by 
+\[\Gamma_{\ ij}^{k} =\frac{1}{2}g_{ }^{kl} \left( g_{ il,j}^{} +g_{ jl,i}^{} - g_{ij ,l}^{}  \right) \]
+where $g_{ij ,k}=\frac{\partial }{\partial x_{k}} g_{ij}$. For a vector field $X=X^i \frac{\partial }{\partial x_{i}} $ on $M$, the covariant derivative of $X$ is \[\left( \nabla_{i}^{} X \right) ^j=\frac{\partial }{\partial x_{i}} X^j + \Gamma_{\ ik}^{j} X^k.\]
+The Riemann curvature tensor on $M$ is defined as 
+\[R_{ijkl}= \left< (\nabla_{i}^{} \nabla_{j}^{} -\nabla_{j}^{} \nabla_{i}^{}) \frac{\partial }{\partial x_{k}} , \frac{\partial }{\partial x_{k}}  \right> \] where $\left\langle  \cdot , \cdot \right\rangle $ is the inner product for tensors on $M$ induced from $g$. By the Gauss' equation, we have that \[R_{ijkl}=h_{ik}h_{jl }^{}-h_{ il}^{} h_{ jk}^{} . \] The Ricci tensor and scalar curvature are thus given by
+\[R_{ik}=Hh_{ik}-h_{ i}^{\ j} h_{ jk}^{} , \quad R=H^2-\left| A \right| ^2\]
+where $H=g^{ij}h_{ij}$, $\left| A \right| ^2=h^{ij}h_{ij}$ and the metric tensor $g$ is used to raise or lower indices.
+
+Now we denote $M$ by $M_0$ and $F$ by $F_0$. We say a family of maps $F(\cdot , t)$ satisfies the mean curvature flow equation with initial condition $F_0$ if
+\begin{align*}
+	 & \frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t), \quad \vec{x} \in U, \\
+	 & F(\cdot ,0)=F_0,
+\end{align*}
+where $H(\vec{x},t)$ is the mean curvature on $M_t$.
+
+\section{Maximum Principles and Preliminary Geometric Identities}
+
+\begin{lemma}
+	[Simon's identity]
+	\[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H + H h_{li}^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} \]
+\end{lemma}
+
+\begin{proof}
+	Note that $\Delta h_{ij}^{} = g_{}^{mn} \nabla_{m}\nabla_{n} h_{ij}^{} $ and $\nabla_{i}\nabla_{j} H = g_{}^{mn } \nabla_{i}\nabla_{j} h_{mn }^{} $. It suffices to examine the difference $\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} .$ Since the ambient space is Euclidean, from the Codazzi equation we have that $\nabla_{i}^{} h_{j}^{k} = \nabla_{j}^{} h_{i}^{k}$. Hence \[\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} = \nabla_{m}\nabla_{i} h_{nj}^{} - \nabla_{i}\nabla_{m} h_{jn}^{}=(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{}.\] By the product rule of connections acting on tensor product, we have that \[(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{} = R_{min}^{\quad\  l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{}.  \]
+	Therefore, by Gauss equation
+	\begin{equation*}
+		\begin{split}
+			\Delta h_{ij}^{} - \nabla_{i}\nabla_{j} H
+			&= g_{}^{mn} (R_{min }^{\quad \ l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{} ) \\
+			&= g_{}^{mn } g_{}^{kl} \{(h_{mn}^{} h_{ik }^{} -h_{mk }^{} h_{in }^{} )h_{lj}^{} + (h_{mj }^{} h_{ik }^{} - h_{mk }^{} h_{ij}^{} )h_{ln}^{} \}\\
+			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - g_{}^{mn } g_{}^{kl } h_{mk }^{} h_{ln }^{} h_{ij}^{} \\
+			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - \left| A \right| ^2 h_{ij}^{} .
+		\end{split}
+	\end{equation*}
+\end{proof}
+
+Parabolic maximum principles are essential PDE tools in the analysis of mean curvature flow. We will briefly introduce two frequently used versions in this section. One is the standard parabolic maximum principle for scalar functions. The other is the parabolic maximum principle for symmetric two-tensors.
+
+\begin{theorem} \label{thm:MPP}[Strong maximum principle for parabolic equations]
+	Let $M$ be a closed smooth manifold and $f: M \times [0,T) \to \R$ be a scalar function on $M$ varying along time $t$. Suppose $f (\cdot,0) \geq 0$ and
+	\[
+		\frac{\partial f}{\partial t} \geq \Delta f + b^{i} \nabla_{i}^{} f+ cf
+	\]
+	for some smooth function $b^i,c$, where $c \geq 0.$ Then
+	\[\min _M f (\cdot,t) \geq \min _M f (\cdot,0).\]
+	Furthermore, if there exist some $p \in M$ and $t_0 \geq 0$ such that $f(p,t_0)=\min _M f (\cdot,0) $, then $f \equiv \min _M f (\cdot,0)$ for $0 \leq t \leq t_0.$
+\end{theorem}
+
+Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tensor on a closed manifold $M$. We say $M_{ij }^{} \geq 0 $ if for any vector $X$ on $M$, $M_{ij }^{} X^i X^j \geq 0$. Let $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$ be another symmetric tensor formed by contracting $M_{ij }^{} $ with itself using the metric where $p$ is a polynomial. Then we have the following verison of the maximum principle:
+
+\begin{theorem}[Strong maximum principle for symmetric two-tensors] \label{thm:MP2T}
+	Suppose $M_{ij }^{} $ is a symmetric tensor on a closed manifold $M$ depending on time $t$ and on $0 \leq t < T$ satisfies that \[\frac{\partial }{\partial t} M_{ij }^{} = \Delta M_{ij }^{} + u^k \nabla_{k}^{} M_{ij }^{} + N_{ij }^{} \] where $u^k$ is a vector on $M$ and $N_{ij }^{} $ is defined as above such that 
+	\[
+		N_{ij }^{} X^i X^j \geq 0 \text{   whenever  } M_{ij }^{} X^j =0.
+	\]
+	Then if $M_{ij }^{} \geq 0$ at $t=0$, it will remain so on $0 \leq t \leq T$.
+\end{theorem}
+
+\begin{proof}
+	Let $\delta >0$ be a constant depending only on $\max \left| M_{ij }^{}  \right| $.
+	Set \[\tilde{M}_{ij }^{}  = M_{ij }^{} + \epsilon (\delta +t) g_{ij}^{} \] for some $\epsilon >0$. Now it suffices to show that $\tilde{M}_{ij }^{} >0$ on $0 \leq t \leq \delta $ for all $\epsilon >0$.
+	Suppose for contradiction that the above assertion is not true. Then there exists $t_0 \in (0,\delta ]$ and a unit vector $X^i $ at $x_0 \in M$ such that $\tilde{M}_{ij }^{} X^j=0$ for all $i$  at $x_0$. Note that $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$, we set $\tilde{N_{ij }^{} }=P(\tilde{M}_{ij }^{} , g_{ij }^{} )$. By the assumption, since $\tilde{M}_{ij }^{} X^j=0$, we have that $\tilde{N_{ij }^{}} X^i X^j \geq 0$. Then at $(x_0,t_0)$, 
+
+	\begin{equation*}
+	\begin{split}
+		N_{ij }^{} X^i X^j
+	&= \tilde{N_{ij }^{}} X^i X^j + (N_{ij }^{} - \tilde{N_{ij }^{}}) X^i X^j\\
+	& \geq (N_{ij }^{} - \tilde{N_{ij }^{}}) X^i X^j\\
+	& \geq -\left| N_{ij }^{} - \tilde{N_{ij }^{}} \right|.
+	\end{split}
+	\end{equation*}
+
+	Since $P$ is a polynomial, we have that \[\left| N_{ij }^{} - \tilde{N_{ij }^{}} \right| \leq C \left| M_{ij }^{} - \tilde{M_{ij }^{}} \right|\] where $C$ is a constant depending only on $\max \left| M_{ij }^{}  \right| $ if we keep $\epsilon , \delta \leq 1$. Hence as $t_0 \leq \delta $,
+
+	\begin{equation}
+	\begin{split}
+		N_{ij }^{} X^i X^j 
+		& \geq -C \left| M_{ij }^{} - \tilde{M_{ij }^{}} \right|\\
+		&= -C \left| \epsilon (\delta + t_0) g_{ij }^{}  \right|\\
+		& \geq -2C \epsilon \delta.
+	\end{split}
+	\end{equation}
+
+	Let $f=\tilde{M}_{ij }^{} X^i X^j$. Observe that $f ( x_0,t) > 0 $ for $t<t_0$ and $f ( x_0,t_0) =0$ which imply that $\frac{\partial }{\partial t} f \leq 0$ for $t<t_0$. At $t=t_0$, we see that $f=0$ attains a minimum at $x_0$. Hence $\nabla f=0$ and $\Delta f \geq 0$ at $( x_0,t_0) $.
+
+	We can extend the vector $X^i$ to a parallel vector field in a neighborhood of $x_0$ along geodesics passing $x_0$ and define $X^i$ on $[0,t_0]$ independent of $t$.
+	Then we have that
+	
+	\begin{align*}
+		\frac{\partial }{\partial t} f&=(\frac{\partial }{\partial t} \tilde{M}_{ij }^{}) X^i X^j\\
+		\nabla_k f&= (\nabla_k \tilde{M}_{ij }^{}) X^i X^j = (\nabla_k M_{ij }^{} )X^i X^j\\
+		\Delta f &= (\Delta  \tilde{M}_{ij }^{}) X^i X^j = (\Delta M_{ij }^{} )X^i X^j
+	\end{align*}
+	
+	Therefore,
+	\begin{equation*}
+	\begin{split}
+		\frac{\partial }{\partial t} f
+		&=(\frac{\partial }{\partial t} \tilde{M}_{ij }^{}) X^i X^j\\
+	&= (\frac{\partial }{\partial t} (M_{ij }^{} + \epsilon (\delta +t) g_{ij }^{} )) X^i X^j\\
+	&= (\frac{\partial }{\partial t} M_{ij }^{} ) X^i X^j +\epsilon g_{ij }^{} X^i X^j+ \epsilon (\delta +t)(\frac{\partial }{\partial t} g_{ij }^{}) X^i X^j\\
+	&= (\frac{\partial }{\partial t} M_{ij }^{} ) X^i X^j +\epsilon\\
+	&= \Delta f + u^k \nabla_{k}^{} f +N_{ij }^{} X^i X^j + \epsilon \\
+	&= (1-2c \delta ) \epsilon.
+	\end{split}
+	\end{equation*}
+	Then contradiction arises when $2c \delta <1.$ 
+\end{proof}
+
+\section{Evolution Equations for Geometric Quantities}
+
+
+
+Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{x} \in U$, we have that geometric quantities on $F(\vec{x},t) \in M_t$ are also evolving under time $t$. By the evolution equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ for $F$, we can derive evolution equations for other geometric quantities.
+
+\begin{lemma}
+	The following evolution equations hold.
+	\begin{enumerate}
+
+		\item $\frac{\partial }{\partial t} g_{ij}=-2Hh_{ij}$
+		\item $\frac{\partial }{\partial t} g^{ij}=2Hh^{ij}$
+		\item $\frac{\partial \nu }{\partial t} = \nabla H$
+		\item $\frac{\partial }{\partial t} h_{ij}=\Delta h_{ij}-2Hh_{ik}g^{kl}h_{lj}+\left| A \right| ^2 h_{ij}$
+		\item $\frac{\partial }{\partial t} H=\Delta H+ \left| A \right| ^2 H$
+		\item $\frac{\partial }{\partial t} \left| A \right| ^2 = \Delta \left| A \right| ^2 - 2 \left| \nabla A \right| ^2 + 2 \left| A \right| ^4$
+	\end{enumerate}
+\end{lemma}
+
+\begin{proof}
+	\begin{enumerate}
+		\item Since $\left( \nu ,\frac{\partial F}{\partial x_{i}}  \right) =0$, by the product rule, we have that
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} g_{ij}^{}
+				      & = \frac{\partial }{\partial t} \left( \frac{\partial F(\vec{x},t) }{\partial x_{i}} , \frac{\partial F(\vec{x},t) }{\partial x_{j }}  \right)                                                                                                               \\
+				      & = \left( \frac{\partial }{\partial x_{i}} (-H (\vec{x},t) \cdot \nu (\vec{x},t)) , \frac{\partial F}{\partial x_{j}} ) \right) + \left( \frac{\partial F}{\partial x_{i}}, \frac{\partial }{\partial x_{j}} (-H (\vec{x},t) \cdot \nu (\vec{x},t))  \right) \\
+				      & = -H(\left( \frac{\partial \nu }{\partial x_{i}} , \frac{\partial F}{\partial x_{j}}  \right) + \left( \frac{\partial F}{\partial x_{i}} , \frac{\partial \nu }{\partial x_{j}}  \right) )                                                                  \\
+				      & = -2H h_{ij}^{}
+			      \end{split}
+		      \end{equation*}
+		\item Since $g_{km}^{} g_{}^{mj} = \delta_{k}^{j} $, we have that
+		      \begin{align*}
+			      \frac{\partial }{\partial t} (g_{km}^{} g_{}^{mj})                                                  & =0                                \\
+			      \frac{\partial g_{km}^{} }{\partial t} g_{}^{mj} + g_{km}^{} \frac{\partial g_{}^{mj} }{\partial t} & =0                                \\
+			      -2H h_{km}^{} g_{}^{mj} + g_{km}^{} \frac{\partial g_{}^{mj} }{\partial t}                          & =0                                \\
+			      g_{}^{ik} g_{km}^{} \frac{\partial g_{}^{mj} }{\partial t}                                          & =g_{}^{ik} 2H h_{km}^{} g_{}^{mj} \\
+			      \frac{\partial }{\partial t} g_{}^{ij}                                                              & = 2H h_{}^{ij}.
+		      \end{align*}
+		\item Since $\left| \nu \right| =1$ is fixed, we have that $\frac{\partial \nu }{\partial t} $ lies in the tangent space of the surface. Hence we can assume that $\frac{\partial \nu }{\partial t} = V^i \frac{\partial F}{\partial x_{i}} \in \R^{n+1}$ where $V^i$ can be determined by the following identity \[\left( \frac{\partial \nu }{\partial t} ,\frac{\partial F}{\partial x_{j}}  \right) = g_{ij}^{} V^i\]. Thus, we have that
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial \nu }{\partial t} &=g_{}^{ij} \left( \frac{\partial \nu }{\partial t} ,\frac{\partial F}{\partial x_{j}}  \right) \cdot \frac{\partial F}{\partial x_{i}} \\
+				      &= -g_{}^{ij} \left( \nu  ,\frac{\partial }{\partial t} \frac{\partial F}{\partial x_{j}}  \right) \cdot \frac{\partial F}{\partial x_{i}} \\
+				      &= g_{}^{ij} \left( \nu  , \frac{\partial }{\partial x_{j}} (H (\vec{x},t) \cdot \nu (\vec{x},t) ) \right) \cdot \frac{\partial F}{\partial x_{i}} \\
+				      &= g_{}^{ij} \frac{\partial }{\partial x_{j}} H \frac{\partial F}{\partial x_{i}} \\
+				      &=\nabla H
+			      \end{split}
+		      \end{equation*}
+		\item By the Gauss-Weingarten relations, we have that
+		      \[
+			      \begin{cases}
+				      \frac{\partial ^2 F}{\partial x_{i} \partial x_{j}} = \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu \\
+				      \frac{\partial \nu }{\partial x_{j}} =h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}} .
+			      \end{cases}
+		      \]
+		      Hence
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} h_{ij}^{}  &= -\frac{\partial }{\partial t} \left( \nu , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}} \right)  \\
+				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}}  \right) + \left( \nu , \frac{\partial^2 }{\partial x_{i} \partial x_{j}} (H \cdot \nu ) \right) \\
+				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu  \right) + \frac{\partial }{\partial x_{j}} \left( \nu , \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) - \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) \\
+				      &= -g_{}^{pq } \frac{\partial H}{\partial x_{q}} \Gamma_{\ ij}^{k} g_{pk}^{} + \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} -H \cdot \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, h_{il'}^{} g_{}^{l'm' } \frac{\partial F}{\partial x_{m'}} \right) \\
+				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}
+			      \end{split}
+		      \end{equation*}
+		      Since $H$ is a scalar function, we have that \[\nabla_{i}\nabla_{j} H = \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}}\] where $\nabla $ is the Levi-Civita connection on $M_t$. From previous lemma, we have the Simon's identity that \[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H +H h_{li }^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} .\] Hence
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} h_{ij}^{}
+				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{} \\
+				      &= \Delta h_{ij}^{} -( H h_{li }^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} ) - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}\\
+				      &= \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}.
+			      \end{split}
+		      \end{equation*}
+
+		\item Since $H=g_{}^{ij} h_{ij}^{} $, we have that
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} H= \frac{\partial }{\partial t} (g_{}^{ij} h_{ij}^{} )&=\frac{\partial g_{}^{ij} }{\partial t} h_{ij}^{} + g_{}^{ij} \frac{\partial h_{ij}^{} }{\partial t} \\
+				      &=2H h_{}^{ij} h_{ij}^{} + g_{}^{ij} (\Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{})\\
+				      &=\Delta H + \left| A \right| ^2 H.
+			      \end{split}
+		      \end{equation*}
+
+		\item Combining previous results, we can deduce the following evolution equation \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} h_{i}^{\ j}
+				      &= \frac{\partial }{\partial t} (h_{ik}^{} g_{}^{kj} )\\
+				      &= (\Delta h_{ik}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mk}^{} + \left| A \right| ^2 h_{ik}^{})g_{}^{kj}+ h_{ik}^{} (2H h_{}^{kj} )\\
+				      &= \Delta h_{i}^{\ j} - 2H h_{ik}^{} h_{}^{kj} + \left| A \right| ^2 h_{i}^{\ j} - 2H h_{ik}^{} h_{}^{kj}\\
+				      &= \Delta h_{i}^{\ j} + \left| A \right| ^2 h_{i}^{\ j}.
+			      \end{split}
+		      \end{equation*}
+		      Since $\left| A \right| ^2=h_{}^{ij} h_{ij}^{} = h_{i}^{\ j} h_{\ j}^{i}$, we have that
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} \left| A \right| ^2
+				      &= \frac{\partial }{\partial t}  (h_{i}^{\ j} h_{\ j}^{i}) \\
+				      &= (\Delta h_{i}^{\ j} + \left| A \right| ^2 h_{i}^{\ j})h_{\ j}^{i} + h_{i}^{\ j}(\Delta h_{\ j}^{i} + \left| A \right| ^2 h_{\ j}^{i})\\
+				      &= 2(h_{}^{ij} \Delta h_{ij}^{} + \left| A \right| ^4)\\
+			      \end{split}
+		      \end{equation*}
+		      Since the connection $\nabla $ is compatible with the metric $g$, we have that
+		      \begin{equation*}
+			      \begin{split}
+				      \Delta \left| A \right| ^2
+				      &= g_{}^{mn } \nabla_{m}\nabla_{n} (h_{}^{ij} h_{ij}^{})  \\
+				      &= 2g_{}^{mn } \nabla_{m} (h_{}^{ij} \nabla_{n}h_{ij}^{})  \\
+				      &= 2(g_{}^{mn } \nabla_{m}\nabla_{n}h_{ij}^{}) h_{}^{ij} + 2g_{}^{mn } (\nabla_{m} h_{}^{ij}) (\nabla_{n}h_{ij}^{}) \\
+				      &= 2 h_{}^{ij} \Delta h_{ij}^{} + 2 \left| \nabla A \right| ^2.
+			      \end{split}
+		      \end{equation*}
+		      It follows that
+		      \begin{equation*}
+			      \begin{split}
+				      \frac{\partial }{\partial t} \left| A \right| ^2
+				      &= 2(h_{}^{ij} \Delta h_{ij}^{} + \left| A \right| ^4)\\
+				      &= \Delta \left| A \right| ^2 - 2 \left| \nabla A \right| ^2 + \left| A \right| ^4.
+			      \end{split}
+		      \end{equation*}
+	\end{enumerate}
+\end{proof}
+\section{Preservation of the convexity and the pinching condition}
+\begin{theorem}
+	If $h_{ij}^{} \geq 0 $ at $t=0,$ then it remains so for $0 \leq t < T.$ 
+\end{theorem}
+\begin{proof}
+	We have that \[\frac{\partial }{\partial t} h_{ij}^{} = \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}.\]
+	Let $M_{ij }^{} = h_{ij }^{} $ and $N_{ij }^{} = \left| A \right| ^2 h_{ij }^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{}.$
+	If vector $X^j$ satisfies that $h_{ij }^{} X^j=0$ for all $i$, then
+	\[N_{ij }^{} X^j = \left| A \right| ^2 (h_{ij }^{} X^j) - 2 H h_{li }^{} g_{}^{lm } (h_{mj}^{}X^j)=0.\]
+	Hence we can apply \autoref{thm:MP2T} to conclude.
+\end{proof}
+We can in fact prove a stronger version of the theorem above.
+\begin{theorem} \label{stpin}
+	If $\epsilon H g_{ij }^{} \leq h_{ij }^{} \leq \beta H g_{ij }^{} ,$ and $H \geq 0$ at $t=0,$ then it remains true for $t>0$.
+\end{theorem}
+\begin{proof}
+	First, since $\frac{\partial }{\partial t} H=\Delta H+ \left| A \right| ^2 H$, by \autoref{thm:MPP} we have that if $H \geq 0$ at $t=0$, $H \geq 0$ for all $t \geq 0$.
+	Let $M_{ij }^{} = h_{ij }^{} - \epsilon H g_{ij }^{} .$ Then
+	\begin{equation*}
+	\begin{split}
+		\frac{\partial }{\partial t} M_{ij }^{}  
+	&= \frac{\partial }{\partial t} h_{ij }^{} -\epsilon (\frac{\partial }{\partial t} H) g_{ij }^{} - \epsilon H \frac{\partial }{\partial t} g_{ij }^{}  \\
+	&= \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}-\epsilon g_{ij }^{} (\delta H+ \left| A \right| ^2 H)-\epsilon H(-2H h_{ij }^{} )\\
+	&= \Delta M_{ij }^{} + \left| A \right| ^{2}h_{ij }^{} + 2 \epsilon H^2 h_{ij }^{} - \epsilon \left| A \right| ^2 H g_{ij }^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{}.
+	\end{split}
+	\end{equation*}
+	Let $N_{ij }^{} = \left| A \right| ^{2}h_{ij }^{} + 2 \epsilon H^2 h_{ij }^{} - \epsilon \left| A \right| ^2 H g_{ij }^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{}$. From direct computation we have that 
+	\begin{equation*}
+	\begin{split}
+		N_{ij }^{} 
+		&= \left| A \right| ^2(h_{ij }^{} -\epsilon H g_{ij }^{} )-2H(h_{li }^{} g_{}^{lm } h_{mj}^{}-\epsilon H h_{ij }^{} )\\
+		&= \left|A \right| ^2 M_{ij }^{} -2H(h_{li }^{} g_{}^{lm } h_{mj}^{}-\epsilon H h_{li }^{} g_{}^{lm} g_{mj }^{} )\\
+		&= \left|A \right| ^2 M_{ij }^{} -2H h_{i}^{m} (h_{mj }^{}-\epsilon H  g_{mj }^{} )\\
+		&= \left|A \right| ^2 M_{ij }^{} -2H h_{i}^{m} M_{ mj}^{}. \\
+	\end{split}
+	\end{equation*}  
+	Then for the null vector $X^i$ of $M_{ij }^{} $, we have that
+	\begin{equation*}
+	\begin{split}
+		N_{ij }^{} X^j 
+	&= \left|A \right| ^2 (M_{ij }^{}X^j) -2H h_{i}^{m} (M_{ mj}^{} X^j)=0.\\
+	\end{split}
+	\end{equation*}
+	Then the result follows from \autoref{thm:MP2T}.
+\end{proof}
+
+\section{Stampacchia's iteration}
+One key step for proving that $M$ converges to a round point is to show that the geometric quantitiy $\left| A \right| ^2-\frac{1}{n}H^2$ becomes small compared to $H^2$.
+
+The rationale behind is that
+\[\left| A \right| ^2-\frac{1}{n}H^2=\frac{1}{n}\sum_{i<j}^{n}(\kappa _i-\kappa _j)^2\]
+measures the sum of distances between eigenvalues $\kappa _i$ of the second fundamental form $A$. 
+
+An iteration scheme named Stampacchia's iteration is used to reach the goal. In this section, we introduce the general idea for Stampacchia's iteration.
+
+The principal components of Stampacchia's iteration are the following algebraic lemma and a version of the Sobolev inequality from [cite:MS]:
+\begin{lemma} \label{SIalg}
+	Let $f : [\bar{x},\infty) \to \R$ be a non-negative and non-increasing function. Suppose for $C>0, p>0$ and $\gamma >1,$ 
+	\[ (y-x)^{p}f(y) \leq Cf(x)^{\gamma }, \quad y \geq x \geq \bar{x}.\] 
+	Then $f(y)=0$ for $y \geq \bar{x} + d$ where $d^p=C f(\bar{x})^{\gamma -1}2^{\frac{p \gamma }{\gamma -1}}$ 
+\end{lemma}
+\begin{proof}
+	Without loss of generality, we can assume that $\bar{x}=0.$ 
+	Let $g=(\frac{f}{f(0)})^{\frac{1}{p}}$ and $A=(Cf(0)^{\gamma -1})^{\frac{1}{p}}.$ For $y \geq x \geq 0,$ we have that
+	\begin{align*}
+		(y-x)^{p}f(y) &\leq Cf(x)^{\gamma }\\
+		A^p (y-x)^{p}f(y) &\leq A^p Cf(x)^{\gamma }\\
+		(y-x)^p g(y)^p f(0)^{\gamma } &\leq C f(0)^{\gamma-1 }g(x)^{p \gamma } f(0)^{\gamma }\\
+		(y-x)g(y) &\leq A g(x)^{\gamma }.
+	\end{align*}
+	Now fix $y>0$, let $x_n=y(1-\frac{1}{2^n})$. Note that $\lim_{n \to \infty} x_n=y$ and $x_0=0.$ Hence, we have that $g(x_0)=g(0)=1$ and 
+	\begin{align*}
+		(x_{n+1}-x_n)g(x_{n+1}) &\leq Ag(x_{n}^{} )^{\gamma }\\
+		y(\frac{1}{2^{n}}-\frac{1}{2^{n+1}})g(x_{n+1}^{} ) &\leq Ag(x_{n}^{} )^{\gamma }\\
+		g(x_{n+1}^{} ) &\leq \frac{A}{y}2^{n+1} g(x_{n}^{} )^{\gamma }.
+	\end{align*} 
+	Using the above inequality inductively, we have that \[g(x_{n}^{} ) \leq (\frac{A}{y})^{1+\gamma + \dots + \gamma ^{n-1}} 2^{n+(n-1)\gamma + (n-2)\gamma ^2 + \dots + \gamma ^{n-1}}.\]
+	Since \[n+(n-1)\gamma + (n-2)\gamma ^2 + \dots + \gamma ^{n-1}=\frac{\gamma ^n+n-(n+1)\gamma }{(\gamma -1)^2},\]
+	if we choose $y$ such that $\frac{A}{y}=2^{-\frac{\gamma }{\gamma -1}}$, then we have that 
+	\begin{equation*}
+	\begin{split}
+		g(x_{n}^{} ) 
+	&\leq  (\frac{A}{y})^{\frac{\gamma ^n-1}{\gamma -1}} 2^{\frac{\gamma ^n+n-(n+1)\gamma }{(\gamma -1)^2}} \\
+	&\leq 2^{\frac{1}{(\gamma -1)^2}(-\gamma (\gamma ^n-1)+\gamma ^{n+1}+n-(n+1)\gamma )}\\
+	&=2^{-\frac{n}{\gamma -1}}.
+	\end{split}
+	\end{equation*}
+	It follows that $\lim_{n \to \infty} g(x_n)=0$. By continuity of $g$, we have that $g(y)=0.$ Therefore, $f(y)=0.$  
+\end{proof}
+
+\begin{lemma} \label{MSeu}
+    Let $v$ be a Lipschitz function on $M$. Then
+    \[\left( \int_{M}^{}\left| v \right| ^{\frac{n}{n-1}} d \mu  \right)^{n-\frac{1}{n}} \leq c(n)\int_{M}^{} \left| \nabla v \right| + H \left| v \right|  d \mu. \]
+\end{lemma}
+
+The geometric quantity we aim to bound is 
+\[f_\sigma = \left( \left| A \right| ^2-\frac{1}{n}H^2 \right) H^{2-\sigma} = \left( \frac{\left| A \right| ^2}{H^2}-\frac{1}{n} \right) H^{\sigma} \]
+for sufficient small $\sigma >0$.
+
+Since $M$ is uniformly convex, by \autoref{stpin}, we have that $\epsilon H g_{ij }^{} \leq h_{ij }^{} \leq \beta H g_{ij }^{} ,$ and $H \geq 0$ for any $t>0$.  Combining previous evolution equations, we can deduce that
+\begin{equation} \label{evof}
+    \frac{\partial }{\partial t} f_\sigma \leq \Delta f_\sigma + \frac{2(1-\sigma )}{H}\left\langle \nabla _i H, \nabla_{i}^{} f_\sigma  \right\rangle - \epsilon ^2 \frac{1}{H^{2-\sigma }}\left| \nabla H \right| ^2+\sigma \left| A \right| ^2 f_\sigma
+\end{equation}
+for all $0 \leq t < T$ and $\sigma >0$. 
+
+Applying integration by parts and Peter-Paul inequality, we have the following Poincare-like inequality for $f_\sigma $.
+
+\begin{lemma}
+    Let $p \geq 2$. For any $0 < \sigma \leq \frac{1}{2}$ and any $\eta >0$, we have that 
+    \begin{equation}
+    \begin{split}
+        n \epsilon ^2 \int_{}^{}f_{\sigma }^{p} H^2d \mu \leq& \left( 2 \eta p+5 \right) \int_{}^{}\frac{1}{H^{2-\sigma }}\left| \nabla H \right| ^2 d \mu  \\
+    &+ \eta ^{-1}\left( p-1 \right) \int_{}^{}f_{\sigma }^{p-2} \left| f_{\sigma }^{}  \right| ^2 d \mu .  \\
+    \end{split}
+    \end{equation} 
+\end{lemma}
+
+For a positive constant $k$, we let $f_{\sigma ,k}^{} =(f_{\sigma }^{} -k)_+$, $A(k)=\left\{ f_{\sigma }^{} \geq k \right\} $ and $A(k,t)=A(k)\cap M_t.$ Integration by parts also yields the following evolution-like inequality.
+
+\begin{lemma}
+    Let $p \geq 2$. For any $0<\sigma <1 $, we have that 
+    \begin{equation}
+        \begin{split}
+            \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
+        \leq&  -\frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu\\
+        & -p\left( \epsilon ^2-\frac{2}{p-1} \right)\int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} d \mu  \\
+        & - \int_{}^{}H^2 f_{\sigma,k }^{p} d \mu +\sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .
+        \end{split}
+        \end{equation} 
+\end{lemma}
+
+\begin{proof}
+    The idea is to multiply both sides of \autoref{evof} by $p f_{\sigma ,k}^{p-1} $ and integrate by parts over $M_t$.
+    For the left hand side, we have that 
+    \begin{equation}
+    \begin{split}
+        \int_{}^{} p f_{\sigma ,k}^{p-1} \frac{\partial }{\partial t} f_{\sigma }^{} d \mu  
+    &= \int_{}^{}\frac{\partial }{\partial t} f_{\sigma ,k}^{p} d \mu  \\
+    &= \frac{\partial }{\partial t} \int_{}^{} f_{\sigma ,k}^{p} d \mu - \int_{}^{} f_{\sigma ,k}^{p} \frac{\partial }{\partial t} (d \mu) \\
+    &= \frac{\partial }{\partial t} \int_{}^{} f_{\sigma ,k}^{p} d \mu + \int_{}^{}H^2 f_{\sigma ,k}^{p} d \mu . 
+    \end{split}
+    \end{equation}
+    For the right hand side, 
+    \begin{equation}
+    \begin{split}
+        \int_{}^{} p f_{\sigma ,k}^{p-1} \Delta f_{\sigma }^{} d \mu  
+    &=  -p(p-1)\int_{}^{}f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2\\
+    \end{split}
+    \end{equation} 
+    and $ \left| A \right| ^2 \leq H^2, \left\langle \nabla _i H, \nabla_{i}^{} f_\sigma  \right\rangle \leq \left| \nabla H \right| \left| \nabla f_{\sigma }^{}  \right| .$ 
+    It follows that 
+    \[f_{\sigma ,k}^{} \leq f_{\sigma }^{} = \left( \left| A \right| ^2-\frac{1}{n}H^2 \right) H^{\sigma-2} \leq H^{\sigma } \]
+    and for $0<\sigma <1, p \geq 2$ 
+    \begin{equation}
+    \begin{split}
+        \frac{2(1-\sigma )}{H}f_{\sigma,k }^{} \left| \nabla H \right| \left| \nabla f_{\sigma }^{}  \right| 
+    &\leq \frac{p-1}{2} \left| \nabla f_{\sigma }^{}  \right|^2 + \frac{2}{p-1} \frac{\left| \nabla H \right| ^2 f_{\sigma ,k}^{2} }{H^2}  \\
+    & \leq \frac{p-1}{2} \left| \nabla f_{\sigma }^{}  \right|^2 + \frac{2}{p-1} \frac{\left| \nabla H \right| ^2 }{H^{2-\sigma }} f_{\sigma ,k}^{}   \\
+    \end{split}
+    \end{equation} 
+    Hence
+    \begin{equation}
+        \begin{split}
+            \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
+            &+ p(p-1)\int_{}^{}f_{\sigma,k }^{p-2} \left| \nabla f_\sigma  \right| ^2 d \mu \\
+            &+ \epsilon ^2 p \int_{}^{}\frac{1}{H^{2-\sigma }}f_{\sigma,k }^{p-1} \left| \nabla H \right| ^2 d \mu + \int_{}^{}H^2 f_{\sigma,k }^{p} d \mu  \\ 
+        \leq & 2(1-\sigma)p \int_{}^{} \frac{1}{H}f_{\sigma,k }^{p-1} \left| \nabla H \right| \left| \nabla f_{\sigma }^{}  \right| d \mu + \sigma p \int_{}^{} \left| A \right| ^2 f_{\sigma,k }^{p-1} f_{\sigma }^{} d \mu .  \\
+        \leq & \frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu + 2 \frac{p}{p-1} \int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} \\
+        &+ \sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .  \\
+        \end{split}
+        \end{equation}
+    Therefore,
+    \begin{equation}
+    \begin{split}
+        \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
+    \leq&  -\frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu\\
+    & -p\left( \epsilon ^2-\frac{2}{p-1} \right)\int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} d \mu  \\
+    & - \int_{}^{}H^2 f_{\sigma,k }^{p} d \mu +\sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .
+    \end{split}
+    \end{equation} 
+\end{proof}
+
+Now we have established two inequalities for the function $f_{\sigma }^{} $. Notice that any compact hypersurface $M$ in $\R^{n+1}$ can be enclosed by a sphere which shrinks to a point under the MCF in finite time. From the avoidence principle[ref:required], we have that the maximal time $T< \infty $. Then from the general iteration scheme we are going to derive in the later chapter, we can bound $f_{\sigma }^{} $ uniformly for all times $t \in [0,T)$.
+
+In sum, the key steps for showing the convergence result are the pinching estimate of the traceless second fundamental form which describes the "roundness" of the hypersurface pointwisely and the estimate for the gradient of the mean curvature which enables us to compare mean curvatures of the hypersurface at different points. In particular, the gradient estimate for the mean curvature is built upon the pinching estimate. To prove a general convergence theorem for the free boundary MCF in the Riemannian ambient space, it is essential to establish a proper iteration scheme for showing the pinching estimate.
+
+\section{Further Generalizations}
+
+The previous convergence theorem was generalized in various settings by different methods.
+
+On the one hand, results were obtained by following Huisken's line of argument with a few modifications. 
+
+On the other hand, mathematicians explored other ways to reach the similar convergence results.
+
+
+
 
 \chapterend
 
