@@ -1,9 +1,94 @@
-\begin{thebibliography}{1}
+\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
+\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
+% \MRhref is called by the amsart/book/proc definition of \MR.
+\providecommand{\MRhref}[2]{%
+  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
+}
+\providecommand{\href}[2]{#2}
+\begin{thebibliography}{Sta96b}
 
-\bibitem{lyle88}
-J.~R. Lyle and C.~Lu.
-\newblock Load balancing from a {\sc unix} shell.
-\newblock In {\em Proc. 13th Conf. Local Computer Networks}, pages 181--183,
-  Oct. 1988.
+\bibitem[AB10]{andrews_mean_2010}
+Ben Andrews and Charles Baker, \emph{Mean curvature flow of pinched
+  submanifolds to spheres}, Journal of Differential Geometry \textbf{85}
+  (2010), no.~3, 357--396, 40.
+
+\bibitem[Alm66]{almgren_interior_1966}
+F.~J. Almgren, \emph{Some {Interior} {Regularity} {Theorems} for {Minimal}
+  {Surfaces} and an {Extension} of {Bernstein}'s {Theorem}}, Annals of
+  Mathematics \textbf{84} (1966), no.~2, 277--292, Publisher: Annals of
+  Mathematics.
+
+\bibitem[And94]{andrews_contraction_1994}
+Ben Andrews, \emph{Contraction of convex hypersurfaces in {Riemannian} spaces},
+  Journal of Differential Geometry \textbf{39} (1994), no.~2, 407--431, 25.
+
+\bibitem[Bre13]{brendle2013inscribed}
+S.~Brendle, \emph{An inscribed radius estimate for mean curvature flow in
+  riemannian manifolds}, 2013.
+
+\bibitem[Ede16]{edelen_convexity_2016}
+Nick Edelen, \emph{Convexity estimates for mean curvature flow with free
+  boundary}, Advances in Mathematics \textbf{294} (2016), 1--36, Section: 1.
+
+\bibitem[HI01]{huisken_inverse_2001}
+Gerhard Huisken and Tom Ilmanen, \emph{The {Inverse} {Mean} {Curvature} {Flow}
+  and the {Riemannian} {Penrose} {Inequality}}, Journal of Differential
+  Geometry \textbf{59} (2001), no.~3, 353--437, 85.
+
+\bibitem[HL20]{hirsch2020contracting}
+Sven Hirsch and Martin Li, \emph{Contracting convex surfaces by mean curvature
+  flow with free boundary on convex barriers}, 2020.
+
+\bibitem[HS74]{hoffman_sobolev_1974}
+David Hoffman and Joel Spruck, \emph{Sobolev and isoperimetric inequalities for
+  riemannian submanifolds}, Communications on Pure and Applied Mathematics
+  \textbf{27} (1974), no.~6, 715--727.
+
+\bibitem[HS99]{huisken_convexity_1999}
+Gerhard Huisken and Carlo Sinestrari, \emph{Convexity estimates for mean
+  curvature flow and singularities of mean convex surfaces}, Acta Mathematica
+  \textbf{183} (1999), no.~1, 45--70.
+
+\bibitem[Hui84]{huisken_flow_1984}
+Gerhard Huisken, \emph{Flow by mean curvature of convex surfaces into spheres},
+  J. Differential Geom. \textbf{20} (1984), no.~1, 237--266 (en).
+
+\bibitem[Hui86]{huisken_contracting_1986}
+\bysame, \emph{Contracting convex hypersurfaces in {Riemannian} manifolds by
+  their mean curvature}, Inventiones mathematicae \textbf{84} (1986), no.~3,
+  463--480.
+
+\bibitem[Hui87]{huisken_deforming_1987}
+\bysame, \emph{Deforming hypersurfaces of the sphere by their mean curvature},
+  Mathematische Zeitschrift \textbf{195} (1987), no.~2, 205--219.
+
+\bibitem[MS73]{michael_sobolev_1973}
+J.~H. Michael and L.~M. Simon, \emph{Sobolev and mean-value inequalities on
+  generalized submanifolds of {Rn}}, Communications on Pure and Applied
+  Mathematics \textbf{26} (1973), no.~3, 361--379, Publisher: John Wiley \&
+  Sons, Ltd.
+
+\bibitem[Mul56]{mullins_twodimensional_1956}
+W.~W. Mullins, \emph{Two‐{Dimensional} {Motion} of {Idealized} {Grain}
+  {Boundaries}}, Journal of Applied Physics \textbf{27} (1956), no.~8,
+  900--904.
+
+\bibitem[Nit85]{nitsche_stationary_1985}
+Johannes C.~C. Nitsche, \emph{Stationary partitioning of convex bodies},
+  Archive for Rational Mechanics and Analysis \textbf{89} (1985), no.~1, 1--19.
+
+\bibitem[Ros]{Ros_stabilityof}
+Antonio Ros, \emph{Stability of minimal and constant mean curvature surfaces
+  with free boundary}, Mat. Contemp, 221--240.
+
+\bibitem[Sta96a]{stahl_convergence_1996}
+Axel Stahl, \emph{Convergence of solutions to the mean curvature flow with a
+  {Neumann} boundary condition}, Calculus of Variations and Partial
+  Differential Equations \textbf{4} (1996), no.~5, 421--441.
+
+\bibitem[Sta96b]{stahl_regularity_1996}
+\bysame, \emph{Regularity estimates for solutions to the mean curvature flow
+  with a {Neumann} boundary condition}, Calculus of Variations and Partial
+  Differential Equations \textbf{4} (1996), no.~4, 385--407.
 
 \end{thebibliography}

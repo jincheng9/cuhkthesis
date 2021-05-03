@@ -1,0 +1,145 @@
+﻿@article{RN32,
+   author = {Andrews, Ben},
+   title = {Contraction of convex hypersurfaces in Riemannian spaces},
+   journal = {Journal of Differential Geometry},
+   volume = {39},
+   number = {2},
+   pages = {407-431, 25},
+   url = {https://doi.org/10.4310/jdg/1214454878},
+   year = {1994},
+   type = {Journal Article}
+}
+
+@article{RN29,
+   author = {Andrews, Ben and Baker, Charles},
+   title = {Mean curvature flow of pinched submanifolds to spheres},
+   journal = {Journal of Differential Geometry},
+   volume = {85},
+   number = {3},
+   pages = {357-396, 40},
+   url = {https://doi.org/10.4310/jdg/1292940688},
+   year = {2010},
+   type = {Journal Article}
+}
+
+@article{RN25,
+   author = {Edelen, Nick},
+   title = {Convexity estimates for mean curvature flow with free boundary},
+   journal = {Advances in Mathematics},
+   volume = {294},
+   pages = {1-36},
+   ISSN = {00018708},
+   DOI = {10.1016/j.aim.2016.02.026},
+   year = {2016},
+   type = {Journal Article}
+}
+
+@article{RN26,
+   author = {Hamilton, Richard S.},
+   title = {Three-manifolds with positive Ricci curvature},
+   journal = {J. Differential Geom.},
+   volume = {17},
+   number = {2},
+   pages = {255-306},
+   ISSN = {0022-040X},
+   DOI = {10.4310/jdg/1214436922},
+   url = {https://projecteuclid.org:443/euclid.jdg/1214436922},
+   year = {1982},
+   type = {Journal Article}
+}
+
+@article{RN37,
+   author = {Hoffman, David and Spruck, Joel},
+   title = {Sobolev and isoperimetric inequalities for riemannian submanifolds},
+   journal = {Communications on Pure and Applied Mathematics},
+   volume = {27},
+   number = {6},
+   pages = {715-727},
+   ISSN = {0010-3640},
+   DOI = {https://doi.org/10.1002/cpa.3160270601},
+   url = {https://doi.org/10.1002/cpa.3160270601},
+   year = {1974},
+   type = {Journal Article}
+}
+
+@article{RN27,
+   author = {Huisken, Gerhard},
+   title = {Flow by mean curvature of convex surfaces into spheres},
+   journal = {J. Differential Geom.},
+   volume = {20},
+   number = {1},
+   pages = {237-266},
+   ISSN = {0022-040X},
+   DOI = {10.4310/jdg/1214438998},
+   url = {https://projecteuclid.org:443/euclid.jdg/1214438998},
+   year = {1984},
+   type = {Journal Article}
+}
+
+@article{RN24,
+   author = {Huisken, Gerhard},
+   title = {Contracting convex hypersurfaces in Riemannian manifolds by their mean curvature},
+   journal = {Inventiones mathematicae},
+   volume = {84},
+   number = {3},
+   pages = {463-480},
+   ISSN = {0020-9910},
+   DOI = {10.1007/BF01388742},
+   year = {1986},
+   type = {Journal Article}
+}
+
+@article{RN33,
+   author = {Huisken, Gerhard and Ilmanen, Tom},
+   title = {The Inverse Mean Curvature Flow and the Riemannian Penrose Inequality},
+   journal = {Journal of Differential Geometry},
+   volume = {59},
+   number = {3},
+   pages = {353-437, 85},
+   url = {https://doi.org/10.4310/jdg/1090349447},
+   year = {2001},
+   type = {Journal Article}
+}
+
+@article{RN36,
+   author = {Mullins, W. W.},
+   title = {Two‐Dimensional Motion of Idealized Grain Boundaries},
+   journal = {Journal of Applied Physics},
+   volume = {27},
+   number = {8},
+   pages = {900-904},
+   ISSN = {0021-8979},
+   DOI = {10.1063/1.1722511},
+   url = {https://doi.org/10.1063/1.1722511},
+   year = {1956},
+   type = {Journal Article}
+}
+
+@article{RN31,
+   author = {Stahl, Axel},
+   title = {Convergence of solutions to the mean curvature flow with a Neumann boundary condition},
+   journal = {Calculus of Variations and Partial Differential Equations},
+   volume = {4},
+   number = {5},
+   pages = {421-441},
+   ISSN = {1432-0835},
+   DOI = {10.1007/BF01246150},
+   url = {https://doi.org/10.1007/BF01246150},
+   year = {1996},
+   type = {Journal Article}
+}
+
+@article{RN30,
+   author = {Stahl, Axel},
+   title = {Regularity estimates for solutions to the mean curvature flow with a Neumann boundary condition},
+   journal = {Calculus of Variations and Partial Differential Equations},
+   volume = {4},
+   number = {4},
+   pages = {385-407},
+   ISSN = {1432-0835},
+   DOI = {10.1007/BF01190825},
+   url = {https://doi.org/10.1007/BF01190825},
+   year = {1996},
+   type = {Journal Article}
+}
+

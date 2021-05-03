@@ -748,14 +748,6 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\sym
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lof
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lof
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lof
-OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lof
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
-INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
-OUTPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot
 INPUT chap1\chap1.tex
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsl12.tfm
 INPUT chap3\chap3.tex
@@ -770,12 +762,10 @@ INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\tex\latex\amsfonts\ueuf.fd
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm10.tfm
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eufm7.tfm
-INPUT proof\proof.tex
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl
-INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmcsc10.tfm
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.out
 INPUT c:\Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.out
@@ -783,8 +773,6 @@ INPUT C:\Users\46537\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcr
 INPUT C:\Users\46537\AppData\Local\MiKTeX\fonts\pk\ljfour\jknappen\ec\dpi600\tcrm1440.pk
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
-INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
-INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmcsc10.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\46537\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb

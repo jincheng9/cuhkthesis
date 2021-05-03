@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  22 APR 2021 20:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  3 MAY 2021 21:45
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
@@ -513,76 +513,59 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `thesis.toc'.
 
- [6] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lof)
-\tf@lof=\write6
-\openout6 = `thesis.lof'.
-
- [7
-
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.lot)
-\tf@lot=\write7
-\openout7 = `thesis.lot'.
-
- [8
-
-] (chap1/chap1.tex
+ [6] (chap1/chap1.tex
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.12 
-      [1
+l.10 T
+      he study of mean curvature flow and the related field is a critical ar... [1
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.14 
-      [2] [3] [4] [5] [6] [7]) (chap3/chap3.tex [8] [9]
+l.13 
+      [2] [3] [4]) (chap3/chap3.tex [5]
 Chapter 2.
+[6
 
-Overfull \hbox (0.69678pt too wide) in paragraph at lines 11--12
-\OT1/cmr/m/n/14.4 con-vex $\OML/cmm/m/it/14.4 n$\OT1/cmr/m/n/14.4 -dimensional sur-face smoothly em-bed-ded in $\U/msb/m/n/14.4 R[]$\OT1/cmr/m/n/14.4 . Then
- []
-
-[10
-
-] [11]
-Overfull \hbox (4.58786pt too wide) in paragraph at lines 34--34
+] [7]
+Overfull \hbox (4.58786pt too wide) in paragraph at lines 30--30
 []\OT1/cmr/bx/n/17.28 Maximum Prin-ci-ples and Pre-lim-i-nary Ge-
  []
 
-
-Overfull \hbox (17.89055pt too wide) in paragraph at lines 42--42
+[8] [9] [10] [11] [12]
+Overfull \hbox (17.89055pt too wide) in paragraph at lines 113--113
 []\OT1/cmr/m/n/14.4 Note that $\OML/cmm/m/it/14.4 h[] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 g[]\OMS/cmsy/m/n/14.4 r[]r[]\OML/cmm/m/it/14.4 h[]$ \OT1/cmr/m/n/14.4 and $\OMS/cmsy/m/n/14.4 r[]r[]\OML/cmm/m/it/14.4 H \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 g[]\OMS/cmsy/m/n/14.4 r[]r[]\OML/cmm/m/it/14.4 h[]$\OT1/cmr/m/n/14.4 .
  []
 
-[12]
-Overfull \hbox (16.3151pt too wide) detected at line 42
+
+Overfull \hbox (16.3151pt too wide) detected at line 113
 \OMS/cmsy/m/n/14.4 r[]r[]\OML/cmm/m/it/14.4 h[] \OMS/cmsy/m/n/14.4   r[]r[]\OML/cmm/m/it/14.4 h[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 r[]r[]\OML/cmm/m/it/14.4 h[] \OMS/cmsy/m/n/14.4   r[]r[]\OML/cmm/m/it/14.4 h[] \OT1/cmr/m/n/14.4 = (\OMS/cmsy/m/n/14.4 r[]r[]   r[]r[]\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 h[]:
  []
 
 
-Overfull \hbox (44.50864pt too wide) detected at line 52
+Overfull \hbox (44.50864pt too wide) detected at line 123
 []
  []
 
-[13] [14] [15] [16] [17]
-Overfull \hbox (2.06772pt too wide) in paragraph at lines 128--128
+[13]
+Overfull \hbox (2.06772pt too wide) in paragraph at lines 127--127
 []\OT1/cmr/bx/n/17.28 Evolution Equa-tions for Ge-o-met-ric Quan-
  []
 
-[18]
-Overfull \hbox (88.17757pt too wide) detected at line 158
+[14]
+Overfull \hbox (88.17757pt too wide) detected at line 156
 []
  []
 
 
-Overfull \hbox (29.3747pt too wide) detected at line 158
+Overfull \hbox (29.3747pt too wide) detected at line 156
 []
  []
 
-[19]
-Overfull \hbox (216.20686pt too wide) detected at line 193
+[15] [16]
+Overfull \hbox (2.64194pt too wide) detected at line 193
 []
  []
 
@@ -591,56 +574,51 @@ Overfull \hbox (29.3747pt too wide) detected at line 193
 []
  []
 
-[20]
-Overfull \hbox (26.70712pt too wide) detected at line 202
+[17]
+Overfull \hbox (26.70712pt too wide) detected at line 204
 []
  []
 
 
-Overfull \hbox (29.3747pt too wide) detected at line 202
+Overfull \hbox (29.3747pt too wide) detected at line 204
 []
  []
 
 
-Overfull \hbox (46.34111pt too wide) detected at line 211
+Overfull \hbox (46.34111pt too wide) detected at line 213
 []
  []
 
 
-Overfull \hbox (29.3747pt too wide) detected at line 211
+Overfull \hbox (29.3747pt too wide) detected at line 213
 []
  []
 
-[21] [22]
-Overfull \hbox (20.57774pt too wide) in paragraph at lines 251--251
+[18] [19]
+Overfull \hbox (20.57774pt too wide) in paragraph at lines 253--253
 []\OT1/cmr/bx/n/17.28 Preservation of the con-vex-ity and the pinch-
  []
 
-[23]
-Overfull \hbox (71.26427pt too wide) detected at line 276
+[20]
+Overfull \hbox (71.26427pt too wide) detected at line 278
 []
  []
 
-[24] [25] [26] [27] [28] [29]
-Overfull \hbox (30.97571pt too wide) detected at line 421
+[21] [22] [23] [24] [25] [26] [27]
+Overfull \hbox (30.97571pt too wide) detected at line 429
 []
  []
 
-[30] [31] [32]) (chap2/chap2.tex [33]
+[28] [29] [30] [31]
+Overfull \hbox (21.50198pt too wide) in paragraph at lines 490--492
+\OT1/cmr/m/n/14.4 Ascoli tho-erem, we have that $[](\OMS/cmsy/m/n/14.4 1\OT1/cmr/m/n/14.4 )$ is smooth. Fi-nally $[][]\OML/cmm/m/it/14.4 Lemma []\OT1/cmr/m/n/14.4 7[][][]$(1)
+ []
+
+[32] [33] [34]) (chap2/chap2.tex [35]
 Chapter 3.
-[34
+[36
 
 ]
-Overfull \hbox (6.32242pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 35
- []
-
-[35]
-Overfull \hbox (6.32242pt too wide) has occurred while \output is active
-\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 36
- []
-
-[36]
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 37
  []
@@ -691,25 +669,11 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [46]
-Overfull \hbox (8.99028pt too wide) in paragraph at lines 190--191
-[]\OT1/cmr/m/n/14.4 Since $\OML/cmm/m/it/14.4 A[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 u; v\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4  \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 u; v\OT1/cmr/m/n/14.4 )$, com-bin-ing all equa-
- []
-
-
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 47
  []
 
 [47]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 216.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-)
-Overfull \hbox (17.78992pt too wide) detected at line 235
-[]
- []
-
-
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 48
  []
@@ -720,8 +684,8 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [49]
-Overfull \hbox (20.4882pt too wide) in paragraph at lines 269--271
-\OT1/cmr/m/n/14.4 where the last in-equal-ity fol-lows from the Tay-lor ex-pan-sion $\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t; x\OT1/cmr/m/n/14.4 ) =
+Overfull \hbox (8.99028pt too wide) in paragraph at lines 189--190
+[]\OT1/cmr/m/n/14.4 Since $\OML/cmm/m/it/14.4 A[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 u; v\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4  \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 A[]\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 ; \OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 h\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 u; v\OT1/cmr/m/n/14.4 )$, com-bin-ing all equa-
  []
 
 
@@ -730,23 +694,27 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [50]
+LaTeX Font Info:    Trying to load font information for U+euf on input line 215.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Overfull \hbox (17.78992pt too wide) detected at line 234
+[]
+ []
+
+
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 51
  []
 
 [51]
-Overfull \hbox (4.26822pt too wide) in paragraph at lines 306--307
-\OT1/cmr/m/n/14.4 Let $[][]$ be a class of hy-per-sur-faces fol-low-ing the free bound-
- []
-
-
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 52
  []
 
 [52]
-Overfull \hbox (16.87338pt too wide) in paragraph at lines 312--314
-\OT1/cmr/m/n/14.4 con-stants $\OML/cmm/m/it/14.4 c \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 c\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S; \OT1/cmr/m/n/14.4 []\OML/cmm/m/it/14.4 ; M; T; n; \OT1/cmr/m/n/14.4 )$ and $\OML/cmm/m/it/14.4 C \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 C\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S; \OT1/cmr/m/n/14.4 []\OML/cmm/m/it/14.4 ; M; T; n; ; p; \OT1/cmr/m/n/14.4 )$
+Overfull \hbox (20.4882pt too wide) in paragraph at lines 268--270
+\OT1/cmr/m/n/14.4 where the last in-equal-ity fol-lows from the Tay-lor ex-pan-sion $\OML/cmm/m/it/14.4 f\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 t; x\OT1/cmr/m/n/14.4 ) =
  []
 
 
@@ -760,29 +728,26 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [54]
+Overfull \hbox (4.26822pt too wide) in paragraph at lines 305--306
+\OT1/cmr/m/n/14.4 Let $[][]$ be a class of hy-per-sur-faces fol-low-ing the free bound-
+ []
+
+
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 55
  []
 
 [55]
+Overfull \hbox (16.87338pt too wide) in paragraph at lines 311--313
+\OT1/cmr/m/n/14.4 con-stants $\OML/cmm/m/it/14.4 c \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 c\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S; \OT1/cmr/m/n/14.4 []\OML/cmm/m/it/14.4 ; M; T; n; \OT1/cmr/m/n/14.4 )$ and $\OML/cmm/m/it/14.4 C \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 C\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 S; \OT1/cmr/m/n/14.4 []\OML/cmm/m/it/14.4 ; M; T; n; ; p; \OT1/cmr/m/n/14.4 )$
+ []
+
+
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 56
  []
 
 [56]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 423.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `superscript' on input line 423.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 423.
-
-
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 57
  []
@@ -798,6 +763,19 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [59]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 422.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 422.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 422.
+
+
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 60
  []
@@ -808,11 +786,6 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
  []
 
 [61]
-Overfull \hbox (39.59978pt too wide) detected at line 524
-[] [][] \OML/cmm/m/it/14.4 f[] \OT1/cmr/m/n/14.4 + [] [][] [][] [][] \OMS/cmsy/m/n/14.4  \OML/cmm/m/it/14.4 C [] [][] []f[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 C [] [][] f[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 C []
- []
-
-
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 62
  []
@@ -822,33 +795,74 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 63
  []
 
-[63]) (proof/proof.tex
+[63]
 Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 64
  []
 
 [64]
-Appendix A.
-) [65
+Overfull \hbox (39.59978pt too wide) detected at line 524
+[] [][] \OML/cmm/m/it/14.4 f[] \OT1/cmr/m/n/14.4 + [] [][] [][] [][] \OMS/cmsy/m/n/14.4  \OML/cmm/m/it/14.4 C [] [][] []f[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 C [] [][] f[] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 C []
+ []
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl) [66
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 65
+ []
+
+[65]
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 66
+ []
+
+[66]
+Overfull \hbox (4.50383pt too wide) in paragraph at lines 567--567
+[]\OT1/cmr/bx/n/17.28 Conclusions and Di-rec-tions for Fu-ture Re-
+ []
+
+
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 67
+ []
+
+[67]
+Overfull \hbox (5.41676pt too wide) in paragraph at lines 572--573
+\OT1/cmr/m/n/14.4 sec-ond fun-da-men-tal form which in-tro-duced by Huisken and Sines-
+ []
+
+
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 68
+ []
+
+[68]
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 69
+ []
+
+[69])
+Overfull \hbox (6.32242pt too wide) has occurred while \output is active
+\OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 70
+ []
+
+[70] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl [71
+
+] [72] [73] [74]) [75] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: A1CF7457625D94A4A1CD4471077BEE33;1818.
+(rerunfilecheck)             Checksum: 69DC1C3162487E1937C404E4742C055D;1910.
  ) 
 Here is how much of TeX's memory you used:
- 17856 strings out of 479697
- 352476 string characters out of 2867132
- 627402 words of memory out of 3000000
- 34393 multiletter control sequences out of 15000+200000
- 410908 words of font info for 56 fonts, out of 3000000 for 9000
+ 17896 strings out of 479697
+ 352998 string characters out of 2867132
+ 628411 words of memory out of 3000000
+ 34414 multiletter control sequences out of 15000+200000
+ 410607 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,19n,98p,1153b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\46537\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (76 pages, 379614 bytes).
+ 93i,22n,98p,1153b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\46537\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (83 pages, 407333 bytes).
 PDF statistics:
- 655 PDF objects out of 1000 (max. 8388607)
- 167 named destinations out of 1000 (max. 500000)
- 213 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 747 PDF objects out of 1000 (max. 8388607)
+ 197 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,25 +1,26 @@
 \contentsline {chapter}{Abstract}{i}{Doc-Start}%
 \contentsline {chapter}{Acknowledgement}{ii}{chapter*.1}%
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
-\contentsline {section}{\numberline {1.1}Outline of Main Results}{8}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Structure of the Thesis}{8}{section.1.2}%
-\contentsline {chapter}{\numberline {2}Classical Results of the MCF}{10}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Maximum Principles and Preliminary Geometric Identities}{12}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Evolution Equations for Geometric Quantities}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Preservation of the convexity and the pinching condition}{23}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Stampacchia's iteration}{25}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Further Generalizations}{32}{section.2.5}%
-\contentsline {chapter}{\numberline {3}Free Boundary MCF in Riemannian Manifolds}{34}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definitions and Notations}{34}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Covariant Formulation of the Mean Curvature Flow}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Subbundles}{37}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Time-dependent Immersion}{40}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Boundary Derivatives}{42}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Stampacchia's Iteration}{47}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Michael-Simon with free boundary}{48}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof}{52}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Boundary Integral Estimate}{54}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Higher $L^p$ bound}{57}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Iteration Scheme and the Uniform bound}{61}{subsection.3.4.5}%
-\contentsline {chapter}{\numberline {A}Equation Derivation}{65}{appendix.A}%
-\contentsline {chapter}{Bibliography}{66}{appendix.A}%
+\contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Structure of the Thesis}{4}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Classical Results of the MCF}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Maximum Principles and Preliminary Geometric Identities}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Evolution Equations for Geometric Quantities}{14}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Preservation of the convexity and the pinching condition}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Stampacchia's iteration}{22}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Convergence to a round point}{29}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Generalizations}{33}{section.2.6}%
+\contentsline {chapter}{\numberline {3}Free Boundary MCF in Riemannian Manifolds}{36}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Definitions and Notations}{37}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Covariant Formulation of the Mean Curvature Flow}{39}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Subbundles}{40}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Time-dependent Immersion}{43}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Boundary Derivatives}{45}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Stampacchia's Iteration}{50}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Michael-Simon with free boundary}{51}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof}{55}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Boundary Integral Estimate}{57}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Higher $L^p$ bound}{60}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Iteration Scheme and the Uniform bound}{64}{subsection.3.4.5}%
+\contentsline {section}{\numberline {3.5}Conclusions and Directions for Future Research}{67}{section.3.5}%
+\contentsline {chapter}{Bibliography}{71}{section.3.5}%

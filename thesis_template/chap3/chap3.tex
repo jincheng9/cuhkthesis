@@ -3,10 +3,6 @@
 
 \chapter{Classical Results of the MCF}
 
-\note{Summary}
-{
-Conclusion comes here.
-}
 
 Throughout this section, we let $M$ be a compact uniformly convex $n$-dimensional surface smoothly embedded in $\R^{n+1}$. Then $M$ can be represented by the following local diffeomorphism:
 \[
@@ -16,7 +12,7 @@ Then the metric $g= \left\{ g_{ij} \right\}  $ and the second fundamental form $
 \[
 	g_{ij}(\vec{x})=\left( \frac{\partial F(\vec{x})}{\partial x_i}, \frac{\partial F(\vec{x})}{\partial x_j} \right) ,\quad h_{ij}(\vec{x})=\left( -\nu (\vec{x}), \frac{\partial^2 F(\vec{x})}{\partial x_i \partial x_j} \right)
 \]
-where $\left( \cdot , \cdot \right) $ is the standard inner product in $\R^{n+1}$ and $\nu (\vec{x}) \in \R^{n+1}$ is the outward normal to $M$ at $F(\vec{x})$. The Levi-Civita connection on $M$ induced from the standard connection on $\R^{n+1}$ is given by 
+where $\nu (\vec{x}) \in \R^{n+1}$ is the outward normal to $M$ at $F(\vec{x})$ and $\left( \cdot , \cdot \right) $ is the standard inner product in $\R^{n+1}$. The Levi-Civita connection on $M$ induced from the standard connection on $\R^{n+1}$ is given by 
 \[\Gamma_{\ ij}^{k} =\frac{1}{2}g_{ }^{kl} \left( g_{ il,j}^{} +g_{ jl,i}^{} - g_{ij ,l}^{}  \right) \]
 where $g_{ij ,k}=\frac{\partial }{\partial x_{k}} g_{ij}$. For a vector field $X=X^i \frac{\partial }{\partial x_{i}} $ on $M$, the covariant derivative of $X$ is \[\left( \nabla_{i}^{} X \right) ^j=\frac{\partial }{\partial x_{i}} X^j + \Gamma_{\ ik}^{j} X^k.\]
 The Riemann curvature tensor on $M$ is defined as 
@@ -32,25 +28,6 @@ Now we denote $M$ by $M_0$ and $F$ by $F_0$. We say a family of maps $F(\cdot , 
 where $H(\vec{x},t)$ is the mean curvature on $M_t$.
 
 \section{Maximum Principles and Preliminary Geometric Identities}
-
-\begin{lemma}
-	[Simon's identity]
-	\[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H + H h_{li}^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} \]
-\end{lemma}
-
-\begin{proof}
-	Note that $\Delta h_{ij}^{} = g_{}^{mn} \nabla_{m}\nabla_{n} h_{ij}^{} $ and $\nabla_{i}\nabla_{j} H = g_{}^{mn } \nabla_{i}\nabla_{j} h_{mn }^{} $. It suffices to examine the difference $\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} .$ Since the ambient space is Euclidean, from the Codazzi equation we have that $\nabla_{i}^{} h_{j}^{k} = \nabla_{j}^{} h_{i}^{k}$. Hence \[\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} = \nabla_{m}\nabla_{i} h_{nj}^{} - \nabla_{i}\nabla_{m} h_{jn}^{}=(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{}.\] By the product rule of connections acting on tensor product, we have that \[(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{} = R_{min}^{\quad\  l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{}.  \]
-	Therefore, by Gauss equation
-	\begin{equation*}
-		\begin{split}
-			\Delta h_{ij}^{} - \nabla_{i}\nabla_{j} H
-			&= g_{}^{mn} (R_{min }^{\quad \ l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{} ) \\
-			&= g_{}^{mn } g_{}^{kl} \{(h_{mn}^{} h_{ik }^{} -h_{mk }^{} h_{in }^{} )h_{lj}^{} + (h_{mj }^{} h_{ik }^{} - h_{mk }^{} h_{ij}^{} )h_{ln}^{} \}\\
-			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - g_{}^{mn } g_{}^{kl } h_{mk }^{} h_{ln }^{} h_{ij}^{} \\
-			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - \left| A \right| ^2 h_{ij}^{} .
-		\end{split}
-	\end{equation*}
-\end{proof}
 
 Parabolic maximum principles are essential PDE tools in the analysis of mean curvature flow. We will briefly introduce two frequently used versions in this section. One is the standard parabolic maximum principle for scalar functions. The other is the parabolic maximum principle for symmetric two-tensors.
 
@@ -125,11 +102,32 @@ Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tens
 	Then contradiction arises when $2c \delta <1.$ 
 \end{proof}
 
+To apply the maximum principles, we need the following Simon's identity to rewrite the evolution equation of the second fundamental form to a parabolic PDE.
+
+\begin{lemma}
+	[Simon's identity] \label{simon}
+	\[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H + H h_{li}^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} \]
+\end{lemma}
+
+\begin{proof}
+	Note that $\Delta h_{ij}^{} = g_{}^{mn} \nabla_{m}\nabla_{n} h_{ij}^{} $ and $\nabla_{i}\nabla_{j} H = g_{}^{mn } \nabla_{i}\nabla_{j} h_{mn }^{} $. It suffices to examine the difference $\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} .$ Since the ambient space is Euclidean, from the Codazzi equation we have that $\nabla_{i}^{} h_{j}^{k} = \nabla_{j}^{} h_{i}^{k}$. Hence \[\nabla_{m}\nabla_{n} h_{ij}^{} - \nabla_{i}\nabla_{j} h_{mn}^{} = \nabla_{m}\nabla_{i} h_{nj}^{} - \nabla_{i}\nabla_{m} h_{jn}^{}=(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{}.\] By the product rule of connections acting on tensor product, we have that \[(\nabla_{m}\nabla_{i}  - \nabla_{i}\nabla_{m})h_{nj}^{} = R_{min}^{\quad\  l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{}.  \]
+	Therefore, by Gauss equation
+	\begin{equation*}
+		\begin{split}
+			\Delta h_{ij}^{} - \nabla_{i}\nabla_{j} H
+			&= g_{}^{mn} (R_{min }^{\quad \ l} h_{lj}^{} + R_{mij}^{\quad \ l} h_{nl }^{} ) \\
+			&= g_{}^{mn } g_{}^{kl} \{(h_{mn}^{} h_{ik }^{} -h_{mk }^{} h_{in }^{} )h_{lj}^{} + (h_{mj }^{} h_{ik }^{} - h_{mk }^{} h_{ij}^{} )h_{ln}^{} \}\\
+			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - g_{}^{mn } g_{}^{kl } h_{mk }^{} h_{ln }^{} h_{ij}^{} \\
+			&= H g_{}^{kl} h_{ik }^{}  h_{lj}^{} - \left| A \right| ^2 h_{ij}^{} .
+		\end{split}
+	\end{equation*}
+\end{proof}
+
+
 \section{Evolution Equations for Geometric Quantities}
 
 
-
-Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{x} \in U$, we have that geometric quantities on $F(\vec{x},t) \in M_t$ are also evolving under time $t$. By the evolution equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ for $F$, we can derive evolution equations for other geometric quantities.
+Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{x} \in U$, we have that geometric quantities on $F(\vec{x},t) \in M_t$ are also evolving under time $t$. By the flow equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ for $F$, we can derive evolution equations for other geometric quantities.
 
 \begin{lemma}
 	The following evolution equations hold.
@@ -186,12 +184,16 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 			      \begin{split}
 				      \frac{\partial }{\partial t} h_{ij}^{}  &= -\frac{\partial }{\partial t} \left( \nu , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}} \right)  \\
 				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}}  \right) + \left( \nu , \frac{\partial^2 }{\partial x_{i} \partial x_{j}} (H \cdot \nu ) \right) \\
-				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu  \right) + \frac{\partial }{\partial x_{j}} \left( \nu , \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) - \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) \\
-				      &= -g_{}^{pq } \frac{\partial H}{\partial x_{q}} \Gamma_{\ ij}^{k} g_{pk}^{} + \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} -H \cdot \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, h_{il'}^{} g_{}^{l'm' } \frac{\partial F}{\partial x_{m'}} \right) \\
+				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu  \right)\\
+					  &\quad+ \frac{\partial }{\partial x_{j}} \left( \nu , \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) - \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) \\
+				      &= -g_{}^{pq } \frac{\partial H}{\partial x_{q}} \Gamma_{\ ij}^{k} g_{pk}^{} + \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} \\
+					  &\quad-H \cdot \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, h_{il'}^{} g_{}^{l'm' } \frac{\partial F}{\partial x_{m'}} \right) \\
 				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}
 			      \end{split}
 		      \end{equation*}
-		      Since $H$ is a scalar function, we have that \[\nabla_{i}\nabla_{j} H = \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}}\] where $\nabla $ is the Levi-Civita connection on $M_t$. From previous lemma, we have the Simon's identity that \[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H +H h_{li }^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} .\] Hence
+		      Since $H$ is a scalar function, we have that \[\nabla_{i}\nabla_{j} H = \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}}\] where $\nabla $ is the Levi-Civita connection on $M_t$. 
+			  
+			Hence, by \autoref{simon},
 		      \begin{equation*}
 			      \begin{split}
 				      \frac{\partial }{\partial t} h_{ij}^{}
@@ -297,13 +299,19 @@ We can in fact prove a stronger version of the theorem above.
 \section{Stampacchia's iteration}
 One key step for proving that $M$ converges to a round point is to show that the geometric quantitiy $\left| A \right| ^2-\frac{1}{n}H^2$ becomes small compared to $H^2$.
 
+\begin{theorem} \label{PinEs}
+	There are constants $C_0<\infty $ and $\delta >0$ depending only on $M_0$ such that 
+	\[\left| A \right| ^2-\frac{1}{n}H^2 \leq C_0 H^{2-\delta }\]
+	for all times $t \in [0,T)$. 
+\end{theorem}
+
 The rationale behind is that
 \[\left| A \right| ^2-\frac{1}{n}H^2=\frac{1}{n}\sum_{i<j}^{n}(\kappa _i-\kappa _j)^2\]
 measures the sum of distances between eigenvalues $\kappa _i$ of the second fundamental form $A$. 
 
 An iteration scheme named Stampacchia's iteration is used to reach the goal. In this section, we introduce the general idea for Stampacchia's iteration.
 
-The principal components of Stampacchia's iteration are the following algebraic lemma and a version of the Sobolev inequality from [cite:MS]:
+The principal components of Stampacchia's iteration are the following algebraic lemma and a version of the Sobolev inequality from \cite{michael_sobolev_1973}:
 \begin{lemma} \label{SIalg}
 	Let $f : [\bar{x},\infty) \to \R$ be a non-negative and non-increasing function. Suppose for $C>0, p>0$ and $\gamma >1,$ 
 	\[ (y-x)^{p}f(y) \leq Cf(x)^{\gamma }, \quad y \geq x \geq \bar{x}.\] 
@@ -430,17 +438,66 @@ For a positive constant $k$, we let $f_{\sigma ,k}^{} =(f_{\sigma }^{} -k)_+$, $
     \end{equation} 
 \end{proof}
 
-Now we have established two inequalities for the function $f_{\sigma }^{} $. Notice that any compact hypersurface $M$ in $\R^{n+1}$ can be enclosed by a sphere which shrinks to a point under the MCF in finite time. From the avoidence principle[ref:required], we have that the maximal time $T< \infty $. Then from the general iteration scheme we are going to derive in the later chapter, we can bound $f_{\sigma }^{} $ uniformly for all times $t \in [0,T)$.
+Now we have established two inequalities for the function $f_{\sigma }^{} $. Notice that any compact hypersurface $M$ in $\R^{n+1}$ can be enclosed by a sphere which shrinks to a point under the MCF in finite time. From the avoidance principle, we have that the maximal time $T< \infty $. Then by \autoref{stamit}, the general iteration scheme we are going to derive in the later chapter, we can bound $f_{\sigma }^{} $ uniformly for all times $t \in [0,T)$, which proves $\autoref{PinEs}$. 
 
-In sum, the key steps for showing the convergence result are the pinching estimate of the traceless second fundamental form which describes the "roundness" of the hypersurface pointwisely and the estimate for the gradient of the mean curvature which enables us to compare mean curvatures of the hypersurface at different points. In particular, the gradient estimate for the mean curvature is built upon the pinching estimate. To prove a general convergence theorem for the free boundary MCF in the Riemannian ambient space, it is essential to establish a proper iteration scheme for showing the pinching estimate.
+\section{Convergence to a round point}
 
-\section{Further Generalizations}
+A general argument from Huisken implies that $M_t$ exists on a maximal time interval $t \in [0,T)$ where $T<\infty $ and $\max_{M_t}\left| A \right| ^2 $ becomes unbounded as $t \to T$.
 
-The previous convergence theorem was generalized in various settings by different methods.
+To prove that $M_t$ converges to a round point as $t \to T$, we first show that the hypersurface $M_t$ converges to a point under the original flow. Then we normalize the flow by keeping the total area of $M_t$ fixed and prove that $M_t$ converges to a sphere under the normalized flow.
 
-On the one hand, results were obtained by following Huisken's line of argument with a few modifications. 
+For the first part, to control the diameter of $M_t$, we need to examine the minimum value of the mean curvature $H_{\min }$. Since $\left| A \right| ^2 \leq H^2$, the maximum value of the mean curvature $H_{\max } \to \infty$ as $t$ approaches $T$. To compare the mean curvature at different points on $M_t$, we need the following gradient estimate for $H$.
 
-On the other hand, mathematicians explored other ways to reach the similar convergence results.
+\begin{theorem} \label{graEs}
+	For any $\eta >0$, there exists a constant $C=C(\eta ,M_0,n)$ such that 
+	\[\left| \nabla H \right| ^2 \leq \eta H^4 + C.\]
+\end{theorem}
+
+Following Hamilton's argument, the preservation of curvature pinching $h_{ij }^{} \leq \epsilon H g_{ij }^{} $ together with $\autoref{graEs}$ and Myer's theorem implies that $H_{\max }/H_{\min } \to 1$ as $t \to T$. Hence the diameter of $M_t$ decreases to zero as $t \to T.$ 
+
+For the second part, we rescale the solution $F$ to the unnormalized equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ at each time $t \in [0,T)$ by a positive constant $\psi(t)$ such that 
+\begin{equation} \label{fixarea}
+	\int_{\tilde{M}_t}^{} d \tilde{\mu }_t = \left| M_0 \right| \text{ for all } 0 \leq t < T
+\end{equation}
+where the surface $\tilde{M}_t$ is given by local diffeomorphisms
+\[\tilde{F}(\cdot ,t)=\psi (t) \cdot F(\cdot ,t).\]
+Then geometric quantities of $\tilde{M}_t$ are dilated by some constants
+\[\tilde{g }_{ij }^{}=\psi ^2 g_{ij }^{}, \quad  \tilde{h}_{ij}=\psi h_{ij }^{} , \quad  \tilde{H}=\psi ^{-1} H. \]
+Hence
+\begin{equation*}
+\begin{split}
+	\frac{\partial }{\partial t} \sqrt[]{\det \tilde{g}_{ij }^{} } 
+&=  \frac{\det \tilde{g}_{ij }^{}}{2 \sqrt[]{\det \tilde{g}_{ij }^{}}} \tilde{g}_{ }^{pq} \frac{\partial \tilde{g}_{pq }^{} }{\partial t}  \\
+&= \frac{\sqrt[]{\det \tilde{g}_{ij }^{} }}{2}\psi ^{-2}g_{ }^{pq} \left( \frac{\partial \psi^2 }{\partial t} g_{ pq}^{}  + \psi^2 \frac{\partial g_{ pq}^{} }{\partial t}  \right) \\
+&= \sqrt[]{\det \tilde{g}_{ij }^{} }\left(\psi ^{-1}n  \frac{\partial \psi }{\partial t}   - \psi ^2 \tilde{H}^2  \right)
+\end{split}
+\end{equation*}
+Differentiating $\autoref{fixarea}$ yields that
+\[\psi ^{-1}  \frac{\partial \psi }{\partial t}   = \frac{1}{n}\psi ^2 \tilde{h}\]
+where $\tilde{h}=\frac{\int_{}^{}\tilde{H}^2 d \tilde{\mu} }{\int_{}^{}d \tilde{\mu} }$ is the average of the squared mean curvature on $\tilde{M}_t$. 
+By introducing a new time variable $\tilde{t}(t)=\int_{0}^{t}\psi ^2(\tau )d \tau $, we have the following normalized equation on a different maximal time interval $\tilde{t} \in [0,\tilde{T})$:
+\[\frac{\partial \tilde{F}}{\partial \tilde{t}}=-\tilde{H}\tilde{\nu }+ \frac{1}{n}\tilde{h}\tilde{F}.\]
+
+The evolution equations of geometric quantities under the normalized flow differ from the original evolution equations by a lower order term. Most of the computations in previous sections still hold. We can further prove that the maximal time $\tilde{T}=\infty $ and derive the exponential decay of the following geometric quantities on $\tilde{M}_t$:
+\begin{lemma} \label{exdc}
+	There are constants $\delta >0$ and $C<\infty $ such that
+	\begin{enumerate}
+		\item $| \tilde{A} | ^2-\frac{1}{n}\tilde{H}^2 \leq Ce^{-\delta \tilde{t}}$ 
+		\item $\left| \tilde{h}_{ij} \tilde{H} - \frac{1}{n}\tilde{h}\tilde{g}_{ij }^{}  \right|\leq Ce^{-\delta \tilde{t}}$ 
+		\item $\max_{\tilde{M}}\left| \nabla_{}^{m} \tilde{A} \right| \leq C_m e^{-\delta _m \tilde{t}}$  
+	\end{enumerate}
+\end{lemma} 
+Since the metric $\tilde{g}_{ij }^{} $ evolves under the equation \[\frac{\partial }{\partial \tilde{t}} \tilde{g}_{ij }^{} = -2\tilde{h}_{ij} \tilde{H} +\frac{2}{n}\tilde{h}\tilde{g}_{ij }^{},\]
+by $\autoref{exdc}$(2), $\tilde{g}_{ij }^{}$ converges uniformly to a positive definite metric $\tilde{g}_{ij }^{} (\infty )$ as $\tilde{t} \to \infty $. Then from $\autoref{exdc}$(3) and Arzela-Ascoli thoerem, we have that $\tilde{g}_{ij }^{} (\infty )$ is smooth. Finally $\autoref{exdc}$(1) implies that $\tilde{g}_{ij }^{} (\infty )$ is the metric of a sphere.
+\section{Generalizations}
+
+The previous convergence theorem was generalized in various settings by mathematicians.
+
+In 1986, Huisken \cite{huisken_contracting_1986} managed to extend the result for hypersurfaces in a general Riemannian manifold where the hypersurface need to be convex enough to overcome the obstruction caused by the curvature of the ambient manifold to converge to a round point. In the special case of spherical spaceform, Huisken \cite{huisken_deforming_1987} observed that the hypersurface can converge to a round point without the initial convexity condition. Similarly, the result obtained by Andrews and Baker \cite{andrews_mean_2010} for the converge of higher-codimension submanifold also allows some non-convex condition to be preserved.
+
+For MCF with free boundary, Stahl \cite{stahl_convergence_1996,stahl_regularity_1996} showed that if the barrier surface in the Euclidean space is a flat hyperplane for a round hypersphere, any convex hypersurface with free boundary on the barrier will converge to a round half point. Later in 2020, Hirsch and Li \cite{hirsch2020contracting} managed to generalize the above result to non-umbilic barriers in $\R^3$. They proved that if the barrier surface satisfies a uniform bound on the exterior and interior ball curvature and certain bounds on the first and second derivative of the second fundamental form, then sufficiently convex free boundary hypersurfaces will converge to a round half point.
+
+In sum, most convergence results above were obtained by following Huisken's line of argument where the key steps are the pinching estimate of the traceless second fundamental form and the estimate for the gradient of the mean curvature. The former describes the "roundness" of the hypersurface pointwisely while the latter enables us to compare mean curvatures of the hypersurface at different points. In particular, the gradient estimate for the mean curvature is built upon the pinching estimate. To prove a general convergence theorem for the free boundary MCF in the Riemannian ambient space, it is essential to establish a proper iteration scheme for showing the pinching estimate.
 
 
 
