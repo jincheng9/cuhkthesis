@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  3 MAY 2021 21:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  3 MAY 2021 21:53
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
@@ -30,7 +30,7 @@ File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 Package graphics Info: Driver file: pdftex.def on input line 105.
  (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
-)) (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.sty
+)) (thesis.sty
 \c@mydefcounter=\count186
 ) (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
@@ -438,7 +438,7 @@ File: pgflibraryarrows.meta.code.tex 2020/12/01 v3.1.7a (3.1.7a)
 File: l3backend-pdftex.def 2020-09-24 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count301
 \l__pdf_internal_box=\box60
-) (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
+) (thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
@@ -487,15 +487,15 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 63.
 LaTeX Info: Redefining \pageref on input line 63.
 LaTeX Info: Redefining \nameref on input line 63.
- (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.out) (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.out)
+ (thesis.out) (thesis.out)
 \@outlinefile=\write4
 \openout4 = `thesis.out'.
 
  [1
 
-{C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\abstract.tex) [1] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\acknowledgement.tex) [2
+{C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] [2] (abstract.tex) [1] (acknowledgement.tex) [2
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\dedication.tex) [3] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc
+] (dedication.tex) [3] (thesis.toc
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
  (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -845,22 +845,22 @@ Overfull \hbox (6.32242pt too wide) has occurred while \output is active
 \OT1/cmr/m/sl/12 CHAPTER 3.  FREE BOUNDARY MCF IN RIEMANNIAN MANIFOLDS \OT1/cmr/m/n/12 70
  []
 
-[70] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.bbl [71
+[70] (thesis.bbl [71
 
-] [72] [73] [74]) [75] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
+] [72] [73] [74]) [75] (thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 69DC1C3162487E1937C404E4742C055D;1910.
  ) 
 Here is how much of TeX's memory you used:
- 17896 strings out of 479697
- 352998 string characters out of 2867132
- 628411 words of memory out of 3000000
+ 17897 strings out of 479697
+ 352349 string characters out of 2867132
+ 628413 words of memory out of 3000000
  34414 multiletter control sequences out of 15000+200000
  410607 words of font info for 55 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  93i,22n,98p,1153b,492s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\46537\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1440.pk><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (83 pages, 407333 bytes).
+Output written on thesis.pdf (83 pages, 407339 bytes).
 PDF statistics:
  747 PDF objects out of 1000 (max. 8388607)
  197 named destinations out of 1000 (max. 500000)

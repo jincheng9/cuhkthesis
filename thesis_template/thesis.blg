@@ -5,11 +5,10 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: amsalpha.bst
 Reallocating 'name_of_file' (item size: 1) to 10 items.
 Database file #1: MyLibrary.bib
-Warning--missing year in Ros_stabilityof
 You've used 18 entries,
             2624 wiz_defined-function locations,
-            671 strings with 7027 characters,
-and the built_in function-call counts, 6522 in all, are:
+            672 strings with 7031 characters,
+and the built_in function-call counts, 6519 in all, are:
 = -- 642
 > -- 201
 < -- 12
@@ -21,7 +20,7 @@ add.period$ -- 18
 call.type$ -- 18
 change.case$ -- 96
 chr.to.int$ -- 17
-cite$ -- 19
+cite$ -- 18
 duplicate$ -- 264
 empty$ -- 555
 format.name$ -- 87
@@ -31,20 +30,19 @@ int.to.str$ -- 0
 missing$ -- 34
 newline$ -- 64
 num.names$ -- 51
-pop$ -- 106
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 114
 quote$ -- 0
-skip$ -- 176
+skip$ -- 179
 stack$ -- 0
 substring$ -- 540
-swap$ -- 19
+swap$ -- 18
 text.length$ -- 12
 text.prefix$ -- 12
 top$ -- 0
 type$ -- 144
-warning$ -- 1
+warning$ -- 0
 while$ -- 71
 width$ -- 19
 write$ -- 204
-(There was 1 warning)
