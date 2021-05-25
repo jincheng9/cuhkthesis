@@ -1,0 +1,16 @@
+TY  - JOUR
+AU  - Stuvard, Salvatore
+AU  - Tonegawa, Yoshihiro
+PY  - 2021
+DA  - 2021/01/24
+TI  - An existence theorem for Brakke flow with fixed boundary conditions
+JO  - Calculus of Variations and Partial Differential Equations
+SP  - 43
+VL  - 60
+IS  - 1
+AB  - Consider an arbitrary closed, countably n-rectifiable set in a strictly convex $$(n+1)$$-dimensional domain, and suppose that the set has finite n-dimensional Hausdorff measure and the complement is not connected. Starting from this given set, we show that there exists a non-trivial Brakke flow with fixed boundary data for all times. As $$t \uparrow \infty $$, the flow sequentially converges to non-trivial solutions of Plateau’s problem in the setting of stationary varifolds.
+SN  - 1432-0835
+UR  - https://doi.org/10.1007/s00526-020-01909-z
+DO  - 10.1007/s00526-020-01909-z
+ID  - Stuvard2021
+ER  - 

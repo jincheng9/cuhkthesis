@@ -1,94 +1,1583 @@
-\providecommand{\bysame}{\leavevmode\hbox to3em{\hrulefill}\thinspace}
-\providecommand{\MR}{\relax\ifhmode\unskip\space\fi MR }
-% \MRhref is called by the amsart/book/proc definition of \MR.
-\providecommand{\MRhref}[2]{%
-  \href{http://www.ams.org/mathscinet-getitem?mr=#1}{#2}
-}
-\providecommand{\href}[2]{#2}
-\begin{thebibliography}{Sta96b}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[AB10]{andrews_mean_2010}
-Ben Andrews and Charles Baker, \emph{Mean curvature flow of pinched
-  submanifolds to spheres}, Journal of Differential Geometry \textbf{85}
-  (2010), no.~3, 357--396, 40.
 
-\bibitem[Alm66]{almgren_interior_1966}
-F.~J. Almgren, \emph{Some {Interior} {Regularity} {Theorems} for {Minimal}
-  {Surfaces} and an {Extension} of {Bernstein}'s {Theorem}}, Annals of
-  Mathematics \textbf{84} (1966), no.~2, 277--292, Publisher: Annals of
-  Mathematics.
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{allard_first_1972}{article}{}
+      \name{author}{1}{}{%
+        {{hash=be72e02c9847a661741d12720ab09ac5}{%
+           family={Allard},
+           familyi={A\bibinitperiod},
+           given={William\bibnamedelima K.},
+           giveni={W\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \strng{namehash}{be72e02c9847a661741d12720ab09ac5}
+      \strng{fullhash}{be72e02c9847a661741d12720ab09ac5}
+      \strng{bibnamehash}{be72e02c9847a661741d12720ab09ac5}
+      \strng{authorbibnamehash}{be72e02c9847a661741d12720ab09ac5}
+      \strng{authornamehash}{be72e02c9847a661741d12720ab09ac5}
+      \strng{authorfullhash}{be72e02c9847a661741d12720ab09ac5}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003486X}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{On the {first} {variation} of a {varifold}}
+      \field{urlday}{24}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{95}
+      \field{year}{1972}
+      \field{urldateera}{ce}
+      \field{pages}{417}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.2307/1970868
+      \endverb
+      \verb{urlraw}
+      \verb https://www.jstor.org/stable/1970868?origin=crossref
+      \endverb
+      \verb{url}
+      \verb https://www.jstor.org/stable/1970868?origin=crossref
+      \endverb
+    \endentry
+    \entry{almgren_interior_1966}{article}{}
+      \name{author}{1}{}{%
+        {{hash=97198abb89619f83d3f8f9d3a7d068b2}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={F.\bibnamedelimi J.},
+           giveni={F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \strng{fullhash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \strng{bibnamehash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \strng{authorbibnamehash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \strng{authornamehash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \strng{authorfullhash}{97198abb89619f83d3f8f9d3a7d068b2}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0003486X}
+      \field{journaltitle}{Ann. of Math. (2)}
+      \field{number}{2}
+      \field{title}{Some {interior} {regularity} {theorems} for {minimal} {surfaces} and an {extension} of {bernstein}'s {theorem}}
+      \field{urlday}{3}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{84}
+      \field{year}{1966}
+      \field{urldateera}{ce}
+      \field{pages}{277\bibrangedash 292}
+      \range{pages}{16}
+      \verb{doi}
+      \verb 10.2307/1970520
+      \endverb
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/1970520
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/1970520
+      \endverb
+    \endentry
+    \entry{almgren_plateaus_1966}{book}{}
+      \name{author}{3}{}{%
+        {{hash=97198abb89619f83d3f8f9d3a7d068b2}{%
+           family={Almgren},
+           familyi={A\bibinitperiod},
+           given={F.J.},
+           giveni={F\bibinitperiod}}}%
+        {{hash=271c67766e4b601f89b8950db17b62e5}{%
+           family={Brakke},
+           familyi={B\bibinitperiod},
+           given={K.A.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f2d3a0d6b870b65cf25a9ce99a623316}{%
+           family={Sullivan},
+           familyi={S\bibinitperiod},
+           given={J.M.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {W.A. Benjamin}%
+      }
+      \strng{namehash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \strng{fullhash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \strng{bibnamehash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \strng{authorbibnamehash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \strng{authornamehash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \strng{authorfullhash}{ca84d4d2d2cbe4432bb66a72e8a168f1}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{978-0-8218-8448-5}
+      \field{series}{Student mathematical library}
+      \field{title}{Plateau's {problem}: {an} {invitation} to {varifold} geometry}
+      \field{year}{1966}
+      \verb{urlraw}
+      \verb https://books.google.com.hk/books?id=Tk8zHPGVmBsC
+      \endverb
+      \verb{url}
+      \verb https://books.google.com.hk/books?id=Tk8zHPGVmBsC
+      \endverb
+    \endentry
+    \entry{altschuler_translating_1994}{article}{}
+      \name{author}{2}{}{%
+        {{hash=6f60dcc0fbfa3e4073be26ff49e80fb1}{%
+           family={Altschuler},
+           familyi={A\bibinitperiod},
+           given={Steven\bibnamedelima J.},
+           giveni={S\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=951581c3e44be96efcb6865f42ac3d46}{%
+           family={Wu},
+           familyi={W\bibinitperiod},
+           given={Lang\bibnamedelima F.},
+           giveni={L\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{cd1d980fbe0626899f8e541ec9916293}
+      \strng{fullhash}{cd1d980fbe0626899f8e541ec9916293}
+      \strng{bibnamehash}{cd1d980fbe0626899f8e541ec9916293}
+      \strng{authorbibnamehash}{cd1d980fbe0626899f8e541ec9916293}
+      \strng{authornamehash}{cd1d980fbe0626899f8e541ec9916293}
+      \strng{authorfullhash}{cd1d980fbe0626899f8e541ec9916293}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0944-2669, 1432-0835}
+      \field{journaltitle}{Calculus of Variations and Partial Differential Equations}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Translating surfaces of the non-parametric mean curvature flow with prescribed contact angle}
+      \field{urlday}{15}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{2}
+      \field{year}{1994}
+      \field{urldateera}{ce}
+      \field{pages}{101\bibrangedash 111}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/BF01234317
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF01234317
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF01234317
+      \endverb
+    \endentry
+    \entry{andrews_contraction_1994}{article}{}
+      \name{author}{1}{}{%
+        {{hash=63dd0eab9768aebaa91707cd2258edbf}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{63dd0eab9768aebaa91707cd2258edbf}
+      \strng{fullhash}{63dd0eab9768aebaa91707cd2258edbf}
+      \strng{bibnamehash}{63dd0eab9768aebaa91707cd2258edbf}
+      \strng{authorbibnamehash}{63dd0eab9768aebaa91707cd2258edbf}
+      \strng{authornamehash}{63dd0eab9768aebaa91707cd2258edbf}
+      \strng{authorfullhash}{63dd0eab9768aebaa91707cd2258edbf}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Differential Geometry}
+      \field{number}{2}
+      \field{title}{Contraction of convex hypersurfaces in {Riemannian} spaces}
+      \field{volume}{39}
+      \field{year}{1994}
+      \field{pages}{407\bibrangedash 431\bibrangessep 25}
+      \range{pages}{26}
+      \verb{urlraw}
+      \verb https://doi.org/10.4310/jdg/1214454878
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4310/jdg/1214454878
+      \endverb
+    \endentry
+    \entry{andrews_mean_2010}{article}{}
+      \name{author}{2}{}{%
+        {{hash=63dd0eab9768aebaa91707cd2258edbf}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Ben},
+           giveni={B\bibinitperiod}}}%
+        {{hash=59cac3b62c53d79e1676b91feb39e8ca}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Charles},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{99058378459a38099a6fbdc2b326d34b}
+      \strng{fullhash}{99058378459a38099a6fbdc2b326d34b}
+      \strng{bibnamehash}{99058378459a38099a6fbdc2b326d34b}
+      \strng{authorbibnamehash}{99058378459a38099a6fbdc2b326d34b}
+      \strng{authornamehash}{99058378459a38099a6fbdc2b326d34b}
+      \strng{authorfullhash}{99058378459a38099a6fbdc2b326d34b}
+      \field{sortinit}{A}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Differential Geometry}
+      \field{number}{3}
+      \field{title}{Mean curvature flow of pinched submanifolds to spheres}
+      \field{volume}{85}
+      \field{year}{2010}
+      \field{pages}{357\bibrangedash 396\bibrangessep 40}
+      \range{pages}{41}
+      \verb{urlraw}
+      \verb https://doi.org/10.4310/jdg/1292940688
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4310/jdg/1292940688
+      \endverb
+    \endentry
+    \entry{bellettini_minimizing_2018}{article}{}
+      \name{author}{2}{}{%
+        {{hash=75ca2866dd92ec5a65ea93b40de51315}{%
+           family={Bellettini},
+           familyi={B\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=09534eef83294a1d8184b5c48b40f021}{%
+           family={Kholmatov},
+           familyi={K\bibinitperiod},
+           given={Sh.Yu.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{d23ec4a2c07bc22b08905a0828a38119}
+      \strng{fullhash}{d23ec4a2c07bc22b08905a0828a38119}
+      \strng{bibnamehash}{d23ec4a2c07bc22b08905a0828a38119}
+      \strng{authorbibnamehash}{d23ec4a2c07bc22b08905a0828a38119}
+      \strng{authornamehash}{d23ec4a2c07bc22b08905a0828a38119}
+      \strng{authorfullhash}{d23ec4a2c07bc22b08905a0828a38119}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00217824}
+      \field{journaltitle}{Journal de Mathématiques Pures et Appliquées}
+      \field{month}{9}
+      \field{title}{Minimizing movements for mean curvature flow of droplets with prescribed contact angle}
+      \field{urlday}{15}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{117}
+      \field{year}{2018}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 58}
+      \range{pages}{58}
+      \verb{doi}
+      \verb 10.1016/j.matpur.2018.06.003
+      \endverb
+      \verb{file}
+      \verb Submitted Version:C\:\\Users\\46537\\Zotero\\storage\\CNK3JYHJ\\Bellettini and Kholmatov - 2018 - Minimizing movements for mean curvature flow of dr.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021782418300825
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0021782418300825
+      \endverb
+    \endentry
+    \entry{bernstein2020closed}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=8f193d69b7b65442d49c63d995ad5479}{%
+           family={Bernstein},
+           familyi={B\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=55f210233ac686af68eba11a97bd84e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \strng{fullhash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \strng{bibnamehash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \strng{authorbibnamehash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \strng{authornamehash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \strng{authorfullhash}{4a0371c37bc5493dc00d2134e2ed5136}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Closed hypersurfaces of low entropy in $\mathbb{R}^4$ are isotopically trivial}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2003.13858
+      \endverb
+    \endentry
+    \entry{Brakke_1978}{book}{}
+      \name{author}{1}{}{%
+        {{hash=1f2cbef8f94627c4c46cd96f7ae5e578}{%
+           family={Brakke},
+           familyi={B\bibinitperiod},
+           given={Kenneth\bibnamedelima A.},
+           giveni={K\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Princeton University Press}%
+      }
+      \strng{namehash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \strng{fullhash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \strng{bibnamehash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \strng{authorbibnamehash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \strng{authornamehash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \strng{authorfullhash}{1f2cbef8f94627c4c46cd96f7ae5e578}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Kenneth Brakke studies in general dimensions a dynamic system of surfaces of no inertial mass driven by the force of surface tension and opposed by a frictional force proportional to velocity. He formulates his study in terms of varifold surfaces and uses the methods of geometric measure theory to develop a mathematical description of the motion of a surface by its mean curvature. This mathematical description encompasses, among other subtleties, those of changing geometries and instantaneous mass losses.Originally published in 1978.ThePrinceton Legacy Libraryuses the latest print-on-demand technology to again make available previously out-of-print books from the distinguished backlist of Princeton University Press. These paperback editions preserve the original texts of these important books while presenting them in durable paperback editions. The goal of the Princeton Legacy Library is to vastly increase access to the rich scholarly heritage found in the thousands of books published by Princeton University Press since its founding in 1905.}
+      \field{title}{The motion of a surface by its mean curvature. (MN-20)}
+      \field{year}{1978}
+      \verb{urlraw}
+      \verb http://www.jstor.org/stable/j.ctt130hk4d
+      \endverb
+      \verb{url}
+      \verb http://www.jstor.org/stable/j.ctt130hk4d
+      \endverb
+    \endentry
+    \entry{brendle2013inscribed}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=2621edf10cacbb2208d08652f127474f}{%
+           family={Brendle},
+           familyi={B\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{2621edf10cacbb2208d08652f127474f}
+      \strng{fullhash}{2621edf10cacbb2208d08652f127474f}
+      \strng{bibnamehash}{2621edf10cacbb2208d08652f127474f}
+      \strng{authorbibnamehash}{2621edf10cacbb2208d08652f127474f}
+      \strng{authornamehash}{2621edf10cacbb2208d08652f127474f}
+      \strng{authorfullhash}{2621edf10cacbb2208d08652f127474f}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{An inscribed radius estimate for mean curvature flow in Riemannian manifolds}
+      \field{year}{2013}
+      \verb{eprint}
+      \verb 1310.3439
+      \endverb
+    \endentry
+    \entry{brendle_mean_2016}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2b9bb81a89297bff53610bf185f5514b}{%
+           family={Brendle},
+           familyi={B\bibinitperiod},
+           given={Simon},
+           giveni={S\bibinitperiod}}}%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{afa2eb402f85d192c31a73222448f2f3}
+      \strng{fullhash}{afa2eb402f85d192c31a73222448f2f3}
+      \strng{bibnamehash}{afa2eb402f85d192c31a73222448f2f3}
+      \strng{authorbibnamehash}{afa2eb402f85d192c31a73222448f2f3}
+      \strng{authornamehash}{afa2eb402f85d192c31a73222448f2f3}
+      \strng{authorfullhash}{afa2eb402f85d192c31a73222448f2f3}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We define a notion of mean curvature flow with surgery for two-dimensional surfaces in \$\${\textbackslash}mathbb \{R\}{\textasciicircum}3\$\$with positive mean curvature. Our construction relies on the earlier work of Huisken and Sinestrari in the higher dimensional case. One of the main ingredients in the proof is a new estimate for the inscribed radius established by the first author (Invent Math, 2015).}
+      \field{issn}{1432-1297}
+      \field{journaltitle}{Invent. Math.}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Mean curvature flow with surgery of mean convex surfaces in {$\mathbb{R}^3$}}
+      \field{volume}{203}
+      \field{year}{2016}
+      \field{pages}{615\bibrangedash 654}
+      \range{pages}{40}
+      \verb{doi}
+      \verb 10.1007/s00222-015-0599-3
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00222-015-0599-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00222-015-0599-3
+      \endverb
+    \endentry
+    \entry{buckland_mean_2005}{article}{}
+      \name{author}{1}{}{%
+        {{hash=69b281dd81374560fd15f46abe27a3e1}{%
+           family={Buckland},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{69b281dd81374560fd15f46abe27a3e1}
+      \strng{fullhash}{69b281dd81374560fd15f46abe27a3e1}
+      \strng{bibnamehash}{69b281dd81374560fd15f46abe27a3e1}
+      \strng{authorbibnamehash}{69b281dd81374560fd15f46abe27a3e1}
+      \strng{authornamehash}{69b281dd81374560fd15f46abe27a3e1}
+      \strng{authorfullhash}{69b281dd81374560fd15f46abe27a3e1}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0075-4102, 1435-5345}
+      \field{journaltitle}{J. Reine Angew. Math.}
+      \field{month}{9}
+      \field{title}{Mean curvature flow with free boundary on smooth hypersurfaces}
+      \field{urlday}{15}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{586}
+      \field{year}{2005}
+      \field{urldateera}{ce}
+      \field{pages}{71\bibrangedash 90}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1515/crll.2005.2005.586.71
+      \endverb
+      \verb{urlraw}
+      \verb https://www.degruyter.com/document/doi/10.1515/crll.2005.2005.586.71/html
+      \endverb
+      \verb{url}
+      \verb https://www.degruyter.com/document/doi/10.1515/crll.2005.2005.586.71/html
+      \endverb
+    \endentry
+    \entry{chodosh2020mean}{misc}{}
+      \name{author}{4}{}{%
+        {{hash=85182447f8f1dd8d0a6da3cd5b37e27d}{%
+           family={Chodosh},
+           familyi={C\bibinitperiod},
+           given={Otis},
+           giveni={O\bibinitperiod}}}%
+        {{hash=36f264df60d9400043090d13d9e2ff9d}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Kyeongsu},
+           giveni={K\bibinitperiod}}}%
+        {{hash=9e6468425200b9a0a98ec462f9478ccf}{%
+           family={Mantoulidis},
+           familyi={M\bibinitperiod},
+           given={Christos},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b9a3e60cbdea42c6b0f2f41c36da20f3}{%
+           family={Schulze},
+           familyi={S\bibinitperiod},
+           given={Felix},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{5db3d689bde169b4e889acf627694126}
+      \strng{fullhash}{ef4f04e55ac942320b542546ff204a2c}
+      \strng{bibnamehash}{5db3d689bde169b4e889acf627694126}
+      \strng{authorbibnamehash}{5db3d689bde169b4e889acf627694126}
+      \strng{authornamehash}{5db3d689bde169b4e889acf627694126}
+      \strng{authorfullhash}{ef4f04e55ac942320b542546ff204a2c}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Mean curvature flow with generic initial data}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2003.14344
+      \endverb
+    \endentry
+    \entry{chow_ricci_2004}{book}{}
+      \name{author}{2}{}{%
+        {{hash=aa4d06b9855fefe69aebaf62b738e673}{%
+           family={Chow},
+           familyi={C\bibinitperiod},
+           given={Bennett},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e4ae74d529d63976ed904940606401d4}{%
+           family={Knopf},
+           familyi={K\bibinitperiod},
+           given={Dan},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Providence, R.I}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{44a54004e3bacd48923cc43c41dcc541}
+      \strng{fullhash}{44a54004e3bacd48923cc43c41dcc541}
+      \strng{bibnamehash}{44a54004e3bacd48923cc43c41dcc541}
+      \strng{authorbibnamehash}{44a54004e3bacd48923cc43c41dcc541}
+      \strng{authornamehash}{44a54004e3bacd48923cc43c41dcc541}
+      \strng{authorfullhash}{44a54004e3bacd48923cc43c41dcc541}
+      \field{sortinit}{C}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{isbn}{978-0-8218-3515-9}
+      \field{number}{v. 110}
+      \field{series}{Mathematical surveys and monographs}
+      \field{shorttitle}{The {Ricci} flow}
+      \field{title}{The {Ricci} flow: an introduction}
+      \field{year}{2004}
+      \keyw{Ricci flow,Global differential geometry,Riemannian manifolds}
+    \endentry
+    \entry{edelen_convexity_2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=6d1350749798b92eb187d764b94b8049}{%
+           family={Edelen},
+           familyi={E\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d1350749798b92eb187d764b94b8049}
+      \strng{fullhash}{6d1350749798b92eb187d764b94b8049}
+      \strng{bibnamehash}{6d1350749798b92eb187d764b94b8049}
+      \strng{authorbibnamehash}{6d1350749798b92eb187d764b94b8049}
+      \strng{authornamehash}{6d1350749798b92eb187d764b94b8049}
+      \strng{authorfullhash}{6d1350749798b92eb187d764b94b8049}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{00018708}
+      \field{journaltitle}{Advances in Mathematics}
+      \field{title}{Convexity estimates for mean curvature flow with free boundary}
+      \field{volume}{294}
+      \field{year}{2016}
+      \field{pages}{1\bibrangedash 36}
+      \range{pages}{36}
+      \verb{doi}
+      \verb 10.1016/j.aim.2016.02.026
+      \endverb
+    \endentry
+    \entry{evans_partial_2010}{book}{}
+      \name{author}{1}{}{%
+        {{hash=0d72932a7775f85a51622d3af75ae26e}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Lawrence\bibnamedelima C.},
+           giveni={L\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Providence, R.I}%
+      }
+      \list{publisher}{1}{%
+        {American Mathematical Society}%
+      }
+      \strng{namehash}{0d72932a7775f85a51622d3af75ae26e}
+      \strng{fullhash}{0d72932a7775f85a51622d3af75ae26e}
+      \strng{bibnamehash}{0d72932a7775f85a51622d3af75ae26e}
+      \strng{authorbibnamehash}{0d72932a7775f85a51622d3af75ae26e}
+      \strng{authornamehash}{0d72932a7775f85a51622d3af75ae26e}
+      \strng{authorfullhash}{0d72932a7775f85a51622d3af75ae26e}
+      \field{sortinit}{E}
+      \field{sortinithash}{c554bd1a0b76ea92b9f105fe36d9c7b0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{"This is the second edition of the now definitive text on partial differential equations (PDE). It offers a comprehensive survey of modern techniques in the theoretical study of PDE with particular emphasis on nonlinear equations. Its wide scope and clear exposition make it a great text for a graduate course in PDE. For this edition, the author has made numerous changes, including: a new chapter on nonlinear wave equations, more than 80 new exercises, several new sections, and a significantly expanded bibliography."--Publisher's description}
+      \field{edition}{2nd ed}
+      \field{isbn}{978-0-8218-4974-3}
+      \field{number}{v. 19}
+      \field{series}{Graduate studies in mathematics}
+      \field{title}{Partial differential equations}
+      \field{year}{2010}
+      \keyw{Differential equations,Partial}
+    \endentry
+    \entry{guan1996mean}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=a4f4aa3a0795ddb91dc655206ddef355}{%
+           family={Guan},
+           familyi={G\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \strng{fullhash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \strng{bibnamehash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \strng{authorbibnamehash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \strng{authornamehash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \strng{authorfullhash}{a4f4aa3a0795ddb91dc655206ddef355}
+      \field{sortinit}{G}
+      \field{sortinithash}{62eb2aa29549e4fdbd3cb154ec5711cb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Elliptic and parabolic methods in geometry}
+      \field{title}{Mean curvature motion of nonparametric hypersurfaces with contact angle condition}
+      \field{year}{1996}
+      \field{pages}{47\bibrangedash 56}
+      \range{pages}{10}
+    \endentry
+    \entry{Hamilton1997FourmanifoldsWP}{article}{}
+      \name{author}{1}{}{%
+        {{hash=7ca3405dc8c7bdbb5bb8e72d544fbf73}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \strng{fullhash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \strng{bibnamehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \strng{authorbibnamehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \strng{authornamehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \strng{authorfullhash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Communications in Analysis and Geometry}
+      \field{title}{Four-manifolds with positive isotropic curvature}
+      \field{volume}{5}
+      \field{year}{1997}
+      \field{pages}{1\bibrangedash 92}
+      \range{pages}{92}
+    \endentry
+    \entry{hirsch2020contracting}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=494435132d6d3891c280f4fc85d9884d}{%
+           family={Hirsch},
+           familyi={H\bibinitperiod},
+           given={Sven},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b8acb486935d1ad1ce7013fc985e9e6e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{6645de2eed2a82e905690224d0168a85}
+      \strng{fullhash}{6645de2eed2a82e905690224d0168a85}
+      \strng{bibnamehash}{6645de2eed2a82e905690224d0168a85}
+      \strng{authorbibnamehash}{6645de2eed2a82e905690224d0168a85}
+      \strng{authornamehash}{6645de2eed2a82e905690224d0168a85}
+      \strng{authorfullhash}{6645de2eed2a82e905690224d0168a85}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.AP}
+      \field{eprinttype}{arXiv}
+      \field{title}{Contracting convex surfaces by mean curvature flow with free boundary on convex barriers}
+      \field{year}{2020}
+      \verb{eprint}
+      \verb 2001.01111
+      \endverb
+    \endentry
+    \entry{hoffman_sobolev_1974}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3f49dbe7754333f2e73e4531b1df5ab6}{%
+           family={Hoffman},
+           familyi={H\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=066e36b004b872d012038f73a45d4e0f}{%
+           family={Spruck},
+           familyi={S\bibinitperiod},
+           given={Joel},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \strng{fullhash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \strng{bibnamehash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \strng{authorbibnamehash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \strng{authornamehash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \strng{authorfullhash}{b09286acb13d3c3c90ebbe312a4c00c6}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{https://doi.org/10.1002/cpa.3160270601}
+      \field{issn}{0010-3640}
+      \field{journaltitle}{Communications on Pure and Applied Mathematics}
+      \field{number}{6}
+      \field{title}{Sobolev and isoperimetric inequalities for riemannian submanifolds}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{27}
+      \field{year}{1974}
+      \field{urldateera}{ce}
+      \field{pages}{715\bibrangedash 727}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1002/cpa.3160270601
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/cpa.3160270601
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/cpa.3160270601
+      \endverb
+    \endentry
+    \entry{Huisken2009MeanCF}{article}{}
+      \name{author}{2}{}{%
+        {{hash=8fd3e952b91412fc859fd6044656d764}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+        {{hash=98266d5cd217ca7d0c0df8e695becae8}{%
+           family={Sinestrari},
+           familyi={S\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \strng{fullhash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \strng{bibnamehash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \strng{authorbibnamehash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \strng{authornamehash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \strng{authorfullhash}{2d56e2978a2164b56fc78b767cd84c7a}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Invent. Math.}
+      \field{title}{Mean curvature flow with surgeries of two–convex hypersurfaces}
+      \field{volume}{175}
+      \field{year}{2009}
+      \field{pages}{137\bibrangedash 221}
+      \range{pages}{85}
+    \endentry
+    \entry{huisken_contracting_1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{fullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{bibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorbibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authornamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorfullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \field{extraname}{1}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0020-9910}
+      \field{journaltitle}{Invent. Math.}
+      \field{number}{3}
+      \field{title}{Contracting convex hypersurfaces in {Riemannian} manifolds by their mean curvature}
+      \field{volume}{84}
+      \field{year}{1986}
+      \field{pages}{463\bibrangedash 480}
+      \range{pages}{18}
+      \verb{doi}
+      \verb 10.1007/BF01388742
+      \endverb
+    \endentry
+    \entry{huisken_deforming_1987}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{fullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{bibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorbibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authornamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorfullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-1823}
+      \field{journaltitle}{Mathematische Zeitschrift}
+      \field{month}{6}
+      \field{number}{2}
+      \field{title}{Deforming hypersurfaces of the sphere by their mean curvature}
+      \field{volume}{195}
+      \field{year}{1987}
+      \field{pages}{205\bibrangedash 219}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1007/BF01166458
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01166458
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01166458
+      \endverb
+    \endentry
+    \entry{huisken_flow_1984}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{fullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{bibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorbibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authornamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorfullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \field{extraname}{3}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-040X}
+      \field{journaltitle}{J. Differential Geom.}
+      \field{number}{1}
+      \field{title}{Flow by mean curvature of convex surfaces into spheres}
+      \field{volume}{20}
+      \field{year}{1984}
+      \field{pages}{237\bibrangedash 266}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.4310/jdg/1214438998
+      \endverb
+      \verb{urlraw}
+      \verb https://projecteuclid.org:443/euclid.jdg/1214438998
+      \endverb
+      \verb{url}
+      \verb https://projecteuclid.org:443/euclid.jdg/1214438998
+      \endverb
+    \endentry
+    \entry{huisken_non-parametric_1989}{article}{}
+      \name{author}{1}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{fullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{bibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorbibnamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authornamehash}{5cd6fb77098a0c0c8907326c79706dde}
+      \strng{authorfullhash}{5cd6fb77098a0c0c8907326c79706dde}
+      \field{extraname}{4}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-0396}
+      \field{journaltitle}{Journal of Differential Equations}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Non-parametric mean curvature evolution with boundary conditions}
+      \field{volume}{77}
+      \field{year}{1989}
+      \field{pages}{369\bibrangedash 378}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/0022-0396(89)90149-6
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/0022039689901496
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/0022039689901496
+      \endverb
+    \endentry
+    \entry{huisken_inverse_2001}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=1065c19225ca31cab89766d2e59af926}{%
+           family={Ilmanen},
+           familyi={I\bibinitperiod},
+           given={Tom},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{498a8b75f00365ca77105af787ba4e19}
+      \strng{fullhash}{498a8b75f00365ca77105af787ba4e19}
+      \strng{bibnamehash}{498a8b75f00365ca77105af787ba4e19}
+      \strng{authorbibnamehash}{498a8b75f00365ca77105af787ba4e19}
+      \strng{authornamehash}{498a8b75f00365ca77105af787ba4e19}
+      \strng{authorfullhash}{498a8b75f00365ca77105af787ba4e19}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Differential Geometry}
+      \field{number}{3}
+      \field{title}{The {Inverse} {Mean} {Curvature} {Flow} and the {Riemannian} {Penrose} {Inequality}}
+      \field{volume}{59}
+      \field{year}{2001}
+      \field{pages}{353\bibrangedash 437\bibrangessep 85}
+      \range{pages}{86}
+      \verb{urlraw}
+      \verb https://doi.org/10.4310/jdg/1090349447
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.4310/jdg/1090349447
+      \endverb
+    \endentry
+    \entry{huisken_convexity_1999}{article}{}
+      \name{author}{2}{}{%
+        {{hash=5cd6fb77098a0c0c8907326c79706dde}{%
+           family={Huisken},
+           familyi={H\bibinitperiod},
+           given={Gerhard},
+           giveni={G\bibinitperiod}}}%
+        {{hash=bae17f0d6feee7d75f210a313c96777f}{%
+           family={Sinestrari},
+           familyi={S\bibinitperiod},
+           given={Carlo},
+           giveni={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{66295d3ff615c086a9481b87ea97ba9e}
+      \strng{fullhash}{66295d3ff615c086a9481b87ea97ba9e}
+      \strng{bibnamehash}{66295d3ff615c086a9481b87ea97ba9e}
+      \strng{authorbibnamehash}{66295d3ff615c086a9481b87ea97ba9e}
+      \strng{authornamehash}{66295d3ff615c086a9481b87ea97ba9e}
+      \strng{authorfullhash}{66295d3ff615c086a9481b87ea97ba9e}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Acta Mathematica}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Convexity estimates for mean curvature flow and singularities of mean convex surfaces}
+      \field{volume}{183}
+      \field{year}{1999}
+      \field{pages}{45\bibrangedash 70}
+      \range{pages}{26}
+      \verb{doi}
+      \verb 10.1007/BF02392946
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF02392946
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF02392946
+      \endverb
+    \endentry
+    \entry{Li2020free}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=b8acb486935d1ad1ce7013fc985e9e6e}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {International Press of Boston, Inc}%
+      }
+      \strng{namehash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \strng{fullhash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \strng{bibnamehash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \strng{authorbibnamehash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \strng{authornamehash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \strng{authorfullhash}{b8acb486935d1ad1ce7013fc985e9e6e}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the International Consortium of Chinese Mathematicians, 2017}
+      \field{title}{Free boundary minimal surfaces in the unit ball: recent advances and open questions}
+      \field{year}{2020}
+      \field{pages}{401\bibrangedash 436}
+      \range{pages}{36}
+    \endentry
+    \entry{Lieberman_1986}{article}{}
+      \name{author}{1}{}{%
+        {{hash=b014e43117010c5950469c379cd39ed1}{%
+           family={Lieberman},
+           familyi={L\bibinitperiod},
+           given={Gary\bibnamedelima M.},
+           giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \list{publisher}{1}{%
+        {Scuola normale superiore}%
+      }
+      \strng{namehash}{b014e43117010c5950469c379cd39ed1}
+      \strng{fullhash}{b014e43117010c5950469c379cd39ed1}
+      \strng{bibnamehash}{b014e43117010c5950469c379cd39ed1}
+      \strng{authorbibnamehash}{b014e43117010c5950469c379cd39ed1}
+      \strng{authornamehash}{b014e43117010c5950469c379cd39ed1}
+      \strng{authorfullhash}{b014e43117010c5950469c379cd39ed1}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Annali della Scuola Normale Superiore di Pisa - Classe di Scienze}
+      \field{number}{3}
+      \field{title}{The first initial-boundary value problem for quasilinear second order parabolic equations}
+      \field{volume}{Ser. 4, 13}
+      \field{year}{1986}
+      \field{pages}{347\bibrangedash 387}
+      \range{pages}{41}
+      \verb{urlraw}
+      \verb http://www.numdam.org/item/ASNSP_1986_4_13_3_347_0/
+      \endverb
+      \verb{url}
+      \verb http://www.numdam.org/item/ASNSP_1986_4_13_3_347_0/
+      \endverb
+    \endentry
+    \entry{liu2012mean}{misc}{}
+      \name{author}{3}{}{%
+        {{hash=2f1c2ebb3891f3563e1cc29b7372ee81}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Kefeng},
+           giveni={K\bibinitperiod}}}%
+        {{hash=90dc76f97b426c385eb75646b923ed71}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Hongwei},
+           giveni={H\bibinitperiod}}}%
+        {{hash=aa5014c46340433e70a74b6679e09e6e}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Entao},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{01da7da4ff679f4f750e90eeab39778d}
+      \strng{fullhash}{01da7da4ff679f4f750e90eeab39778d}
+      \strng{bibnamehash}{01da7da4ff679f4f750e90eeab39778d}
+      \strng{authorbibnamehash}{01da7da4ff679f4f750e90eeab39778d}
+      \strng{authornamehash}{01da7da4ff679f4f750e90eeab39778d}
+      \strng{authorfullhash}{01da7da4ff679f4f750e90eeab39778d}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Mean curvature flow of higher codimension in Riemannian manifolds}
+      \field{year}{2012}
+      \verb{eprint}
+      \verb 1204.0107
+      \endverb
+    \endentry
+    \entry{michael_sobolev_1973}{article}{}
+      \name{author}{2}{}{%
+        {{hash=ce2cb4acc75879b91184a0ff0902134e}{%
+           family={Michael},
+           familyi={M\bibinitperiod},
+           given={J.\bibnamedelimi H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=efc730cadc93b3bc37e1c650453c2578}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={L.\bibnamedelimi M.},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e5a7f3263a77e14552aee25361064c1e}
+      \strng{fullhash}{e5a7f3263a77e14552aee25361064c1e}
+      \strng{bibnamehash}{e5a7f3263a77e14552aee25361064c1e}
+      \strng{authorbibnamehash}{e5a7f3263a77e14552aee25361064c1e}
+      \strng{authornamehash}{e5a7f3263a77e14552aee25361064c1e}
+      \strng{authorfullhash}{e5a7f3263a77e14552aee25361064c1e}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{annotation}{https://doi.org/10.1002/cpa.3160260305}
+      \field{issn}{0010-3640}
+      \field{journaltitle}{Communications on Pure and Applied Mathematics}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{Sobolev and mean-value inequalities on generalized submanifolds of {Rn}}
+      \field{urlday}{5}
+      \field{urlmonth}{4}
+      \field{urlyear}{2021}
+      \field{volume}{26}
+      \field{year}{1973}
+      \field{urldateera}{ce}
+      \field{pages}{361\bibrangedash 379}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1002/cpa.3160260305
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1002/cpa.3160260305
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1002/cpa.3160260305
+      \endverb
+    \endentry
+    \entry{mullins_twodimensional_1956}{article}{}
+      \name{author}{1}{}{%
+        {{hash=8d01cc0273d62aa344b686bfe5e2b2fa}{%
+           family={Mullins},
+           familyi={M\bibinitperiod},
+           given={W.\bibnamedelimi W.},
+           giveni={W\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \strng{fullhash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \strng{bibnamehash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \strng{authorbibnamehash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \strng{authornamehash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \strng{authorfullhash}{8d01cc0273d62aa344b686bfe5e2b2fa}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0021-8979}
+      \field{journaltitle}{J. Appl. Phys.}
+      \field{number}{8}
+      \field{title}{Two‐{dimensional} {motion} of {idealized} {grain} {boundaries}}
+      \field{urlday}{1}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{27}
+      \field{year}{1956}
+      \field{urldateera}{ce}
+      \field{pages}{900\bibrangedash 904}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1063/1.1722511
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1063/1.1722511
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1063/1.1722511
+      \endverb
+    \endentry
+    \entry{nitsche_stationary_1985}{article}{}
+      \name{author}{1}{}{%
+        {{hash=2fbe56f3966061859e9b8ec601fef77d}{%
+           family={Nitsche},
+           familyi={N\bibinitperiod},
+           given={Johannes\bibnamedelimb C.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2fbe56f3966061859e9b8ec601fef77d}
+      \strng{fullhash}{2fbe56f3966061859e9b8ec601fef77d}
+      \strng{bibnamehash}{2fbe56f3966061859e9b8ec601fef77d}
+      \strng{authorbibnamehash}{2fbe56f3966061859e9b8ec601fef77d}
+      \strng{authornamehash}{2fbe56f3966061859e9b8ec601fef77d}
+      \strng{authorfullhash}{2fbe56f3966061859e9b8ec601fef77d}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-0673}
+      \field{journaltitle}{Archive for Rational Mechanics and Analysis}
+      \field{month}{3}
+      \field{number}{1}
+      \field{title}{Stationary partitioning of convex bodies}
+      \field{volume}{89}
+      \field{year}{1985}
+      \field{pages}{1\bibrangedash 19}
+      \range{pages}{19}
+      \verb{doi}
+      \verb 10.1007/BF00281743
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF00281743
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF00281743
+      \endverb
+    \endentry
+    \entry{perelman2003ricci}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cf1bb040edf60cdef5b52e30eee4f561}{%
+           family={Perelman},
+           familyi={P\bibinitperiod},
+           given={Grisha},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{fullhash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{bibnamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authorbibnamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authornamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authorfullhash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \field{extraname}{1}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Ricci flow with surgery on three-manifolds}
+      \field{year}{2003}
+      \verb{eprint}
+      \verb math/0303109
+      \endverb
+    \endentry
+    \entry{perelman2002entropy}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=cf1bb040edf60cdef5b52e30eee4f561}{%
+           family={Perelman},
+           familyi={P\bibinitperiod},
+           given={Grisha},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{fullhash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{bibnamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authorbibnamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authornamehash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \strng{authorfullhash}{cf1bb040edf60cdef5b52e30eee4f561}
+      \field{extraname}{2}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{The entropy formula for the Ricci flow and its geometric applications}
+      \field{year}{2002}
+      \verb{eprint}
+      \verb math/0211159
+      \endverb
+    \endentry
+    \entry{priwitzer_mean_2003}{article}{}
+      \name{author}{1}{}{%
+        {{hash=c63dce1efec30f1709094d4dad04aee4}{%
+           family={Priwitzer},
+           familyi={P\bibinitperiod},
+           given={Barbara},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{c63dce1efec30f1709094d4dad04aee4}
+      \strng{fullhash}{c63dce1efec30f1709094d4dad04aee4}
+      \strng{bibnamehash}{c63dce1efec30f1709094d4dad04aee4}
+      \strng{authorbibnamehash}{c63dce1efec30f1709094d4dad04aee4}
+      \strng{authornamehash}{c63dce1efec30f1709094d4dad04aee4}
+      \strng{authorfullhash}{c63dce1efec30f1709094d4dad04aee4}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider a hypermanifold M0 of a Riemannian manifold N whose Riccicurvature is bounded from below. If M0 is transversal to a conformalvector field on N, then conditions are given, such that the meancurvature evolution of M0 with Dirichlet boundary conditions has asolution for all times.}
+      \field{issn}{1572-9060}
+      \field{journaltitle}{Annals of Global Analysis and Geometry}
+      \field{month}{4}
+      \field{number}{2}
+      \field{title}{Mean {curvature} {flow} with {Dirichlet} {boundary} {conditions} in {Riemannian} {manifolds} with {symmetries}}
+      \field{volume}{23}
+      \field{year}{2003}
+      \field{pages}{157\bibrangedash 171}
+      \range{pages}{15}
+      \verb{doi}
+      \verb 10.1023/A:1022417312834
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1023/A:1022417312834
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/A:1022417312834
+      \endverb
+    \endentry
+    \entry{Ros_stabilityof}{article}{}
+      \name{author}{1}{}{%
+        {{hash=99ec486a960ab4749b65614416eb53ec}{%
+           family={Ros},
+           familyi={R\bibinitperiod},
+           given={Antonio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{99ec486a960ab4749b65614416eb53ec}
+      \strng{fullhash}{99ec486a960ab4749b65614416eb53ec}
+      \strng{bibnamehash}{99ec486a960ab4749b65614416eb53ec}
+      \strng{authorbibnamehash}{99ec486a960ab4749b65614416eb53ec}
+      \strng{authornamehash}{99ec486a960ab4749b65614416eb53ec}
+      \strng{authorfullhash}{99ec486a960ab4749b65614416eb53ec}
+      \field{sortinit}{R}
+      \field{sortinithash}{b9c68a358aea118dfa887b6e902414a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mat. Contemp}
+      \field{title}{Stability of minimal and constant mean curvature surfaces with free boundary}
+      \field{year}{2008}
+      \field{pages}{221\bibrangedash 240}
+      \range{pages}{20}
+    \endentry
+    \entry{stahl_convergence_1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=808c9d785462b2866b219bcc5e5e9774}{%
+           family={Stahl},
+           familyi={S\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{fullhash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{bibnamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authorbibnamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authornamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authorfullhash}{808c9d785462b2866b219bcc5e5e9774}
+      \field{extraname}{1}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This work continues our considerations in [15], where we discussed existence and regularity results for the mean curvature flow with homogenious Neumann boundary data. We study the long time evolution of compact, smooth, immersed manifolds with boundary which move under the mean curvature flow in Euclidian space. On the boundary, a Neumann condition is prescribed in a purely geometric manner by requiring a vertical contact angle between the unit normal fields of the immersions and a given, smooth hypersurfaceΣ. We deduce estimates for the curvature of the immersions and, in a special case, we obtain a precise description of the possible singularities.}
+      \field{issn}{1432-0835}
+      \field{journaltitle}{Calculus of Variations and Partial Differential Equations}
+      \field{number}{5}
+      \field{title}{Convergence of solutions to the mean curvature flow with a {Neumann} boundary condition}
+      \field{volume}{4}
+      \field{year}{1996}
+      \field{pages}{421\bibrangedash 441}
+      \range{pages}{21}
+      \verb{doi}
+      \verb 10.1007/BF01246150
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01246150
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01246150
+      \endverb
+    \endentry
+    \entry{stahl_regularity_1996}{article}{}
+      \name{author}{1}{}{%
+        {{hash=808c9d785462b2866b219bcc5e5e9774}{%
+           family={Stahl},
+           familyi={S\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{fullhash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{bibnamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authorbibnamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authornamehash}{808c9d785462b2866b219bcc5e5e9774}
+      \strng{authorfullhash}{808c9d785462b2866b219bcc5e5e9774}
+      \field{extraname}{2}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this work we study the behaviour of compact, smooth, immersed manifolds with boundary which move under the mean curvature flow in Euclidian space. We thereby prescribe the Neumann boundary condition in a purely geometric manner by requiring a vertical contact angle between the unit normal fields of the immersions and a given, smooth hypersurface∑. We deduce a very sharp local gradient bound depending only on the curvature of the immersions and∑. Combining this with a short time existence result, we obtain the existence of a unique solution to any given smooth initial and boundary data. This solution either exists for anyt{>}0 or on a maximal finite time interval [0,T] such that the curvature explodes ast→T.}
+      \field{issn}{1432-0835}
+      \field{journaltitle}{Calculus of Variations and Partial Differential Equations}
+      \field{number}{4}
+      \field{title}{Regularity estimates for solutions to the mean curvature flow with a {Neumann} boundary condition}
+      \field{volume}{4}
+      \field{year}{1996}
+      \field{pages}{385\bibrangedash 407}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1007/BF01190825
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF01190825
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF01190825
+      \endverb
+    \endentry
+    \entry{SJL_1963-1964___3_1_0}{article}{}
+      \name{author}{1}{}{%
+        {{hash=ea9d1533d593166514f5b41e88348cd8}{%
+           family={Stampacchia},
+           familyi={S\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {fr}%
+      }
+      \list{publisher}{1}{%
+        {Collège de France}%
+      }
+      \strng{namehash}{ea9d1533d593166514f5b41e88348cd8}
+      \strng{fullhash}{ea9d1533d593166514f5b41e88348cd8}
+      \strng{bibnamehash}{ea9d1533d593166514f5b41e88348cd8}
+      \strng{authorbibnamehash}{ea9d1533d593166514f5b41e88348cd8}
+      \strng{authornamehash}{ea9d1533d593166514f5b41e88348cd8}
+      \strng{authorfullhash}{ea9d1533d593166514f5b41e88348cd8}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Séminaire Jean Leray}
+      \field{number}{3}
+      \field{title}{Équations elliptiques du second ordre à coefficients discontinus}
+      \field{year}{1963-1964}
+      \field{pages}{1\bibrangedash 77}
+      \range{pages}{77}
+      \verb{urlraw}
+      \verb http://www.numdam.org/item/SJL_1963-1964___3_1_0/
+      \endverb
+      \verb{url}
+      \verb http://www.numdam.org/item/SJL_1963-1964___3_1_0/
+      \endverb
+    \endentry
+    \entry{stuvard_existence_2021}{article}{}
+      \name{author}{2}{}{%
+        {{hash=d649afe12a0e15725fbf837b0ad6bc4a}{%
+           family={Stuvard},
+           familyi={S\bibinitperiod},
+           given={Salvatore},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c4bf7a847f27b05ffb89af9aae0b52b8}{%
+           family={Tonegawa},
+           familyi={T\bibinitperiod},
+           given={Yoshihiro},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \strng{fullhash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \strng{bibnamehash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \strng{authorbibnamehash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \strng{authornamehash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \strng{authorfullhash}{f290d9605efee2a8604cb5bcc022a6e8}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Consider an arbitrary closed, countably n-rectifiable set in a strictly convex \$\$(n+1)\$\$-dimensional domain, and suppose that the set has finite n-dimensional Hausdorff measure and the complement is not connected. Starting from this given set, we show that there exists a non-trivial Brakke flow with fixed boundary data for all times. As \$\$t {\textbackslash}uparrow {\textbackslash}infty \$\$, the flow sequentially converges to non-trivial solutions of Plateau’s problem in the setting of stationary varifolds.}
+      \field{issn}{1432-0835}
+      \field{journaltitle}{Calculus of Variations and Partial Differential Equations}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{An existence theorem for {Brakke} flow with fixed boundary conditions}
+      \field{volume}{60}
+      \field{year}{2021}
+      \field{pages}{43}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1007/s00526-020-01909-z
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00526-020-01909-z
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00526-020-01909-z
+      \endverb
+    \endentry
+    \entry{volkmann_monotonicity_2016}{article}{}
+      \name{author}{1}{}{%
+        {{hash=80add6f3706327bb4ed84dc5b2b39c92}{%
+           family={Volkmann},
+           familyi={V\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \strng{fullhash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \strng{bibnamehash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \strng{authorbibnamehash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \strng{authornamehash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \strng{authorfullhash}{80add6f3706327bb4ed84dc5b2b39c92}
+      \field{sortinit}{V}
+      \field{sortinithash}{02432525618c08e2b03cac47c19764af}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{10198385, 19449992}
+      \field{journaltitle}{Communications in Analysis and Geometry}
+      \field{number}{1}
+      \field{title}{A monotonicity formula for free boundary surfaces with respect to the unit ball}
+      \field{urlday}{24}
+      \field{urlmonth}{5}
+      \field{urlyear}{2021}
+      \field{volume}{24}
+      \field{year}{2016}
+      \field{urldateera}{ce}
+      \field{pages}{195\bibrangedash 221}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.4310/CAG.2016.v24.n1.a7
+      \endverb
+      \verb{file}
+      \verb Submitted Version:C\:\\Users\\46537\\Zotero\\storage\\V45TCYKG\\Volkmann - 2016 - A monotonicity formula for free boundary surfaces .pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.intlpress.com/site/pub/pages/journals/items/cag/content/vols/0024/0001/a007/
+      \endverb
+      \verb{url}
+      \verb http://www.intlpress.com/site/pub/pages/journals/items/cag/content/vols/0024/0001/a007/
+      \endverb
+    \endentry
+    \entry{white2021mean}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=7aefe34a4f0a757480b2ee1bbae09111}{%
+           family={White},
+           familyi={W\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \strng{fullhash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \strng{bibnamehash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \strng{authorbibnamehash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \strng{authornamehash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \strng{authorfullhash}{7aefe34a4f0a757480b2ee1bbae09111}
+      \field{sortinit}{W}
+      \field{sortinithash}{1af34bd8c148ffb32de1494636b49713}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{math.DG}
+      \field{eprinttype}{arXiv}
+      \field{title}{Mean Curvature Flow with Boundary}
+      \field{year}{2021}
+      \verb{eprint}
+      \verb 1901.03008
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem[And94]{andrews_contraction_1994}
-Ben Andrews, \emph{Contraction of convex hypersurfaces in {Riemannian} spaces},
-  Journal of Differential Geometry \textbf{39} (1994), no.~2, 407--431, 25.
-
-\bibitem[Bre13]{brendle2013inscribed}
-S.~Brendle, \emph{An inscribed radius estimate for mean curvature flow in
-  riemannian manifolds}, 2013.
-
-\bibitem[Ede16]{edelen_convexity_2016}
-Nick Edelen, \emph{Convexity estimates for mean curvature flow with free
-  boundary}, Advances in Mathematics \textbf{294} (2016), 1--36, Section: 1.
-
-\bibitem[HI01]{huisken_inverse_2001}
-Gerhard Huisken and Tom Ilmanen, \emph{The {Inverse} {Mean} {Curvature} {Flow}
-  and the {Riemannian} {Penrose} {Inequality}}, Journal of Differential
-  Geometry \textbf{59} (2001), no.~3, 353--437, 85.
-
-\bibitem[HL20]{hirsch2020contracting}
-Sven Hirsch and Martin Li, \emph{Contracting convex surfaces by mean curvature
-  flow with free boundary on convex barriers}, 2020.
-
-\bibitem[HS74]{hoffman_sobolev_1974}
-David Hoffman and Joel Spruck, \emph{Sobolev and isoperimetric inequalities for
-  riemannian submanifolds}, Communications on Pure and Applied Mathematics
-  \textbf{27} (1974), no.~6, 715--727.
-
-\bibitem[HS99]{huisken_convexity_1999}
-Gerhard Huisken and Carlo Sinestrari, \emph{Convexity estimates for mean
-  curvature flow and singularities of mean convex surfaces}, Acta Mathematica
-  \textbf{183} (1999), no.~1, 45--70.
-
-\bibitem[Hui84]{huisken_flow_1984}
-Gerhard Huisken, \emph{Flow by mean curvature of convex surfaces into spheres},
-  J. Differential Geom. \textbf{20} (1984), no.~1, 237--266 (en).
-
-\bibitem[Hui86]{huisken_contracting_1986}
-\bysame, \emph{Contracting convex hypersurfaces in {Riemannian} manifolds by
-  their mean curvature}, Inventiones mathematicae \textbf{84} (1986), no.~3,
-  463--480.
-
-\bibitem[Hui87]{huisken_deforming_1987}
-\bysame, \emph{Deforming hypersurfaces of the sphere by their mean curvature},
-  Mathematische Zeitschrift \textbf{195} (1987), no.~2, 205--219.
-
-\bibitem[MS73]{michael_sobolev_1973}
-J.~H. Michael and L.~M. Simon, \emph{Sobolev and mean-value inequalities on
-  generalized submanifolds of {Rn}}, Communications on Pure and Applied
-  Mathematics \textbf{26} (1973), no.~3, 361--379, Publisher: John Wiley \&
-  Sons, Ltd.
-
-\bibitem[Mul56]{mullins_twodimensional_1956}
-W.~W. Mullins, \emph{Two‐{Dimensional} {Motion} of {Idealized} {Grain}
-  {Boundaries}}, Journal of Applied Physics \textbf{27} (1956), no.~8,
-  900--904.
-
-\bibitem[Nit85]{nitsche_stationary_1985}
-Johannes C.~C. Nitsche, \emph{Stationary partitioning of convex bodies},
-  Archive for Rational Mechanics and Analysis \textbf{89} (1985), no.~1, 1--19.
-
-\bibitem[Ros08]{Ros_stabilityof}
-Antonio Ros, \emph{Stability of minimal and constant mean curvature surfaces
-  with free boundary}, Mat. Contemp (2008), 221--240.
-
-\bibitem[Sta96a]{stahl_convergence_1996}
-Axel Stahl, \emph{Convergence of solutions to the mean curvature flow with a
-  {Neumann} boundary condition}, Calculus of Variations and Partial
-  Differential Equations \textbf{4} (1996), no.~5, 421--441.
-
-\bibitem[Sta96b]{stahl_regularity_1996}
-\bysame, \emph{Regularity estimates for solutions to the mean curvature flow
-  with a {Neumann} boundary condition}, Calculus of Variations and Partial
-  Differential Equations \textbf{4} (1996), no.~4, 385--407.
-
-\end{thebibliography}

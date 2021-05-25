@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  19 FEB 2021 17:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  26 MAY 2021 01:21
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/draft/draft.tex
@@ -558,39 +558,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
                    \relax 
 l.103 	\]
           [1] [2] [3]
-Overfull \hbox (3.62354pt too wide) detected at line 203
+Overfull \hbox (3.62354pt too wide) detected at line 221
 []
  []
 
 
-Overfull \hbox (25.00003pt too wide) detected at line 203
+Overfull \hbox (25.00003pt too wide) detected at line 221
 []
  []
 
 [4]
-Overfull \hbox (103.63808pt too wide) detected at line 238
+Overfull \hbox (103.63808pt too wide) detected at line 256
 []
  []
 
 
-Overfull \hbox (25.00003pt too wide) detected at line 238
+Overfull \hbox (25.00003pt too wide) detected at line 256
 []
  []
 
 [5] [6] [7] [8] (c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.aux)
 Package rerunfilecheck Info: File `draft.out' has not changed.
-(rerunfilecheck)             Checksum: BAA89D88A4A1D18147A9C576D074A28D;326.
+(rerunfilecheck)             Checksum: BFD705B0411A2048A06906C9E8C5C82C;322.
  ) 
 Here is how much of TeX's memory you used:
  18994 strings out of 479697
  373506 string characters out of 2867132
- 680605 words of memory out of 3000000
+ 677604 words of memory out of 3000000
  35661 multiletter control sequences out of 15000+200000
  412030 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 94i,18n,98p,881b,517s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 94i,18n,98p,1275b,499s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.pdf (9 pages, 223917 bytes).
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\draft\draft.pdf (9 pages, 226447 bytes).
 PDF statistics:
  181 PDF objects out of 1000 (max. 8388607)
  33 named destinations out of 1000 (max. 500000)

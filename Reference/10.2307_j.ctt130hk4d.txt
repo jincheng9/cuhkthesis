@@ -1,0 +1,9 @@
+@book{10.2307/j.ctt130hk4d,
+ URL = {http://www.jstor.org/stable/j.ctt130hk4d},
+ abstract = {Kenneth Brakke studies in general dimensions a dynamic system of surfaces of no inertial mass driven by the force of surface tension and opposed by a frictional force proportional to velocity. He formulates his study in terms of varifold surfaces and uses the methods of geometric measure theory to develop a mathematical description of the motion of a surface by its mean curvature. This mathematical description encompasses, among other subtleties, those of changing geometries and instantaneous mass losses.Originally published in 1978.ThePrinceton Legacy Libraryuses the latest print-on-demand technology to again make available previously out-of-print books from the distinguished backlist of Princeton University Press. These paperback editions preserve the original texts of these important books while presenting them in durable paperback editions. The goal of the Princeton Legacy Library is to vastly increase access to the rich scholarly heritage found in the thousands of books published by Princeton University Press since its founding in 1905.},
+ author = {Kenneth A. Brakke},
+ publisher = {Princeton University Press},
+ title = {The Motion of a Surface by Its Mean Curvature. (MN-20)},
+ year = {1978}
+}
+

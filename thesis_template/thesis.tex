@@ -1,14 +1,22 @@
-\documentclass[12pt]{report}
+\documentclass[a4paper]{report}
+
+\usepackage[margin=1.575in]{geometry}
+
+%\usepackage[UTF8]{ctex}
+\usepackage{CJKutf8}
 
 \usepackage{graphics}
 \usepackage{thesis}
 \usepackage{latexsym}
 \usepackage[dvips]{epsfig}
+\usepackage{enumerate}
 %\usepackage{color}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{amsthm}
+\usepackage{thmtools}
+%\usepackage{amsrefs}
 %\usepackage{graphicx}
 %\usepackage[colorinlistoftodos]{todonotes}
 \usepackage[colorlinks,
@@ -18,14 +26,61 @@ citecolor=green
 ]{hyperref}
 \usepackage{tikz-cd}
 
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}
+\usepackage[backend=biber,url=false,isbn=false,doi=false,giveninits=true,date=year]{biblatex}
+
+\renewcommand*{\newunitpunct}{\addcomma}
+\renewcommand*{\newblockpunct}{\adddot\addspace}
+
+\AtEveryBibitem{\clearlist{language}}
+\renewbibmacro{in:}{}
+
+\renewbibmacro*{volume+number+eid}{%
+  \printfield{volume}%
+%  \setunit*{\adddot}%
+%  \printfield{number}%
+%  \setunit{\bibeidpunct}%
+%  \printfield{eid}
+}
+
+\renewbibmacro*{journal+issuetitle}{%
+  \usebibmacro{journal}%
+  \setunit*{\addspace}%
+  \iffieldundef{series}
+    {}
+    {\newunit
+     \printfield{series}%
+     \setunit{\addspace}}%
+  \usebibmacro{volume+number+eid}%
+  \setunit{\addspace}%
+  \usebibmacro{issue+date}%
+  \setunit{\addcomma\space}%
+  \usebibmacro{issue}%
+  \printfield{number}%NEW
+  \setunit{\addspace}%NEW
+  \newunit}
+
+\DeclareFieldFormat*{author}{#1\addcomma}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat
+  [article,inbook,incollection,inproceedings,patent,thesis,unpublished]
+  {title}{\mkbibitalic{#1}}
+\DeclareFieldFormat{journaltitle}{#1\isdot}
+\DeclareFieldFormat{booktitle}{#1\isdot}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\bibstring{number}\addnbspace #1}
+\addbibresource{MyLibrary.bib}
+
+\usepackage{shortmathj}
+\DeclareFieldFormat[article]{titlecase}{\shortifyAMSjournalname{#1}}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
 \newtheorem{cor}{Corollary}[theorem]
 \newtheorem{prop}[theorem]{Proposition}
 \newtheorem{conj}{Conjecture}
 \newtheorem{definition}{Definition}
 
-\newcommand*{\lemmaautorefname}{Lemma}
+%\newcommand*{\lemmaautorefname}{Lemma}
 
 \newcommand{\bigM}{\mathcal{M}}
 \newcommand{\N}{\mathbb{N}}
@@ -33,15 +88,15 @@ citecolor=green
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\R}{\mathbb{R}}
 \newcommand{\hp}{\mathbb{H}}
-\newcommand{\C}{\mathbb{C}}
+%\newcommand{\C}{\mathbb{C}}
 \newcommand{\bbu}{\mathbb{U}}
 
 \newcommand{\bigo}{\mathcal{O}}
 
 \newcommand{\E}{\mathcal{E}}
 \newcommand{\F}{\mathcal{F}}
-\newcommand{\G}{\mathcal{G}}
-\newcommand{\U}{\mathcal{U}}
+%\newcommand{\G}{\mathcal{G}}
+%\newcommand{\U}{\mathcal{U}}
 \newcommand{\V}{\mathcal{V}}
 \newcommand{\calH}{\mathcal{H}}
 \newcommand{\calQ}{\mathcal{Q}}
@@ -55,6 +110,14 @@ citecolor=green
 \newtheorem*{rem}{Remark}
 %\newtheorem*{note}{Note}
 
+%\pdfstringdefDisableCommands{%
+  %\def\\{}%
+  %\def\texttt#1{<#1>}%
+    %\def\({}%
+    %\def\){}%
+    %\def^{-}%
+%}
+
 \topmargin	0.0cm
 \textheight    21cm
 %\renewcommand{\arraystretch}{1.2}
@@ -63,12 +126,12 @@ citecolor=green
 \begin{document}
 
 %set double line spacing
-\linespread{2}
+\linespread{1.6}
 
 %cover page information
 
 \thesistitle{Convergence Theories of the Mean Curvature Flow}
-\authorname{WANG Yizi}
+\authorname{WANG, Yizi}
 \degree{Master of Philosophy}
 \programme{Mathematics}
 \supervisor{Prof. Li Man-chun, Martin}
@@ -94,7 +157,7 @@ citecolor=green
 
 %dedication
 
-\dedicationpage
+%\dedicationpage
 
 %=======================================================
 
@@ -131,8 +194,9 @@ citecolor=green
 
 \newpage
 \addcontentsline{toc}{chapter}{Bibliography}
-\bibliographystyle{amsalpha}
-\bibliography{My Library}
+%\bibliographystyle{amsplain}
+%\bibliography{MyLibrary}
+\printbibliography
 
 
 

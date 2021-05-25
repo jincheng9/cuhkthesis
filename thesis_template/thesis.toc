@@ -1,26 +1,49 @@
-\contentsline {chapter}{Abstract}{i}{Doc-Start}%
-\contentsline {chapter}{Acknowledgement}{ii}{chapter*.1}%
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
-\contentsline {section}{\numberline {1.2}Structure of the Thesis}{4}{section.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {1.2}Structure of the thesis}{5}{section.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Classical Results of the MCF}{6}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Maximum Principles and Preliminary Geometric Identities}{8}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Evolution Equations for Geometric Quantities}{14}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Preservation of the convexity and the pinching condition}{20}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Stampacchia's iteration}{22}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Convergence to a round point}{29}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Generalizations}{33}{section.2.6}%
-\contentsline {chapter}{\numberline {3}Free Boundary MCF in Riemannian Manifolds}{36}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Definitions and Notations}{37}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Covariant Formulation of the Mean Curvature Flow}{39}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Subbundles}{40}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Time-dependent Immersion}{43}{subsection.3.2.2}%
-\contentsline {section}{\numberline {3.3}Boundary Derivatives}{45}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Stampacchia's Iteration}{50}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Michael-Simon with free boundary}{51}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof}{55}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Boundary Integral Estimate}{57}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Higher $L^p$ bound}{60}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Iteration Scheme and the Uniform bound}{64}{subsection.3.4.5}%
-\contentsline {section}{\numberline {3.5}Conclusions and Directions for Future Research}{67}{section.3.5}%
-\contentsline {chapter}{Bibliography}{71}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Maximum principles and preliminary geometric identities}{7}{section.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Evolution equations for geometric quantities}{11}{section.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Preservation of convexity and the pinching condition}{15}{section.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Stampacchia's iteration}{16}{section.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.5}Convergence to a round point}{20}{section.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.6}Generalizations}{23}{section.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Free Boundary MCF in Riemannian Manifolds}{25}{chapter.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Definitions and notations}{26}{section.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Covariant formulation of the Mean Curvature Flow}{27}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Subbundles.}{27}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Time-dependent immersion.}{29}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Boundary derivatives}{30}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Stampacchia's iteration}{34}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Michael-Simon with free boundary.}{34}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof.}{37}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Boundary integral estimate.}{38}{subsection.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Higher \(L^p\) bound.}{40}{subsection.3.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.5}Iteration scheme and the uniform bound.}{42}{subsection.3.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Conclusions and directions for future research}{45}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Bibliography}{47}{section.3.5}%

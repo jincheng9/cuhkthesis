@@ -3,12 +3,13 @@
 
 \chapter{Classical Results of the MCF}
 
+This chapter outlines a general methodology proposed by Huisken~\cite{huisken_flow_1984} for proving the convergence of surfaces to a round point. Following the similar idea, mathematicians~\cite{andrews_mean_2010,liu2012mean,hirsch2020contracting} has generalized the convergence theorem to different conditions. Therefore, it is essential to review Huisken’s~\cite{huisken_flow_1984} classical arguments and capture the idea behind.
 
-Throughout this section, we let $M$ be a compact uniformly convex $n$-dimensional surface smoothly embedded in $\R^{n+1}$. Then $M$ can be represented by the following local diffeomorphism:
+Throughout this chapter, we let $M$ be a compact uniformly convex $n$-dimensional surface smoothly embedded in $\R^{n+1}$. Any such $M$ can be represented locally by the following diffeomorphism:
 \[
 	F: U \subset \R^n \rightarrow M \subset \R^{n+1}.
 \]
-Then the metric $g= \left\{ g_{ij} \right\}  $ and the second fundamental form $A= \left\{ h_{ij} \right\}  $ at $F(\vec{x}) \in M$ can be written as
+The metric $g= \left\{ g_{ij} \right\}  $ and the second fundamental form $A= \left\{ h_{ij} \right\}  $ at $F(\vec{x}) \in M$ can be written as
 \[
 	g_{ij}(\vec{x})=\left( \frac{\partial F(\vec{x})}{\partial x_i}, \frac{\partial F(\vec{x})}{\partial x_j} \right) ,\quad h_{ij}(\vec{x})=\left( -\nu (\vec{x}), \frac{\partial^2 F(\vec{x})}{\partial x_i \partial x_j} \right)
 \]
@@ -16,7 +17,7 @@ where $\nu (\vec{x}) \in \R^{n+1}$ is the outward normal to $M$ at $F(\vec{x})$ 
 \[\Gamma_{\ ij}^{k} =\frac{1}{2}g_{ }^{kl} \left( g_{ il,j}^{} +g_{ jl,i}^{} - g_{ij ,l}^{}  \right) \]
 where $g_{ij ,k}=\frac{\partial }{\partial x_{k}} g_{ij}$. For a vector field $X=X^i \frac{\partial }{\partial x_{i}} $ on $M$, the covariant derivative of $X$ is \[\left( \nabla_{i}^{} X \right) ^j=\frac{\partial }{\partial x_{i}} X^j + \Gamma_{\ ik}^{j} X^k.\]
 The Riemann curvature tensor on $M$ is defined as 
-\[R_{ijkl}= \left< (\nabla_{i}^{} \nabla_{j}^{} -\nabla_{j}^{} \nabla_{i}^{}) \frac{\partial }{\partial x_{k}} , \frac{\partial }{\partial x_{k}}  \right> \] where $\left\langle  \cdot , \cdot \right\rangle $ is the inner product for tensors on $M$ induced from $g$. By the Gauss' equation, we have that \[R_{ijkl}=h_{ik}h_{jl }^{}-h_{ il}^{} h_{ jk}^{} . \] The Ricci tensor and scalar curvature are thus given by
+\[R_{ijkl}= \left< (\nabla_{i}^{} \nabla_{j}^{} -\nabla_{j}^{} \nabla_{i}^{}) \frac{\partial }{\partial x_{k}} , \frac{\partial }{\partial x_{l}}  \right> \] where $\left\langle  \cdot , \cdot \right\rangle $ is the inner product for tensors on $M$ induced from $g$. By Gauss equation, we have that \[R_{ijkl}=h_{ik}h_{jl }^{}-h_{ il}^{} h_{ jk}^{} . \] The Ricci tensor and scalar curvature are thus given by
 \[R_{ik}=Hh_{ik}-h_{ i}^{\ j} h_{ jk}^{} , \quad R=H^2-\left| A \right| ^2\]
 where $H=g^{ij}h_{ij}$, $\left| A \right| ^2=h^{ij}h_{ij}$ and the metric tensor $g$ is used to raise or lower indices.
 
@@ -27,11 +28,11 @@ Now we denote $M$ by $M_0$ and $F$ by $F_0$. We say a family of maps $F(\cdot , 
 \end{align*}
 where $H(\vec{x},t)$ is the mean curvature on $M_t$.
 
-\section{Maximum Principles and Preliminary Geometric Identities}
+\section{Maximum principles and preliminary geometric identities}
 
-Parabolic maximum principles are essential PDE tools in the analysis of mean curvature flow. We will briefly introduce two frequently used versions in this section. One is the standard parabolic maximum principle for scalar functions. The other is the parabolic maximum principle for symmetric two-tensors.
+Parabolic maximum principles are essential PDE tools in the analysis of mean curvature flow. We will briefly introduce two frequently used versions in this section. One is the standard parabolic maximum principle for scalar functions.
 
-\begin{theorem} \label{thm:MPP}[Strong maximum principle for parabolic equations]
+\begin{theorem}[{\cite[p.397]{evans_partial_2010}}] \label{thm:MPP}
 	Let $M$ be a closed smooth manifold and $f: M \times [0,T) \to \R$ be a scalar function on $M$ varying along time $t$. Suppose $f (\cdot,0) \geq 0$ and
 	\[
 		\frac{\partial f}{\partial t} \geq \Delta f + b^{i} \nabla_{i}^{} f+ cf
@@ -40,10 +41,11 @@ Parabolic maximum principles are essential PDE tools in the analysis of mean cur
 	\[\min _M f (\cdot,t) \geq \min _M f (\cdot,0).\]
 	Furthermore, if there exist some $p \in M$ and $t_0 \geq 0$ such that $f(p,t_0)=\min _M f (\cdot,0) $, then $f \equiv \min _M f (\cdot,0)$ for $0 \leq t \leq t_0.$
 \end{theorem}
+Later we will see that the mean curavture of the evolving hypersurface satisfies such a parabolic inequality. By the strong maximum principle, we have that the positivity of $H$ is preserved along the flow.
 
-Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tensor on a closed manifold $M$. We say $M_{ij }^{} \geq 0 $ if for any vector $X$ on $M$, $M_{ij }^{} X^i X^j \geq 0$. Let $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$ be another symmetric tensor formed by contracting $M_{ij }^{} $ with itself using the metric where $p$ is a polynomial. Then we have the following verison of the maximum principle:
+In order to study the evolution of tensors such as the second fundamental form, we extend the scalar maximum principle to tensors. Let $M_{ij}$ be a symmetric tensor on a closed manifold $M$. We say $M_{ij }^{} \geq 0 $ if for any vector $X$ on $M$, $M_{ij }^{} X^i X^j \geq 0$. Let $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$ be another symmetric tensor formed by contracting $M_{ij }^{} $ with itself using the metric where $P$ is a polynomial. Then we have the following strong maximum principle for symmetric two-tensors.
 
-\begin{theorem}[Strong maximum principle for symmetric two-tensors] \label{thm:MP2T}
+\begin{theorem}[{\cite[Theorem 4.6]{chow_ricci_2004}}] \label{thm:MP2T}
 	Suppose $M_{ij }^{} $ is a symmetric tensor on a closed manifold $M$ depending on time $t$ and on $0 \leq t < T$ satisfies that \[\frac{\partial }{\partial t} M_{ij }^{} = \Delta M_{ij }^{} + u^k \nabla_{k}^{} M_{ij }^{} + N_{ij }^{} \] where $u^k$ is a vector on $M$ and $N_{ij }^{} $ is defined as above such that 
 	\[
 		N_{ij }^{} X^i X^j \geq 0 \text{   whenever  } M_{ij }^{} X^j =0.
@@ -53,34 +55,32 @@ Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tens
 
 \begin{proof}
 	Let $\delta >0$ be a constant depending only on $\max \left| M_{ij }^{}  \right| $.
-	Set \[\tilde{M}_{ij }^{}  = M_{ij }^{} + \epsilon (\delta +t) g_{ij}^{} \] for some $\epsilon >0$. Now it suffices to show that $\tilde{M}_{ij }^{} >0$ on $0 \leq t \leq \delta $ for all $\epsilon >0$.
-	Suppose for contradiction that the above assertion is not true. Then there exists $t_0 \in (0,\delta ]$ and a unit vector $X^i $ at $x_0 \in M$ such that $\tilde{M}_{ij }^{} X^j=0$ for all $i$  at $x_0$. Note that $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$, we set $\tilde{N_{ij }^{} }=P(\tilde{M}_{ij }^{} , g_{ij }^{} )$. By the assumption, since $\tilde{M}_{ij }^{} X^j=0$, we have that $\tilde{N_{ij }^{}} X^i X^j \geq 0$. Then at $(x_0,t_0)$, 
-
+	Set \[\tilde{M}_{ij }^{}  = M_{ij }^{} + \epsilon (\delta +t) g_{ij}^{} \] for some $\epsilon >0$. We claim that $\tilde{M}_{ij }^{} >0$ on $0 \leq t \leq \delta $ for all $\epsilon >0$. It suffices to prove the claim because we can split the interval $[0,T]$ into small intervals with length less that $\delta$ and let $\epsilon \to 0$.
+	
+	Suppose the claim were not true. Then $\tilde{M}_{ij }^{}$ has null eigenvectors for a first time $t_0 \in (0,\delta ]$ at $x_0 \in M_{t_0}$. Let $X^i$ be a unit null eigenvector of $\tilde{M}_{ij }^{}$ at $x_0 \in M$. We set $\tilde{N}_{ij }^{} =P(\tilde{M}_{ij }^{} , g_{ij }^{} )$. Note that $N_{ij }^{} = P(M_{ij }^{} , g_{ij}^{} )$ have the property that  $\tilde{N}_{ij }^{} Y^i Y^j \geq 0$ whenever $Y$ is a null eigenvector of $M_{ij }^{} $. Since $X^i$ is a unit null eigenvector of $\tilde{M}_{ij }^{}$, we have that $\tilde{N}_{ij }^{} X^i X^j \geq 0$. Then at $(x_0,t_0)$, 
 	\begin{equation*}
 	\begin{split}
 		N_{ij }^{} X^i X^j
-	&= \tilde{N_{ij }^{}} X^i X^j + (N_{ij }^{} - \tilde{N_{ij }^{}}) X^i X^j\\
-	& \geq (N_{ij }^{} - \tilde{N_{ij }^{}}) X^i X^j\\
-	& \geq -\left| N_{ij }^{} - \tilde{N_{ij }^{}} \right|.
+	&= \tilde{N}_{ij }^{} X^i X^j + (N_{ij }^{} - \tilde{N}_{ij }^{}) X^i X^j\\
+	& \geq (N_{ij }^{} - \tilde{N}_{ij }^{}) X^i X^j\\
+	& \geq -\left| N_{ij }^{} - \tilde{N}_{ij }^{} \right|.
 	\end{split}
 	\end{equation*}
 
-	Since $P$ is a polynomial, we have that \[\left| N_{ij }^{} - \tilde{N_{ij }^{}} \right| \leq C \left| M_{ij }^{} - \tilde{M_{ij }^{}} \right|\] where $C$ is a constant depending only on $\max \left| M_{ij }^{}  \right| $ if we keep $\epsilon , \delta \leq 1$. Hence as $t_0 \leq \delta $,
-
-	\begin{equation}
+	Since $P$ is a polynomial, we have that \[\left| N_{ij }^{} - \tilde{N}_{ij }^{} \right| \leq C \left| M_{ij }^{} - \tilde{M_{ij }^{}} \right|\] where $C$ is a constant depending only on $\max \left| M_{ij }^{}  \right| $ if we keep $\epsilon , \delta \leq 1$. Hence as $t_0 \leq \delta $,
+	\begin{equation*}
 	\begin{split}
 		N_{ij }^{} X^i X^j 
 		& \geq -C \left| M_{ij }^{} - \tilde{M_{ij }^{}} \right|\\
 		&= -C \left| \epsilon (\delta + t_0) g_{ij }^{}  \right|\\
 		& \geq -2C \epsilon \delta.
 	\end{split}
-	\end{equation}
+	\end{equation*}
 
 	Let $f=\tilde{M}_{ij }^{} X^i X^j$. Observe that $f ( x_0,t) > 0 $ for $t<t_0$ and $f ( x_0,t_0) =0$ which imply that $\frac{\partial }{\partial t} f \leq 0$ for $t<t_0$. At $t=t_0$, we see that $f=0$ attains a minimum at $x_0$. Hence $\nabla f=0$ and $\Delta f \geq 0$ at $( x_0,t_0) $.
 
 	We can extend the vector $X^i$ to a parallel vector field in a neighborhood of $x_0$ along geodesics passing $x_0$ and define $X^i$ on $[0,t_0]$ independent of $t$.
 	Then we have that
-	
 	\begin{align*}
 		\frac{\partial }{\partial t} f&=(\frac{\partial }{\partial t} \tilde{M}_{ij }^{}) X^i X^j\\
 		\nabla_k f&= (\nabla_k \tilde{M}_{ij }^{}) X^i X^j = (\nabla_k M_{ij }^{} )X^i X^j\\
@@ -102,10 +102,10 @@ Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tens
 	Then contradiction arises when $2c \delta <1.$ 
 \end{proof}
 
-To apply the maximum principles, we need the following Simon's identity to rewrite the evolution equation of the second fundamental form to a parabolic PDE.
+To apply the maximum principles, we need the following Simons' identity to rewrite the evolution equation of the second fundamental form as a parabolic PDE.
 
 \begin{lemma}
-	[Simon's identity] \label{simon}
+	[Simons' identity] \label{simon}
 	\[\Delta h_{ij}^{} = \nabla_{i}\nabla_{j} H + H h_{li}^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} \]
 \end{lemma}
 
@@ -124,14 +124,14 @@ To apply the maximum principles, we need the following Simon's identity to rewri
 \end{proof}
 
 
-\section{Evolution Equations for Geometric Quantities}
+\section{Evolution equations for geometric quantities}
 
 
-Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{x} \in U$, we have that geometric quantities on $F(\vec{x},t) \in M_t$ are also evolving under time $t$. By the flow equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ for $F$, we can derive evolution equations for other geometric quantities.
+Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{x} \in U$, we have that geometric quantities at $F(\vec{x},t) \in M_t$ are also evolving under time $t$. By the flow equation $\frac{\partial }{\partial t} F(\vec{x},t)=-H(\vec{x},t) \cdot \nu (\vec{x},t)$ for $F$, we can derive evolution equations for other geometric quantities.
 
-\begin{lemma}
+\begin{lemma}[{\cite[Section 3]{huisken_flow_1984}}]
 	The following evolution equations hold.
-	\begin{enumerate}
+	\begin{enumerate}[\normalfont(1)]
 
 		\item $\frac{\partial }{\partial t} g_{ij}=-2Hh_{ij}$
 		\item $\frac{\partial }{\partial t} g^{ij}=2Hh^{ij}$
@@ -142,16 +142,17 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 	\end{enumerate}
 \end{lemma}
 
-\begin{proof}
-	\begin{enumerate}
+\begin{proof}\leavevmode
+	\begin{enumerate}[\normalfont(1)]
 		\item Since $\left( \nu ,\frac{\partial F}{\partial x_{i}}  \right) =0$, by the product rule, we have that
 		      \begin{equation*}
 			      \begin{split}
 				      \frac{\partial }{\partial t} g_{ij}^{}
 				      & = \frac{\partial }{\partial t} \left( \frac{\partial F(\vec{x},t) }{\partial x_{i}} , \frac{\partial F(\vec{x},t) }{\partial x_{j }}  \right)                                                                                                               \\
-				      & = \left( \frac{\partial }{\partial x_{i}} (-H (\vec{x},t) \cdot \nu (\vec{x},t)) , \frac{\partial F}{\partial x_{j}} ) \right) + \left( \frac{\partial F}{\partial x_{i}}, \frac{\partial }{\partial x_{j}} (-H (\vec{x},t) \cdot \nu (\vec{x},t))  \right) \\
+				      & = \left( \frac{\partial }{\partial x_{i}} (-H (\vec{x},t) \cdot \nu (\vec{x},t)) , \frac{\partial F}{\partial x_{j}} ) \right) \\
+					  & \quad + \left( \frac{\partial F}{\partial x_{i}}, \frac{\partial }{\partial x_{j}} (-H (\vec{x},t) \cdot \nu (\vec{x},t))  \right) \\
 				      & = -H(\left( \frac{\partial \nu }{\partial x_{i}} , \frac{\partial F}{\partial x_{j}}  \right) + \left( \frac{\partial F}{\partial x_{i}} , \frac{\partial \nu }{\partial x_{j}}  \right) )                                                                  \\
-				      & = -2H h_{ij}^{}
+				      & = -2H h_{ij}^{}.
 			      \end{split}
 		      \end{equation*}
 		\item Since $g_{km}^{} g_{}^{mj} = \delta_{k}^{j} $, we have that
@@ -162,14 +163,14 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 			      g_{}^{ik} g_{km}^{} \frac{\partial g_{}^{mj} }{\partial t}                                          & =g_{}^{ik} 2H h_{km}^{} g_{}^{mj} \\
 			      \frac{\partial }{\partial t} g_{}^{ij}                                                              & = 2H h_{}^{ij}.
 		      \end{align*}
-		\item Since $\left| \nu \right| =1$ is fixed, we have that $\frac{\partial \nu }{\partial t} $ lies in the tangent space of the surface. Hence we can assume that $\frac{\partial \nu }{\partial t} = V^i \frac{\partial F}{\partial x_{i}} \in \R^{n+1}$ where $V^i$ can be determined by the following identity \[\left( \frac{\partial \nu }{\partial t} ,\frac{\partial F}{\partial x_{j}}  \right) = g_{ij}^{} V^i\]. Thus, we have that
+		\item Since $\left| \nu \right| =1$ is fixed, we have that $\frac{\partial \nu }{\partial t} $ lies in the tangent space of the surface. Hence we can assume that $\frac{\partial \nu }{\partial t} = V^i \frac{\partial F}{\partial x_{i}} \in \R^{n+1}$ where $V^i$ can be determined by the following identity \[\left( \frac{\partial \nu }{\partial t} ,\frac{\partial F}{\partial x_{j}}  \right) = g_{ij}^{} V^i.\] Thus, we have that
 		      \begin{equation*}
 			      \begin{split}
 				      \frac{\partial \nu }{\partial t} &=g_{}^{ij} \left( \frac{\partial \nu }{\partial t} ,\frac{\partial F}{\partial x_{j}}  \right) \cdot \frac{\partial F}{\partial x_{i}} \\
 				      &= -g_{}^{ij} \left( \nu  ,\frac{\partial }{\partial t} \frac{\partial F}{\partial x_{j}}  \right) \cdot \frac{\partial F}{\partial x_{i}} \\
 				      &= g_{}^{ij} \left( \nu  , \frac{\partial }{\partial x_{j}} (H (\vec{x},t) \cdot \nu (\vec{x},t) ) \right) \cdot \frac{\partial F}{\partial x_{i}} \\
-				      &= g_{}^{ij} \frac{\partial }{\partial x_{j}} H \frac{\partial F}{\partial x_{i}} \\
-				      &=\nabla H
+				      &= g_{}^{ij} \frac{\partial H}{\partial x_{j}}  \frac{\partial F}{\partial x_{i}} \\
+				      &=\nabla H.
 			      \end{split}
 		      \end{equation*}
 		\item By the Gauss-Weingarten relations, we have that
@@ -183,12 +184,12 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 		      \begin{equation*}
 			      \begin{split}
 				      \frac{\partial }{\partial t} h_{ij}^{}  &= -\frac{\partial }{\partial t} \left( \nu , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}} \right)  \\
-				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}}  \right) + \left( \nu , \frac{\partial^2 }{\partial x_{i} \partial x_{j}} (H \cdot \nu ) \right) \\
-				      &= -\left( g_{}^{pq } \frac{\partial }{\partial x_{p}} H \frac{\partial F}{\partial x_{q}} , \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu  \right)\\
+				      &= -\left( g_{}^{pq } \frac{\partial H}{\partial x_{p}}  \frac{\partial F}{\partial x_{q}} , \frac{\partial^2 F}{\partial x_{i} \partial x_{j}}  \right) + \left( \nu , \frac{\partial^2 }{\partial x_{i} \partial x_{j}} (H \cdot \nu ) \right) \\
+				      &= -\left( g_{}^{pq } \frac{\partial H}{\partial x_{p}}  \frac{\partial F}{\partial x_{q}} , \Gamma_{\ ij}^{k} \frac{\partial F}{\partial x_{k}} -h_{ij}^{} \nu  \right)\\
 					  &\quad+ \frac{\partial }{\partial x_{j}} \left( \nu , \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) - \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, \frac{\partial }{\partial x_{i}} (H \cdot \nu ) \right) \\
 				      &= -g_{}^{pq } \frac{\partial H}{\partial x_{q}} \Gamma_{\ ij}^{k} g_{pk}^{} + \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} \\
 					  &\quad-H \cdot \left( h_{jl}^{} g_{}^{lm } \frac{\partial F}{\partial x_{m}}, h_{il'}^{} g_{}^{l'm' } \frac{\partial F}{\partial x_{m'}} \right) \\
-				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}
+				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}.
 			      \end{split}
 		      \end{equation*}
 		      Since $H$ is a scalar function, we have that \[\nabla_{i}\nabla_{j} H = \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}}\] where $\nabla $ is the Levi-Civita connection on $M_t$. 
@@ -198,7 +199,7 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 			      \begin{split}
 				      \frac{\partial }{\partial t} h_{ij}^{}
 				      &= \frac{\partial^2 H}{\partial x_{i} \partial x_{j}} - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{} \\
-				      &= \Delta h_{ij}^{} -( H h_{li }^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} ) - \Gamma_{\ ij}^{q} \frac{\partial H}{\partial x_{q}} - H h_{j}^{m} h_{i}^{n} g_{mn }^{}\\
+				      &= \Delta h_{ij}^{} -( H h_{li }^{} g_{}^{lm } h_{mj}^{} - \left| A \right| ^2 h_{ij}^{} ) - H h_{j}^{m} h_{i}^{n} g_{mn }^{}\\
 				      &= \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}.
 			      \end{split}
 		      \end{equation*}
@@ -227,7 +228,7 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 				      \frac{\partial }{\partial t} \left| A \right| ^2
 				      &= \frac{\partial }{\partial t}  (h_{i}^{\ j} h_{\ j}^{i}) \\
 				      &= (\Delta h_{i}^{\ j} + \left| A \right| ^2 h_{i}^{\ j})h_{\ j}^{i} + h_{i}^{\ j}(\Delta h_{\ j}^{i} + \left| A \right| ^2 h_{\ j}^{i})\\
-				      &= 2(h_{}^{ij} \Delta h_{ij}^{} + \left| A \right| ^4)\\
+				      &= 2(h_{}^{ij} \Delta h_{ij}^{} + \left| A \right| ^4).\\
 			      \end{split}
 		      \end{equation*}
 		      Since the connection $\nabla $ is compatible with the metric $g$, we have that
@@ -250,7 +251,8 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 		      \end{equation*}
 	\end{enumerate}
 \end{proof}
-\section{Preservation of the convexity and the pinching condition}
+\section{Preservation of convexity and the pinching condition}
+Combining the maximum principles and the evolution equations, we can prove the following two theorems in~\cite[Section 4]{huisken_flow_1984}.
 \begin{theorem}
 	If $h_{ij}^{} \geq 0 $ at $t=0,$ then it remains so for $0 \leq t < T.$ 
 \end{theorem}
@@ -261,7 +263,7 @@ Since the embedding map $F$ is evolving under time $t$, if we fix a point $\vec{
 	\[N_{ij }^{} X^j = \left| A \right| ^2 (h_{ij }^{} X^j) - 2 H h_{li }^{} g_{}^{lm } (h_{mj}^{}X^j)=0.\]
 	Hence we can apply \autoref{thm:MP2T} to conclude.
 \end{proof}
-We can in fact prove a stronger version of the theorem above.
+
 \begin{theorem} \label{stpin}
 	If $\epsilon H g_{ij }^{} \leq h_{ij }^{} \leq \beta H g_{ij }^{} ,$ and $H \geq 0$ at $t=0,$ then it remains true for $t>0$.
 \end{theorem}
@@ -272,7 +274,7 @@ We can in fact prove a stronger version of the theorem above.
 	\begin{split}
 		\frac{\partial }{\partial t} M_{ij }^{}  
 	&= \frac{\partial }{\partial t} h_{ij }^{} -\epsilon (\frac{\partial }{\partial t} H) g_{ij }^{} - \epsilon H \frac{\partial }{\partial t} g_{ij }^{}  \\
-	&= \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}-\epsilon g_{ij }^{} (\delta H+ \left| A \right| ^2 H)-\epsilon H(-2H h_{ij }^{} )\\
+	&= \Delta h_{ij}^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{} + \left| A \right| ^2 h_{ij}^{}-\epsilon g_{ij }^{} (\Delta H+ \left| A \right| ^2 H)-\epsilon H(-2H h_{ij }^{} )\\
 	&= \Delta M_{ij }^{} + \left| A \right| ^{2}h_{ij }^{} + 2 \epsilon H^2 h_{ij }^{} - \epsilon \left| A \right| ^2 H g_{ij }^{} - 2 H h_{li }^{} g_{}^{lm } h_{mj}^{}.
 	\end{split}
 	\end{equation*}
@@ -307,12 +309,12 @@ One key step for proving that $M$ converges to a round point is to show that the
 
 The rationale behind is that
 \[\left| A \right| ^2-\frac{1}{n}H^2=\frac{1}{n}\sum_{i<j}^{n}(\kappa _i-\kappa _j)^2\]
-measures the sum of distances between eigenvalues $\kappa _i$ of the second fundamental form $A$. 
+measures the sum of differences between eigenvalues $\kappa _i$ of the second fundamental form $A$. 
 
-An iteration scheme named Stampacchia's iteration is used to reach the goal. In this section, we introduce the general idea for Stampacchia's iteration.
+An iteration scheme known as Stampacchia's iteration is used to reach the goal. In this section, we introduce the general idea for Stampacchia's iteration.
 
-The principal components of Stampacchia's iteration are the following algebraic lemma and a version of the Sobolev inequality from \cite{michael_sobolev_1973}:
-\begin{lemma} \label{SIalg}
+The principal components of Stampacchia's iteration are the following algebraic lemma by Stampacchia~\cite{SJL_1963-1964___3_1_0} and a version of the Sobolev inequality by Michael and Simon~\cite{michael_sobolev_1973}.
+\begin{lemma}[{\cite[Lemma 4.1]{SJL_1963-1964___3_1_0}}] \label{SIalg}
 	Let $f : [\bar{x},\infty) \to \R$ be a non-negative and non-increasing function. Suppose for $C>0, p>0$ and $\gamma >1,$ 
 	\[ (y-x)^{p}f(y) \leq Cf(x)^{\gamma }, \quad y \geq x \geq \bar{x}.\] 
 	Then $f(y)=0$ for $y \geq \bar{x} + d$ where $d^p=C f(\bar{x})^{\gamma -1}2^{\frac{p \gamma }{\gamma -1}}$ 
@@ -346,16 +348,16 @@ The principal components of Stampacchia's iteration are the following algebraic 
 	It follows that $\lim_{n \to \infty} g(x_n)=0$. By continuity of $g$, we have that $g(y)=0.$ Therefore, $f(y)=0.$  
 \end{proof}
 
-\begin{lemma} \label{MSeu}
+\begin{lemma}[{\cite[Theorem 2.1]{michael_sobolev_1973}}] \label{MSeu}
     Let $v$ be a Lipschitz function on $M$. Then
-    \[\left( \int_{M}^{}\left| v \right| ^{\frac{n}{n-1}} d \mu  \right)^{n-\frac{1}{n}} \leq c(n)\int_{M}^{} \left| \nabla v \right| + H \left| v \right|  d \mu. \]
+    \[\left( \int_{M}^{}\left| v \right| ^{\frac{n}{n-1}} d \mu  \right)^{\frac{n-1}{n}} \leq c(n)\int_{M}^{} \left| \nabla v \right| + H \left| v \right|  d \mu. \]
 \end{lemma}
 
 The geometric quantity we aim to bound is 
-\[f_\sigma = \left( \left| A \right| ^2-\frac{1}{n}H^2 \right) H^{2-\sigma} = \left( \frac{\left| A \right| ^2}{H^2}-\frac{1}{n} \right) H^{\sigma} \]
+\[f_\sigma = \left( \left| A \right| ^2-\frac{1}{n}H^2 \right) H^{\sigma-2} = \left( \frac{\left| A \right| ^2}{H^2}-\frac{1}{n} \right) H^{\sigma} \]
 for sufficient small $\sigma >0$.
 
-Since $M$ is uniformly convex, by \autoref{stpin}, we have that $\epsilon H g_{ij }^{} \leq h_{ij }^{} \leq \beta H g_{ij }^{} ,$ and $H \geq 0$ for any $t>0$.  Combining previous evolution equations, we can deduce that
+Since $M$ is uniformly convex, by \autoref{stpin}, we have that $\epsilon H g_{ij }^{} \leq h_{ij }^{} \leq \beta H g_{ij }^{} ,$ and $H \geq 0$ for any $t>0$.  Combining previous evolution equations, we can deduce as in~\cite[Corollary 5.3]{huisken_flow_1984} that
 \begin{equation} \label{evof}
     \frac{\partial }{\partial t} f_\sigma \leq \Delta f_\sigma + \frac{2(1-\sigma )}{H}\left\langle \nabla _i H, \nabla_{i}^{} f_\sigma  \right\rangle - \epsilon ^2 \frac{1}{H^{2-\sigma }}\left| \nabla H \right| ^2+\sigma \left| A \right| ^2 f_\sigma
 \end{equation}
@@ -363,61 +365,61 @@ for all $0 \leq t < T$ and $\sigma >0$.
 
 Applying integration by parts and Peter-Paul inequality, we have the following Poincare-like inequality for $f_\sigma $.
 
-\begin{lemma}
+\begin{lemma}[{\cite[Lemma 5.4]{huisken_flow_1984}}]
     Let $p \geq 2$. For any $0 < \sigma \leq \frac{1}{2}$ and any $\eta >0$, we have that 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         n \epsilon ^2 \int_{}^{}f_{\sigma }^{p} H^2d \mu \leq& \left( 2 \eta p+5 \right) \int_{}^{}\frac{1}{H^{2-\sigma }}\left| \nabla H \right| ^2 d \mu  \\
     &+ \eta ^{-1}\left( p-1 \right) \int_{}^{}f_{\sigma }^{p-2} \left| f_{\sigma }^{}  \right| ^2 d \mu .  \\
     \end{split}
-    \end{equation} 
+    \end{equation*} 
 \end{lemma}
 
-For a positive constant $k$, we let $f_{\sigma ,k}^{} =(f_{\sigma }^{} -k)_+$, $A(k)=\left\{ f_{\sigma }^{} \geq k \right\} $ and $A(k,t)=A(k)\cap M_t.$ Integration by parts also yields the following evolution-like inequality.
+For a positive constant $k$, we let $f_{\sigma ,k}^{} =(f_{\sigma }^{} -k)_+$, $A(k)=\left\{ f_{\sigma }^{} \geq k \right\} $ and $A(k,t)=A(k)\cap M_t.$ Following Huisken's idea in~\cite[Lemma 5.5]{huisken_flow_1984},we can further derive a evolution-like inequality for $f_{\sigma ,k}$.
 
 \begin{lemma}
     Let $p \geq 2$. For any $0<\sigma <1 $, we have that 
-    \begin{equation}
+    \begin{equation*}
         \begin{split}
             \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
         \leq&  -\frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu\\
         & -p\left( \epsilon ^2-\frac{2}{p-1} \right)\int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} d \mu  \\
         & - \int_{}^{}H^2 f_{\sigma,k }^{p} d \mu +\sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .
         \end{split}
-        \end{equation} 
+        \end{equation*} 
 \end{lemma}
 
 \begin{proof}
     The idea is to multiply both sides of \autoref{evof} by $p f_{\sigma ,k}^{p-1} $ and integrate by parts over $M_t$.
     For the left-hand side, we have that 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \int_{}^{} p f_{\sigma ,k}^{p-1} \frac{\partial }{\partial t} f_{\sigma }^{} d \mu  
     &= \int_{}^{}\frac{\partial }{\partial t} f_{\sigma ,k}^{p} d \mu  \\
     &= \frac{\partial }{\partial t} \int_{}^{} f_{\sigma ,k}^{p} d \mu - \int_{}^{} f_{\sigma ,k}^{p} \frac{\partial }{\partial t} (d \mu) \\
     &= \frac{\partial }{\partial t} \int_{}^{} f_{\sigma ,k}^{p} d \mu + \int_{}^{}H^2 f_{\sigma ,k}^{p} d \mu . 
     \end{split}
-    \end{equation}
+    \end{equation*}
     For the right-hand side, 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \int_{}^{} p f_{\sigma ,k}^{p-1} \Delta f_{\sigma }^{} d \mu  
     &=  -p(p-1)\int_{}^{}f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2\\
     \end{split}
-    \end{equation} 
+    \end{equation*} 
     and $ \left| A \right| ^2 \leq H^2, \left\langle \nabla _i H, \nabla_{i}^{} f_\sigma  \right\rangle \leq \left| \nabla H \right| \left| \nabla f_{\sigma }^{}  \right| .$ 
     It follows that 
     \[f_{\sigma ,k}^{} \leq f_{\sigma }^{} = \left( \left| A \right| ^2-\frac{1}{n}H^2 \right) H^{\sigma-2} \leq H^{\sigma } \]
     and for $0<\sigma <1, p \geq 2$ 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \frac{2(1-\sigma )}{H}f_{\sigma,k }^{} \left| \nabla H \right| \left| \nabla f_{\sigma }^{}  \right| 
     &\leq \frac{p-1}{2} \left| \nabla f_{\sigma }^{}  \right|^2 + \frac{2}{p-1} \frac{\left| \nabla H \right| ^2 f_{\sigma ,k}^{2} }{H^2}  \\
     & \leq \frac{p-1}{2} \left| \nabla f_{\sigma }^{}  \right|^2 + \frac{2}{p-1} \frac{\left| \nabla H \right| ^2 }{H^{2-\sigma }} f_{\sigma ,k}^{}   \\
     \end{split}
-    \end{equation} 
+    \end{equation*} 
     Hence
-    \begin{equation}
+    \begin{equation*}
         \begin{split}
             \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
             &+ p(p-1)\int_{}^{}f_{\sigma,k }^{p-2} \left| \nabla f_\sigma  \right| ^2 d \mu \\
@@ -426,16 +428,16 @@ For a positive constant $k$, we let $f_{\sigma ,k}^{} =(f_{\sigma }^{} -k)_+$, $
         \leq & \frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu + 2 \frac{p}{p-1} \int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} \\
         &+ \sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .  \\
         \end{split}
-        \end{equation}
+        \end{equation*}
     Therefore,
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \frac{\partial }{\partial t}\int_{}^{}f_{\sigma,k }^{p} d \mu 
     \leq&  -\frac{1}{2} p(p-1) \int_{}^{} f_{\sigma ,k}^{p-2} \left| \nabla f_{\sigma }^{}  \right| ^2 d \mu\\
     & -p\left( \epsilon ^2-\frac{2}{p-1} \right)\int_{}^{} f_{\sigma ,k}^{p-1} \frac{\left| \nabla H \right| ^2}{H^{2-\sigma }} d \mu  \\
     & - \int_{}^{}H^2 f_{\sigma,k }^{p} d \mu +\sigma p \int_{A(k,t)}^{} H ^2  f_{\sigma }^{p} d \mu .
     \end{split}
-    \end{equation} 
+    \end{equation*} 
 \end{proof}
 
 Now we have established two inequalities for the function $f_{\sigma }^{} $. Notice that any compact hypersurface $M$ in $\R^{n+1}$ can be enclosed by a sphere which shrinks to a point under the MCF in finite time. From the avoidance principle, we have that the maximal time $T< \infty $. Then by \autoref{stamit}, the general iteration scheme we are going to derive in the later chapter, we can bound $f_{\sigma }^{} $ uniformly for all times $t \in [0,T)$, which proves $\autoref{PinEs}$. 
@@ -444,11 +446,11 @@ Now we have established two inequalities for the function $f_{\sigma }^{} $. Not
 
 A general argument from Huisken implies that $M_t$ exists on a maximal time interval $t \in [0,T)$ where $T<\infty $ and $\max_{M_t}\left| A \right| ^2 $ becomes unbounded as $t \to T$.
 
-To prove that $M_t$ converges to a round point as $t \to T$, we first show that the hypersurface $M_t$ converges to a point under the original flow. Then we normalize the flow by keeping the total area of $M_t$ fixed and prove that $M_t$ converges to a sphere under the normalized flow.
+To prove that $M_t$ converges to a round point as $t \to T$, we first show that the hypersurface $M_t$ converges to a point under the original flow. Then we normalize the flow by keeping the total area of $M_t$ fixed and prove that $M_t$ converges to a round sphere under the normalized flow.
 
 For the first part, to control the diameter of $M_t$, we need to examine the minimum value of the mean curvature $H_{\min }$. Since $\left| A \right| ^2 \leq H^2$, the maximum value of the mean curvature $H_{\max } \to \infty$ as $t$ approaches $T$. To compare the mean curvature at different points on $M_t$, we need the following gradient estimate for $H$.
 
-\begin{theorem} \label{graEs}
+\begin{theorem}[{\cite[Theorem 6.1]{huisken_flow_1984}}] \label{graEs}
 	For any $\eta >0$, there exists a constant $C=C(\eta ,M_0,n)$ such that 
 	\[\left| \nabla H \right| ^2 \leq \eta H^4 + C.\]
 \end{theorem}
@@ -461,7 +463,7 @@ For the second part, we rescale the solution $F$ to the unnormalized equation $\
 \end{equation}
 where the surface $\tilde{M}_t$ is given by local diffeomorphisms
 \[\tilde{F}(\cdot ,t)=\psi (t) \cdot F(\cdot ,t).\]
-Then geometric quantities of $\tilde{M}_t$ are dilated by some constants
+Other geometric quantities of $\tilde{M}_t$ are rescaled as follows:
 \[\tilde{g }_{ij }^{}=\psi ^2 g_{ij }^{}, \quad  \tilde{h}_{ij}=\psi h_{ij }^{} , \quad  \tilde{H}=\psi ^{-1} H. \]
 Hence
 \begin{equation*}
@@ -478,14 +480,15 @@ where $\tilde{h}=\frac{\int_{}^{}\tilde{H}^2 d \tilde{\mu} }{\int_{}^{}d \tilde{
 By introducing a new time variable $\tilde{t}(t)=\int_{0}^{t}\psi ^2(\tau )d \tau $, we have the following normalized equation on a different maximal time interval $\tilde{t} \in [0,\tilde{T})$:
 \[\frac{\partial \tilde{F}}{\partial \tilde{t}}=-\tilde{H}\tilde{\nu }+ \frac{1}{n}\tilde{h}\tilde{F}.\]
 
-The evolution equations of geometric quantities under the normalized flow differ from the original evolution equations by a lower order term. Most of the computations in previous sections still hold. We can further prove that the maximal time $\tilde{T}=\infty $ and derive the exponential decay of the following geometric quantities on $\tilde{M}_t$:
-\begin{lemma} \label{exdc}
-	There are constants $\delta >0$ and $C<\infty $ such that
-	\begin{enumerate}
+The evolution equations of geometric quantities under the normalized flow differ from the original evolution equations by a lower order term. Most of the computations in previous sections still hold. We can further prove that the maximal time $\tilde{T}=\infty $ and derive the exponential decay of the following geometric quantities on $\tilde{M}_t$.
+\begin{lemma} [{\cite[Lemma 10.6]{huisken_flow_1984}}] \label{exdc}
+	There are constants $\delta >0$, $C~<~\infty $ depending only on geometric quantities of $M_0$ and the dimension $n$ such that
+	\begin{enumerate}[\normalfont(1)]
 		\item $| \tilde{A} | ^2-\frac{1}{n}\tilde{H}^2 \leq Ce^{-\delta \tilde{t}}$ 
 		\item $\left| \tilde{h}_{ij} \tilde{H} - \frac{1}{n}\tilde{h}\tilde{g}_{ij }^{}  \right|\leq Ce^{-\delta \tilde{t}}$ 
 		\item $\max_{\tilde{M}}\left| \nabla_{}^{m} \tilde{A} \right| \leq C_m e^{-\delta _m \tilde{t}}$  
 	\end{enumerate}
+	where $\delta_m>0, C_m< \infty $ also depend on the order $m$.
 \end{lemma} 
 Since the metric $\tilde{g}_{ij }^{} $ evolves under the equation \[\frac{\partial }{\partial \tilde{t}} \tilde{g}_{ij }^{} = -2\tilde{h}_{ij} \tilde{H} +\frac{2}{n}\tilde{h}\tilde{g}_{ij }^{},\]
 by $\autoref{exdc}$(2), $\tilde{g}_{ij }^{}$ converges uniformly to a positive definite metric $\tilde{g}_{ij }^{} (\infty )$ as $\tilde{t} \to \infty $. Then from $\autoref{exdc}$(3) and Arzela-Ascoli thoerem, we have that $\tilde{g}_{ij }^{} (\infty )$ is smooth. Finally $\autoref{exdc}$(1) implies that $\tilde{g}_{ij }^{} (\infty )$ is the metric of a sphere.
@@ -493,11 +496,11 @@ by $\autoref{exdc}$(2), $\tilde{g}_{ij }^{}$ converges uniformly to a positive d
 
 The previous convergence theorem was generalized in various settings by mathematicians.
 
-In 1986, Huisken \cite{huisken_contracting_1986} managed to extend the result for hypersurfaces in a general Riemannian manifold where the hypersurface need to be convex enough to overcome the obstruction caused by the curvature of the ambient manifold to converge to a round point. In the special case of spherical spaceform, Huisken \cite{huisken_deforming_1987} observed that the hypersurface can converge to a round point without the initial convexity condition. Similarly, the result obtained by Andrews and Baker \cite{andrews_mean_2010} for the converge of higher-codimension submanifold also allows some non-convex condition to be preserved.
+In 1986, Huisken~\cite{huisken_contracting_1986} managed to extend the result for hypersurfaces in a general Riemannian manifold where the hypersurface need to be convex enough to overcome the obstruction caused by the curvature of the ambient manifold to converge to a round point. In the special case of spherical space-form, Huisken~\cite{huisken_deforming_1987} observed that the hypersurface can converge to a round point without the initial convexity condition. Similarly, the result obtained by Andrews and Baker~\cite{andrews_mean_2010} for the convergence of higher-codimension submanifold also allows some non-convex condition to be preserved.
 
-For MCF with free boundary, Stahl \cite{stahl_convergence_1996,stahl_regularity_1996} showed that if the barrier surface in the Euclidean space is a flat hyperplane for a round hypersphere, any convex hypersurface with free boundary on the barrier will converge to a round half point. Later in 2020, Hirsch and Li \cite{hirsch2020contracting} managed to generalize the above result to non-umbilic barriers in $\R^3$. They proved that if the barrier surface satisfies a uniform bound on the exterior and interior ball curvature and certain bounds on the first and second derivative of the second fundamental form, then sufficiently convex free boundary hypersurfaces will converge to a round half point.
+For MCF with free boundary, Stahl~\cite{stahl_convergence_1996,stahl_regularity_1996} showed that if the barrier surface in the Euclidean space is a flat hyperplane or a round hypersphere, any convex hypersurface with free boundary on the barrier will converge to a round half point. Later in 2020, Hirsch and Li~\cite{hirsch2020contracting} managed to generalize the above result to non-umbilic barriers in $\R^3$. They proved that if the barrier surface satisfies a uniform bound on the exterior and interior ball curvature and certain bounds on the first and second derivative of the second fundamental form, then sufficiently convex free boundary hypersurfaces will converge to a round half point.
 
-In sum, most convergence results above were obtained by following Huisken's line of argument where the key steps are the pinching estimate of the traceless second fundamental form and the estimate for the gradient of the mean curvature. The former describes the "roundness" of the hypersurface pointwisely while the latter enables us to compare mean curvatures of the hypersurface at different points. In particular, the gradient estimate for the mean curvature is built upon the pinching estimate. To prove a general convergence theorem for the free boundary MCF in the Riemannian ambient space, it is essential to establish a proper iteration scheme for showing the pinching estimate.
+In summary, most convergence results above were obtained by following Huisken's line of argument where the key steps are the pinching estimate of the traceless second fundamental form and the estimate for the gradient of the mean curvature. The former describes the ``roundness" of the hypersurface pointwisely, while the latter enables us to compare mean curvatures of the hypersurface at different points. In particular, the gradient estimate for the mean curvature is built upon the pinching estimate. To prove a general convergence theorem for the free boundary MCF in the Riemannian ambient space, it is essential to establish a proper iteration scheme to prove the pinching estimate.
 
 
 

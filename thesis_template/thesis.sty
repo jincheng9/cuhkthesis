@@ -27,32 +27,20 @@
 	\programme \\
 
 	\vskip 1cm
-	\large Supervised by \\
-
-	\vskip 0.5cm
-	\large {\bf \supervisor}
-
-	\vskip 1cm
 	\large
-	\copyright \institution \\
+	\institution \\
 	\submitdate
 	\end{center}
 
-	\vfill
-	\noindent
-\institution~holds the copyright of this thesis.
-Any person(s) intending to use a part or whole of the materials in the thesis
-in a proposed publication must seek copyright release from the Dean of the
-Graduate School.
+
 	\newpage
 }
 
 %=======================================================
 
 \def\abstractpage{
-        \addcontentsline{toc}{chapter}{Abstract}
 
-	\vspace*{2cm}
+	\vspace*{0cm}
 	\large \noindent
 	Abstract of thesis entitled: \\
 	\indent \thesistitle \\
@@ -63,6 +51,12 @@ Graduate School.
 	\vskip 1cm \noindent
 	\input{abstract.tex}
 	\newpage
+\begin{CJK}{UTF8}{bsmi}
+	\chapter*{摘要}
+	\vskip 1cm \noindent
+	\input{abstract_c.tex}
+	\newpage
+\end{CJK}
 }
 
 %=======================================================
@@ -70,7 +64,6 @@ Graduate School.
 \def\acknowledgementpage{%
         \chapter*{Acknowledgement}
 
-        \addcontentsline{toc}{chapter}{Acknowledgement}
         \input{acknowledgement.tex}
 	\newpage
 }

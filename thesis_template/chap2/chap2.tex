@@ -1,104 +1,107 @@
-%
-% chapter background study
 
-\chapter{Free Boundary MCF in Riemannian Manifolds}
 
-To prove that a free boundary hypersurface converges to a round half-point under the MCF, the standard argument from Huisken \cite{huisken_flow_1984} also works. Hence, it suffices to prove the pinching estimate by the Stampacchia's iteration and the gradient estimate. 
+\chapter{Free Boundary MCF in Riemannian Manifolds} \label{chap:fbmcf}
 
-However, for a general barrier in a 3-manifold, two difficulties need to be overcome. First, as the prerequisite of proving pinching and gradient estimates, the initial convexity condition is expected to be preserved along the flow. To apply maximum principles for surfaces with boundary, it is essential to compute and estimate the boundary derivatives of geometric quantities.
+In this chapter, we study the convergence theory for MCF with free boundary where the barrier surface lies in Riemannian manifolds.
 
-The second difficulty is the reformulation of Stampacchia's iteration in a more general setting. Edelen \cite{edelen_convexity_2016} has introduced a free boundary version of Stampacchia's iteration, but the iteration argument only works when the barrier is in the Euclidean space. To further extend the iteration argument to the Riemannian manifold, we first need to extend the Michael-Simon inequality for Riemannian manifold by Hoffman and Spruck \cite{hoffman_sobolev_1974} to the free boundary case. Then by the arguments in \cite{edelen_convexity_2016}, the Stampacchia's iteration could be applied once the Poincare-like inequality and the evolution-like inequality are established.
+To prove that a free boundary hypersurface converges to a round half-point under the MCF, the standard argument from Huisken~\cite{huisken_flow_1984} also works. Hence, it suffices to prove the pinching estimate by the Stampacchia's iteration and the gradient estimate.
 
-\section{Definitions and Notations}
+However, for a general barrier in a Riemannian manifold, two difficulties need to be overcome. 
 
-Let $(M, \bar{g})$ be an $(n+1)$-dimensional Riemannian manifold with the Levi-Civita connection $\bar{\nabla }$. We denote by $\sigma _x(P)$ the sectional curvature of a 2-plane $P$ at $x \in M$ and by $i_x(M)$ the injectivity radius of $M$ at $x$. 
+First, as the prerequisite of proving pinching and gradient estimates, the initial convexity condition is expected to be preserved along the flow. To apply maximum principles for surfaces with boundary, it is essential to compute and estimate the boundary derivatives of geometric quantities. In particular, we compute the boundary derivatives for the mean curvature and the second fundamental form in \autoref{sec:bd}.
 
-Consider a properly embedded, orientable, smooth hypersurface $S \subset M$ without boundary. We refer to $S$ as the \textit{barrier surface} or the \textit{barrier}. We write $f=O(g)$ to indicate that $\left| f \right| \leq c(n,S,M)\left| g \right| $. By fixing a smooth global unit normal $\nu _S$ on $S$, we can define the second fundamental form $A^S: TS \times TS \to \R$ by
+The second difficulty is the reformulation of Stampacchia's iteration in a more general setting. Edelen~\cite{edelen_convexity_2016} has introduced a free boundary version of Stampacchia's iteration, but the iteration argument only works when the barrier is in the Euclidean space. In \autoref{sec:si}, we extend the iteration argument to the Riemannian manifold. We first extend the Michael-Simon inequality by Hoffman and Spruck~\cite{hoffman_sobolev_1974} to the free boundary case. Then following Edelen's~\cite{edelen_convexity_2016} arguments, we prove the generalized Stampacchia's iteration.
+
+\section{Definitions and notations}
+
+Let $(\bar{M}, \bar{g})$ be an $(n+1)$-dimensional Riemannian manifold with the Levi-Civita connection $\bar{\nabla }$. We denote by $\sigma _x(P)$ the sectional curvature of a 2-plane $P$ at $x \in \bar{M}$ and by $i_x(\bar{M})$ the injectivity radius of $\bar{M}$ at $x$. 
+
+Consider a properly embedded, orientable, smooth hypersurface $S \subset \bar{M}$ without boundary. We refer to $S$ as the \textit{barrier surface} or the \textit{barrier}. We write $f=O(g)$ to indicate that $\left| f \right| \leq c(n,S,\bar{M})\left| g \right| $. By fixing a smooth global unit normal $\nu _S$ on $S$, we can define the second fundamental form $A^S: TS \times TS \to \R$ by
 \[A^S(u,v)=-\bar{g}(\bar{\nabla }_u v, \nu _S).\]
 
-Let $\Sigma $ be a two-sided smooth $n$-dimensional manifold with non-empty boundary $\partial \Sigma $. A smooth immersion $F : \Sigma \to  M$ defines a free boundary hypersurface if $F(\partial \Sigma ) \subset S$ and $F_* N = \nu _S \circ F$ where $N$ is the outward unit normal of $\partial \Sigma \subset \Sigma $ with respect to the metric induced from $M$ by $F$.
+Let $\Sigma $ be a two-sided smooth $n$-dimensional manifold with non-empty boundary $\partial \Sigma $. A smooth immersion $F : \Sigma \to  \bar{M}$ defines a free boundary hypersurface if $F(\partial \Sigma ) \subset S$ and $F_* N = \nu _S \circ F$ where $N$ is the outward unit normal of $\partial \Sigma \subset \Sigma $ with respect to the metric induced from $\bar{M}$ by $F$.
 
 
 
 
-\section{Covariant Formulation of the Mean Curvature Flow}
+\section{Covariant formulation of the Mean Curvature Flow}
 
-From the previous chapter, we can see that Huisken considered a family of maps $F_t$ from an open set $U \subset \R^n$ to $\R^{n+1}$ which evolve along the mean curvature vector of their images. In this way, we can fix a local coordinate system and analyze geometric quantities of the images along the flow using this invariant coordinate system. The advantages include that the structure of the general evolution equation is clearer which enables us to prove the short-time existence of the flow using the theory of quasilinear parabolic differential equations. On the other hand, one needs to carefully choose the local coordinate system to simplify the computation without losing the important information. A more modern treatment is to consider a rather invariant form of evolution equations independent of the local coordinates. In particular, we consider the metrics and connections on vector bundles over the space-time domain and derive structure equations and evolution equations for geometric quantities in such new vector bundle machinery.
+From the previous chapter, we can see that Huisken considered a family of maps $F_t$ from an open set $U \subset \R^n$ to $\R^{n+1}$ which evolve along the mean curvature vector of their images. In this way, we can fix a local coordinate system and analyze geometric quantities of the images along the flow using this coordinate system. On the one hand, the structure of the general evolution equation is clearer in local coordinates. The short-time existence of the flow follows naturally by the theory of quasilinear parabolic differential equations. On the other hand, one needs to carefully choose the local coordinate system to simplify the computation without losing the important information. A more modern treatment is to consider an invariant form of evolution equations independent of local coordinates. In particular, we consider the metrics and connections on vector bundles over the space-time domain and derive structure equations and evolution equations for geometric quantities in the new vector bundle terminology.
 
-\subsection{Subbundles}
+\subsection{Subbundles.}
 
 \begin{definition}
-    Let $K, E$ be two vector bundles over a manifold $M$. We say $K$ is a subbundle of $E$ if there exists an injective vector bundle homomorphism $\iota_K : K \to E$ covering the identity map on $M$.
+    Let $K, E$ be two vector bundles over a manifold $\bar{M}$. We say $K$ is a subbundle of $E$ if there exists an injective vector bundle homomorphism $\iota_K : K \to E$ covering the identity map on $\bar{M}$.
 \end{definition}
 
-Now let $E$ be a vector bundle over a manifold $M$. We can consider two complementary subbundles $K$ and $L$ of $E$ , in the sense that for each $x \in M,$ the fiber $E_x=\iota_K(K_x) \oplus \iota_L(L_x)$. Let $\pi _K : E \to K$ and $\pi _L : E \to L$ be the correseponding projections from $E$ onto $K$ and $L$ where we have the following relations
+Now let $E$ be a vector bundle over a manifold $\bar{M}$. We can consider two complementary subbundles $K$ and $L$ of $E$ , in the sense that for each $x \in \bar{M},$ the fiber $E_x=\iota_K(K_x) \oplus \iota_L(L_x)$. Let $\pi _K : E \to K$ and $\pi _L : E \to L$ be the correseponding projections from $E$ onto $K$ and $L$ where we have the following relations
 \begin{gather*}
     \pi _K \circ \iota _K= \mathrm{Id}_K \quad \pi _L \circ \iota _L=\mathrm{Id}_L\\
     \pi _K \circ \iota _L=0 \quad \pi _L \circ \iota _K=0\\
     \iota _K \circ \pi _K + \iota _L \circ \pi _L = \mathrm{Id}_E.
 \end{gather*}
 
-Similar to the way of defining the second fundamental form for submanifolds, we can extend a connection $\nabla$  on $E$ to a connection $\overset{K}{\nabla_{}} $ on its subbundle $K$ and define the second fundamental form $h^K \in \Gamma (T^*(M) \otimes K^* \otimes L)$ of $K$ where
-\begin{equation}
+Similar to the way of defining the second fundamental form for submanifolds, we can extend a connection $\nabla$  on $E$ to a connection $\overset{K}{\nabla_{}} $ on its subbundle $K$ and define the second fundamental form $h^K \in \Gamma (T^*(\bar{M}) \otimes K^* \otimes L)$ of $K$ where
+\begin{equation*}
     \overset{K}{\nabla_{u}} \xi = \pi _K(\nabla_{u}^{} (\iota _K \xi )) \qquad 
     h^K(u,\xi )=\pi _L(\nabla_{u}^{} (\iota _K \xi )),
-\end{equation}
-for any $\xi \in \Gamma (K)$ and $u \in TM.$
+\end{equation*}
+for any $\xi \in \Gamma (K)$ and $u \in T\bar{M}.$
 
 Then we can derive the following Gauss equation relating the curvature $R^K$ of $\overset{K}{\nabla_{}} $ to the curvature $R_{\nabla }$ of $\nabla $ and the second fundamental forms $h^L$ and $h^K$:
-\begin{equation}
+\begin{equation*}
     R^K(u,v)\xi = \pi _k(R_{\nabla }(u,v)\iota _K \xi )+h^L(u,h^K(v,\xi ))-h^L(v,h^K(u,\xi ))
-\end{equation} 
-for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. If we also have a connection defined on $TM $, then we can define the covariant derivative of the second fundamental form $h_K$ by 
-\begin{equation}
+\end{equation*} 
+for any $u,v \in T_x\bar{M}$ and $\xi \in \Gamma (K)$. If we also have a connection defined on $T\bar{M} $, then we can define the covariant derivative of the second fundamental form $h_K$ by 
+\begin{equation*}
     \nabla_{u}^{} h^K(v,\xi) = \overset{L}{\nabla_{u}} (h^K(v,\xi ))-h^K(\nabla_{u}^{} v,\xi )-h^K(v, \overset{K}{\nabla_{u}} \xi )
-\end{equation}
-for any $u,v \in T_xM$ and $\xi \in \Gamma (K)$. Assume in addition that the connection on $TM $ is symmetric, we have the following Codazzi identity:
+\end{equation*}
+for any $u,v \in T_x\bar{M}$ and $\xi \in \Gamma (K)$. Assume in addition that the connection on $T\bar{M} $ is symmetric, we have the following Codazzi identity:
 \begin{equation} \label{Codazzi}
     \nabla_{u}^{} h^K(v, \xi )-  \nabla_{v}^{} h^K(u, \xi ) =\pi _L(R_{\nabla }(u,v)(\iota _K \xi )).
 \end{equation}
 
 Furthermore, if $E$ admits a metric $g$ compatible with $\nabla $ and $K,L$ are orthogonal with respect to the metric in the sense that 
-\begin{equation}
+\begin{equation*}
     g(\iota _K \xi ,\iota _L \eta  )=0
-\end{equation}
+\end{equation*}
 for any $\xi \in \Gamma (K)$ and $\eta \in \Gamma (L)$. Then the metric $g$ induces naturally metrics $g_K, g_L$ on subbundles $K,L$ respectively and gives us the Weingarten relation associating the second fundamental forms $h^K$ and $h^L$ by 
-\begin{equation}
+\begin{equation*}
     g^L(h^K(u,\xi ), \eta )+g^K(\xi ,h^L(u,\eta ))=0.
-\end{equation}
+\end{equation*}
 
-\subsection{Time-dependent Immersion}
-Let $I$ be a real interval. Then the tangent bundle $T(\Sigma \times I)$ splits into $\mathcal{H} \oplus \R \partial t$ where $\calH := \left\{ u \in T(\Sigma \times I) : dt(u)=0\right\} $  is the 'spatial' tangent bundle.
+\subsection{Time-dependent immersion.}
+Let $I$ be an interval in $\R$. Then the tangent bundle $T(\Sigma \times I)$ splits into $\mathcal{H} \oplus \R \partial_t$ where $\calH := \left\{ u \in T(\Sigma \times I) : dt(u)=0\right\} $  is the 'spatial' tangent bundle.
 
-Let $F: \Sigma \times I \to M$ be a smooth map such that $F(\cdot,t) : \Sigma \to M $ defines a free boundary hypersurface with respect to the barrier $S$. Note that the pullback bundle $F^*TM$ is equipped with a metric $\bar{g}_F$ and a connection ${}^F \bar{\nabla }$ induced from the ambient manifold $M$. 
+Let $F: \Sigma \times I \to \bar{M}$ be a smooth map such that $F(\cdot,t) : \Sigma \to \bar{M} $ defines a free boundary hypersurface with respect to the barrier $S$. Note that the pullback bundle $F^*T\bar{M}$ is equipped with a metric $\bar{g}_F$ and a connection ${}^F \bar{\nabla }$ induced from the ambient manifold $\bar{M}$. 
 
-The pushforward map of the spatial tangent vector $F_* : \calH \to F^*TM $ defines a subbundle of $F^*TM$ of rank $n$ . We denote by $\mathcal{N} $ the orthogonal complement of $F_*(\calH)$ in $F^*TM$. Then $\mathcal{N} $ is a subbundle of $F^*TM $ of rank $1$, which is referred to as the (spacetime) normal bundle.
+The pushforward map of the spatial tangent vector $F_* : \calH \to F^*T\bar{M} $ defines a subbundle of $F^*T\bar{M}$ of rank $n$ . We denote by $\mathcal{N} $ the orthogonal complement of $F_*(\calH)$ in $F^*T\bar{M}$. Then $\mathcal{N} $ is a subbundle of $F^*T\bar{M} $ of rank $1$, which is referred to as the (spacetime) normal bundle.
 
-Now $\mathcal{H} $ and $\mathcal{N} $ are subbundles of $F^*TM $ with inclusion maps
-\[F_*: \mathcal{H} \to F^*TM \qquad \iota : \mathcal{N} \to F^*TM \]
+Now $\mathcal{H} $ and $\mathcal{N} $ are subbundles of $F^*T\bar{M} $ with inclusion maps
+\[F_*: \mathcal{H} \to F^*T\bar{M} \qquad \iota : \mathcal{N} \to F^*T\bar{M} \]
 and projection maps
-\[\pi : F^*TM \to \mathcal{H} \qquad \overset{\perp }{\pi} : F^*TM \to \mathcal{N} .\]
+\[\pi : F^*T\bar{M} \to \mathcal{H} \qquad \overset{\perp }{\pi} : F^*T\bar{M} \to \mathcal{N} .\]
 
 Then from the previous section we can define the metric $g(u,v):=\bar{g}_F(F_* u, F_* v)$, the connection $\nabla := \pi \circ {}^F \bar{\nabla } \circ F_*$ on the bundle $\mathcal{H} $ and the metric $\overset{\perp }{g} (\xi , \eta ):=\bar{g}_F(\iota \xi , \iota \eta )$, the connection $\overset{\perp }{\nabla} := \overset{\perp }{\pi} \circ {}^F \bar{\nabla } \circ \iota $ on the bundle $\mathcal{N} $.
 
 By restricting the first argument of the second fundamental form $h^{\mathcal{H} }=\overset{\perp }{\pi} \circ {}^F \bar{\nabla } \circ F_* \in \Gamma (T(\Sigma \times I)^* \otimes \mathcal{H} ^* \otimes \mathcal{N} )$ to $\mathcal{H} $, we can define the symmetric bilinear form $h \in \Gamma (\mathcal{H} ^* \otimes \mathcal{H} ^* \otimes \mathcal{N})$ on $\mathcal{H} $ with values in $\mathcal{N} $. The mean curvature vector $\vec{H} \in \Gamma (\mathcal{N} )$ on $\Sigma $ is thus defined as $\vec{H} := \mathrm{Tr}_g(h)$.
 
-Let $I=[0,T)$. We say a time-dependent immersion $F: \Sigma \times I \to M$ is a solution to the free boundary mean curvature flow if \[F_* \partial t = \iota \vec{H}.\]
+Let $I=[0,T)$. We say a time-dependent immersion $F: \Sigma \times I \to \bar{M}$ is a solution to the free boundary mean curvature flow if \[F_* \partial_t = \iota \vec{H}.\]
 
 Note that in the case of free boundary mean curvature flow, the remaining components of $h^{\mathcal{H} }$ are given by
-\begin{equation}
+\begin{equation*}
 \begin{split}
     h^{\mathcal{H} }(\partial_t, v) 
 &= \overset{\perp }{\pi} ({}^F \bar{\nabla }_{\partial _t} F_* v)  \\
 &= \overset{\perp }{\pi} ({}^F \bar{\nabla }_{v} F_* \partial _t+F_*([\partial_t,v]))  \\
 &= \overset{\perp }{\nabla} _v \vec{H}  \\
 \end{split}
-\end{equation} 
+\end{equation*} 
 where $\overset{\perp }{\pi} \circ  F_*([\partial_t,v])=0$ for $[\partial _t, v]=(\partial _t v^i) \partial _i \in \mathcal{H} $.
 
-\section{Boundary Derivatives}
+\section{Boundary derivatives} \label{sec:bd}
 
-Since $\mathcal{N} $ is a subbundle of $F^*TM $  of rank $1$, we can fix a global unit section $\nu \in \Gamma (\mathcal{N} )$. Let $H$ be a function over $\Sigma \times I$ defined by $H:=-\overset{\perp }{g} (\vec{H},\nu )$. Then $\vec{H}=-H \nu $.
+Since $\mathcal{N} $ is a trivial subbundle of $F^*T\bar{M} $  of rank $1$, we can fix a global unit section $\nu \in \Gamma (\mathcal{N} )$. Let $H$ be a function over $\Sigma \times I$ defined by $H:=-\overset{\perp }{g} (\vec{H},\nu )$. Then $\vec{H}=-H \nu $.
 
 \begin{theorem}
     $N(H)=H A^S(\iota \nu , \iota \nu )$ 
@@ -106,7 +109,7 @@ Since $\mathcal{N} $ is a subbundle of $F^*TM $  of rank $1$, we can fix a globa
 
 \begin{proof}
 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         N(H)
     &= - \overset{\perp }{g} (\overset{\perp }{\nabla} _{N}\vec{H}, \nu )\\
@@ -117,12 +120,12 @@ Since $\mathcal{N} $ is a subbundle of $F^*TM $  of rank $1$, we can fix a globa
     &= - \bar{g}(\bar{\nabla }_{-H \iota \nu } \nu _S,\iota \nu )\\
     &= H A^S(\iota \nu , \iota \nu )
     \end{split}
-    \end{equation}  
+    \end{equation*}  
 \end{proof}
 
 In the rest of the section, we fix a time $t_0 \in I$. Then the restrictions of $\mathcal{H} $ and $\mathcal{N} $  to $\Sigma \times \left\{ t_0 \right\} $ are the usual tangent and the normal bundle of $F_{t_0}$. Moreover, $\nabla $ agrees with the Levi-Civita connection of $g(t_0)$ and $h$ agrees with the usual second fundamental form of the immersion $F_{t_0}$. 
 
-Let $p \in \partial \Sigma $. Then for any $u \in T_p \Sigma $, we can extend $u$ to a section of $\mathcal{H} $ in an open neighborhood of $(p,t_0) \in \Sigma \times I$. \textbf{Since the quantities we are going to work with in the rest of the section are all tensorial}, we can further assume that $\nabla u = \pi \circ {}^F \bar{\nabla } \circ F_* u = 0$ without affecting the values of the quantities. \textit{But for vectors in the tangent space of the boundary of Sigma, such extension would make the vector leave the tangent space of the boundary.} What we could do is to extend the vector to the interior of $\Sigma $ along the normal direction $N$. Then we have that $\nabla _N u=0$.  
+Let $p \in \partial \Sigma $. Then for any $u \in T_p \Sigma $, we can extend $u$ to a section of $\mathcal{H} $ in an open neighborhood of $(p,t_0) \in \Sigma \times I$. Since the quantities we are going to work with in the rest of the section are all tensorial, we can further assume that $\nabla u = \pi \circ {}^F \bar{\nabla } \circ F_* u = 0$ at $p$ without affecting the values of the quantities. But for vectors in the tangent space of $\partial \Sigma$, such extension would make the vector leave the tangent space of the boundary. What we could do is to extend the vector to the interior of $\Sigma $ along the normal direction $N$. Then we have that $\nabla _N u=0$.  
 
 Before computing the boundary derivative of the second fundamental form $h$ on $\mathcal{H} $. We first derive a relationship between $h$ and $A^S$ on $F(\partial \Sigma \times \left\{ t_0 \right\} ) \subset S $.
 
@@ -157,17 +160,17 @@ Before computing the boundary derivative of the second fundamental form $h$ on $
     \[\nabla _u h(N,v)=\overset{\perp }{\nabla} _u(h(N,v))-h(\nabla_u N, v)-h(N, \nabla _u v).\]
 
     Since $v \in T_p \partial \Sigma $, by \autoref{htoas}, we have that
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \overset{\perp }{\nabla} _u(h(N,v)) 
     &=  \overset{\perp }{\nabla} _u(A^S(F_{*}v, \iota \nu ) \nu)\\
     &= F_*u(A^S(F_{*}v, \iota \nu )) \nu.
     \end{split}
-    \end{equation} 
-    Since the equation we need to derive is tensorial, we can extend the vectors $u,v$ parallel on $\partial \Sigma $ and along the direction $N$ to the interior of $\Sigma $ where 
+    \end{equation*} 
+    Since the equation we need to derive is tensorial, we can extend the vectors $u,v$ by parallel transport on $\partial \Sigma $ and along the direction $N$ to the interior of $\Sigma $ where 
     \[\nabla _u v=g(\nabla _u v,N) N.\]
     Hence,
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         h(N, \nabla _u v) 
     &= g(\nabla _u v,N) h(N,N)  \\
@@ -175,15 +178,15 @@ Before computing the boundary derivative of the second fundamental form $h$ on $
     &= \bar{g}(\bar{\nabla } _{F_*u} F_* v , \nu_S)h(N,N)  \\
     &= -A^S(F_*u, F_* v)h(N,N).
     \end{split}
-    \end{equation}
+    \end{equation*}
     Moreover, the pushforward $F_*u, F_* v \in T_pS$ can be extended to vector fields on the barrier $S$ where $\bar{\nabla }^{S}_{F_*u} F_*v=\iota h(u,v)$ and
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         &F_*u(A^S(\iota \nu , F_*v)) \\
     =& \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)+A^S(\iota \nu , \bar{\nabla }^{S}_{F_*u} F_*v)\\
     =& \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)+A^S(\iota  h(u,v) , \iota \nu )
     \end{split}
-    \end{equation}
+    \end{equation*}
     where $\bar{\nabla }^{S}$ is the connection on $S$ induced from $\bar{\nabla }$.
 
     Since $A^S(\iota  h(u,v) , \iota \nu ) \nu =A^S(\iota  \nu  , \iota \nu )h(u,v)$, combining all equations above, we can conclude that 
@@ -197,22 +200,23 @@ Before computing the boundary derivative of the second fundamental form $h$ on $
     \end{equation*} 
 \end{proof}
 
-\section{Stampacchia's Iteration}
-In this section, we assume that the ambient manifold $M$ satisfies uniform bounds
-\[\sigma _x(P) \leq K, \quad i_x(M) \geq i(M)\]
-for constants $K \geq 0$ and $i(M)>0$.
+\section{Stampacchia's iteration} \label{sec:si}
 
-\subsection{Michael-Simon with free boundary}
+In this section, we assume that the ambient manifold $\bar{M}$ satisfies uniform bounds
+\[\sigma _x(P) \leq K, \quad i_x(\bar{M}) \geq i(\bar{M})\]
+for constants $K \geq 0$ and $i(\bar{M})>0$.
+
+\subsection{Michael-Simon with free boundary.}
 
 \begin{lemma}\label{BoundaryIntegral}
-    There exists a constant $c=c(n,S,M)$ such that for any $\Sigma $ meeting $S$ orthogonally, and any $f \in C^1(\bar{\Sigma })$ 
+    There exists a constant $c=c(n,S,\bar{M})$ such that for any $\Sigma $ meeting $S$ orthogonally, and any $f \in C^1(\bar{\Sigma })$ 
     \[
         \frac{1}{c}\int_{\partial \Sigma } \left| f \right| \leq \int_{ \Sigma} \left| \nabla f \right| + \int_{ \Sigma} \left| Hf \right| + \int_{ \Sigma} \left| f \right| .   
     \]
 \end{lemma}
 
 \begin{proof}
-    Fix $X \in \mathfrak{X} (\R^{n+1})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $\nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
+    Fix $X \in \mathfrak{X} (\bar{M})$ which is 0 outside a neighborhood of $S$ and $X|_S=\nu _S$. Let $\nu$ be the outward normal of $\partial \Sigma $. By the divergence theorem and product rule, we have that
     \begin{equation*}
     \begin{split}
         \int_{\partial \Sigma} \left| f \right| 
@@ -234,7 +238,7 @@ for constants $K \geq 0$ and $i(M)>0$.
         \end{equation*} 
 \end{proof}
 
-\begin{lemma} \label{MSRie}
+\begin{lemma}[{\cite[Theorem 2.2]{hoffman_sobolev_1974}}] \label{MSRie}
     Let $f$ be a Lipschitz function on $\Sigma $ vanishing on $\partial \Sigma $. Then
     \[\left( \int_{\Sigma }^{}\left| f \right| ^{\frac{n}{n-1}} \right) ^{\frac{n-1}{n}}\leq c(n)\left( \int_{\Sigma} \left| \nabla f \right| + \int_{\Sigma} H \left| f \right|  \right) \]
     provided
@@ -248,7 +252,7 @@ for constants $K \geq 0$ and $i(M)>0$.
 \end{lemma}
 
 \begin{theorem} \label{MSwithextra}
-    There exists a constant $c=c(n)$ such that for any $\Sigma $ meeting $S$ orthogonally and any $f \in C_{C}^{1}(\bar{\Sigma})$ satisfying the conditions in \autoref{MSRie},
+    There exists a constant $c=c(n)$ such that for any $\Sigma $ meeting $S$ orthogonally and any $f \in C_{c}^{1}(\bar{\Sigma})$ satisfying the conditions in \autoref{MSRie},
     \[\frac{1}{c}(\int_{\Sigma} \left| f \right| ^{\frac{n}{n-1}})^{\frac{n-1}{n}}\leq \int_{\Sigma} \left| \nabla f \right| +\int_{\Sigma} \left| Hf \right| +\int_{\partial \Sigma} \left| f \right| .\]
 \end{theorem}
 
@@ -293,14 +297,14 @@ for constants $K \geq 0$ and $i(M)>0$.
     The conclusion follows by taking $\epsilon \to 0$.
 \end{proof}
 
-Finally, by combining \autoref{BoundaryIntegral} and \autoref{MSwithextra}, we can derive the following Michael-Simon inequality for free boundary hypersurfaces in Riemannian manifold using the argument identical to the proof of Theorem 2.3 in [ref:Edelen].
+Finally, by combining \autoref{BoundaryIntegral} and \autoref{MSwithextra}, we can derive the following Michael-Simon inequality for free boundary hypersurfaces in Riemannian manifold using the argument identical to the proof of~\cite[Theorem 2.3]{edelen_convexity_2016}.
 
 \begin{theorem} \label{MSfree}
-    For any $\Sigma $ meeting $S$ orthogonally, any $f \in C^{1}(\bar{\Sigma })$ satisfying the conditions in \autoref{MSRie}, and any positive integer $p<n$, there exists a constant $c=c(n,p,S)$ such that 
+    For any $\Sigma $ meeting $S$ orthogonally, any $f \in C^{1}(\bar{\Sigma })$ satisfying the conditions in \autoref{MSRie}, and any positive integer $p<n$, there exists a constant $c=c(n,p,S,\bar{M})$ such that 
     \[\left\| f \right\| _{\frac{np}{n-p};\Sigma } \leq c(\left\| \nabla f \right\| _{p;\Sigma }+\left\| Hf \right\| _{p;\Sigma }+\left\|  f \right\| _{p;\Sigma }).\] 
 \end{theorem}
 
-\subsection{Main theorem and the idea of proof}
+\subsection{Main theorem and the idea of proof.}
 
 Let $\left( \Sigma _t \right) _{t \in [0,T)}$ be a class of hypersurfaces following the free boundary MCF with barrier $S$. Assume $T<\infty $. Let $f_{\alpha }$ be a non-negative function on $\Sigma _t$ where $\alpha = \alpha (S, \Sigma _0,T,n)$. Then we consider another two functions $\tilde{H}>0,\tilde{G}\geq 0$ on $\Sigma _t$ such that 
 \[
@@ -308,7 +312,7 @@ Let $\left( \Sigma _t \right) _{t \in [0,T)}$ be a class of hypersurfaces follow
 \]
 Finally, for another two positve constant $\sigma$ and $k$, we let $f=f_{\alpha }\tilde{H}^{\sigma }$, $f_k=\left( f-k \right) _{+}$ and $A(k)=\left\{ f \geq k \right\} $, $A(k,t)=A(k)\cap \Sigma _t$.
 
-We say the function $f$ satisfies the condition $(\star)$ if there exist constants $c=c(S, \Sigma_0,M,T,n,\alpha )$ and $C=C(S,\Sigma _0,M,T,n,\alpha ,p,\sigma )$ such that the following two inequalities hold:\\
+We say the function $f$ satisfies the condition $(\star)$ if there exist constants $c=c(S, \Sigma_0,\bar{M},T,n,\alpha )$ and $C=C(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma )$ such that the following two inequalities hold:\\
 (Poincare-like)
 \begin{equation} \label{PLE}
 \begin{split}
@@ -333,12 +337,12 @@ for any $p>p_0(n,\alpha ,c), \sigma <\frac{1}{2}, k>0, \beta >0$.
 Now we state the main theorem.
 
 \begin{theorem} \label{stamit}
-    If $f$ satisfies $(\star)$, then for sufficiently small $\sigma $ depending on sufficiently large $p$, $f=f_{\alpha }\tilde{H}^{\sigma }$ is uniformly bounded in spacetime by a constant depending on $(S,\Sigma _0,T,n,\alpha ,p,\sigma )$. 
+    If $f$ satisfies $(\star)$, then for sufficiently small $\sigma $ depending on sufficiently large $p$, $f=f_{\alpha }\tilde{H}^{\sigma }$ is uniformly bounded in spacetime by a constant depending on $(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma )$. 
 \end{theorem}
 
 The proof of the main theorem splits into three parts. First, we find a way to handle the boundary term. Then we obtain a higher $L^p$ bound for $f$ by rearranging and combining the inequalities. Finally, using the higher $L^p$ bound and the Michael-Simon inequality, we establish the iteration scheme which leads to the conclusion.
 
-\subsection{Boundary Integral Estimate}
+\subsection{Boundary integral estimate.}
 
 The following two lemmas are needed to handle the boundary integral.
 
@@ -370,35 +374,35 @@ The following two lemmas are needed to handle the boundary integral.
     The conclusion follows by combining the two inequalities above.
 \end{proof}
 
-The \autoref{BoundaryIntegral} which associates integrals on the boundary and the interior for free boundary surfaces is also needed.
+\autoref{BoundaryIntegral} which associates integrals on the boundary and the interior for free boundary surfaces is also needed.
 
 Now we can prove the following lemma which estimates the boundary integral.
 
 \begin{lemma} \label{BoundaryFH}
-    For any $\sigma <\frac{1}{2}, p>4$ and $\mu >0$, there exists constants $c=c(n,S,M)$ and $C=C(n,S,M,\mu ,p)$ such that
-    \begin{equation}
+    For any $\sigma <\frac{1}{2}, p>4$ and $\mu >0$, there exists constants $c=c(n,S,\bar{M})$ and $C=C(n,S,\bar{M},\mu ,p)$ such that
+    \begin{equation*}
     \begin{split}
         \int_{\partial \Sigma_t} f_{k}^{p-1}\tilde{H}^{\sigma } 
     \leq & c \int_{\Sigma_t} \left| \nabla f \right| ^2 f_{k}^{p-2} +c \sigma \int_{\Sigma_t} \frac{\tilde{G}^{2} }{\tilde{H}^{2-\sigma }  }f_{k}^{p-1} \\
     &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| .
     \end{split}
-    \end{equation} 
+    \end{equation*} 
 \end{lemma}
 
 \begin{proof}
     By \autoref{BoundaryIntegral}, we have that 
     \begin{equation*}
     \begin{split}
-        \frac{1}{c(n,S,M)}\int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  &\leq \int_{\Sigma_t} \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| + \int_{\Sigma_t} \left| H f_{k}^{p-1} \tilde{H}^{\sigma } \right|\\ 
+        \frac{1}{c(n,S,\bar{M})}\int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  &\leq \int_{\Sigma_t} \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| + \int_{\Sigma_t} \left| H f_{k}^{p-1} \tilde{H}^{\sigma } \right|\\ 
         & \quad + \int_{\Sigma_t} \left| f_{k}^{p-1} \tilde{H}^{\sigma } \right|. 
     \end{split}
     \end{equation*} 
-    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangular inequality, we have that
+    Since $f_{k}^{} $ and $\tilde{H}^{} $ are non-negative, by product rule and triangle inequality, we have that
     \[
-        \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| \leq p f_{k}^{p-2} \tilde{H}^{\sigma } \left| \nabla f \right| +c(n,S,M) \sigma f_{k}^{p-1} \tilde{H}^{\sigma -1} \tilde{G}^{} .
+        \left| \nabla \left( f_{k}^{p-1} \tilde{H}^{\sigma }  \right)  \right| \leq p f_{k}^{p-2} \tilde{H}^{\sigma } \left| \nabla f \right| +c(n,S,\bar{M}) \sigma f_{k}^{p-1} \tilde{H}^{\sigma -1} \tilde{G}^{} .
     \]
 
-    Combining the inequalities above, we have that, for some constant $c=c(n,S,M)$ and $\sigma < \frac{1}{2}$,
+    Combining the inequalities above, we have that, for some constant $c=c(n,S,\bar{M})$ and $\sigma < \frac{1}{2}$,
     \begin{equation*}
     \begin{split}
         \int_{\partial \Sigma_t} f_{k}^{p-1} \tilde{H}^{\sigma }  
@@ -416,14 +420,14 @@ Now we can prove the following lemma which estimates the boundary integral.
         &+ \frac{cp^2}{\mu }\int_{A(k,t)}^{}f^p \tilde{H}^{2} + C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right|
         \end{split}
         \end{equation*}
-        for constants $c=c(n,S,M)$ and $C=C(n,S,M,\mu ,p)$.
+        for constants $c=c(n,S,\bar{M})$ and $C=C(n,S,\bar{M},\mu ,p)$.
 \end{proof}
 
-\subsection{Higher $L^p$ bound}
+\subsection{Higher \texorpdfstring{\(L^p\)}{Lp} bound.}
 Next, we establish the higher $L^p$ bound for $f$.
 
 \begin{lemma} \label{hlp}
-    Suppose $f$ satisfies $(\star)$. Then there exist constants $p_0(c)$ and $c_\sigma (c)$ depending on some $c=c(S, \Sigma_0,M,T,n,\alpha )$ such that for $p>p_0(c)$ and $\sigma < \frac{c_{\sigma }(c)}{\sqrt[]{p}}$,
+    Suppose $f$ satisfies $(\star)$. Then there exist constants $p_0(c)$ and $c_\sigma (c)$ depending on some $c=c(S, \Sigma_0,\bar{M},T,n,\alpha )$ such that for $p>p_0(c)$ and $\sigma < \frac{c_{\sigma }(c)}{\sqrt[]{p}}$,
     \[\int_{0}^{T}\int_{\Sigma_t} f^p \leq C_1(C,T,\Sigma_0)<\infty .\]  
 \end{lemma}
 
@@ -443,7 +447,7 @@ Next, we establish the higher $L^p$ bound for $f$.
     \end{equation*} 
     where we use \autoref{PLE} to estimate the term $cp \sigma \int_{\Sigma_t}^{}\tilde{H}^2f^p$.
     For the boundary integral $\int_{\partial \Sigma_t} f^{p-1}\tilde{H}^{\sigma }$, we apply the previous estimate \autoref{BoundaryFH} and conclude that 
-    \begin{equation}
+    \begin{equation*}
     \begin{split}
         \partial _t \int_{\Sigma_t} f^p 
     &\leq \left[ -\frac{1}{3}p^2+cp^2 \sigma (1+\frac{1}{\beta })+cp \right] \int_{\Sigma_t} f_{}^{p-2} \left| \nabla f \right|   \\
@@ -451,7 +455,7 @@ Next, we establish the higher $L^p$ bound for $f$.
     &\quad + \left( \frac{cp^3}{\mu }-\frac{1}{5} \right) \int_{\Sigma_t} \tilde{H}^2f^{p}\\
     &\quad + C \left| \Sigma _t \right| + C \int_{\Sigma_t} f^p
     \end{split}
-    \end{equation} 
+    \end{equation*} 
     For $p>12c$, we can choose constants $\mu=10cp^3 , \beta=\frac{1}{\sqrt[]{cp}} , \sigma=\frac{1}{6 \sqrt[]{c^3p}} $ such that
     \[
     \begin{cases}
@@ -492,16 +496,16 @@ We can also simplify the evolution-like equation for $f_k$ and obtain the follow
 \end{proof}
 The conclusion follows by choosing the value of $p,\sigma ,\mu $ as in the proof of \autoref{hlp}. 
 
-\subsection{Iteration Scheme and the Uniform bound}
+\subsection{Iteration scheme and the uniform bound.}
 
-By \autoref{MSfree}, for each $n \geq 2$, there exist some $q>1$ and $c=c(n,q,\left| \Sigma_0 \right|,S )$ such that
+By \autoref{MSfree}, for each $n \geq 2$, there exist some $q>1$ and $c=c(n,q,\left| \Sigma_0 \right|,S,\bar{M} )$ such that
 \[\left( \int_{\Sigma} v^{2q} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma} \left| \nabla v \right| ^2 + c \int_{\Sigma} v^2 H^2 + c \int_{\Sigma} v^2\]
 provided that $v$ satisfies the assumptions in \autoref{MSRie}.
-For $n>2$, we let $q=\frac{n}{n-2}$. For $n=2$, we apply Corollary 2.4 and Remark 2.5 in [ref:Edelen].
+For $n>2$, we let $q=\frac{n}{n-2}$. For $n=2$, we apply Corollary 2.4 and Remark 2.5 in~\cite{edelen_convexity_2016}.
 
 Take $v=f_{k}^{\frac{p}{2}} $, then by \autoref{hlp}, we have that 
 \[\left| \mathrm{supp}  \  v \right|=\left| A(k,t) \right| \leq \frac{1}{k} \int_{\Sigma_t} f \leq \frac{1}{k} C'  \]
-where $C'$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Since $C_1=C_1(C,T,\Sigma _0)$ and the constant $C$ in $(\star )$ depends on $(S,\Sigma _0,M,T,n,\alpha ,p,\sigma )$, for $k \geq k_0(S,\Sigma _0,M,T,n,\alpha ,p,\sigma ) $
+where $C'$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Since $C_1=C_1(C,T,\Sigma _0)$ and the constant $C$ in $(\star )$ depends on $(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma )$, for $k \geq k_0(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma ) $
 \begin{equation} \label{MSF}
     \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \int_{\Sigma_t} f_{k}^{p} H^2 + c \int_{\Sigma_t} f_{k}^{p}.
 \end{equation}
@@ -514,7 +518,7 @@ where $C'$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Since $C_1=C_1(C,T,\S
         \partial _t \int_{\Sigma_t} f^p + \frac{1}{c} \int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}}  \right| ^2 \leq C \int_{A(k,t)}^{} \tilde{H}^2 f^p +C \int_{A(k,t)}^{}f^p + C \left| A(k,t) \right| 
     \end{equation}
     for any $k>0$ where $C,c$ are constants independent of $k$.
-    Then for sufficient small $\sigma $, $f$ is uniformly bounded in spacetime and the bound will depend on $(S,\Sigma _0,M,T,n,\alpha ,p,\sigma )$.
+    Then for sufficient small $\sigma $, $f$ is uniformly bounded in spacetime and the bound will depend on $(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma )$.
 \end{theorem}
 
 \begin{proof}
@@ -526,7 +530,7 @@ where $C'$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Since $C_1=C_1(C,T,\S
     \begin{equation*}
         \int_{0}^{T} \left(\int_{\Sigma_t} f_{k}^{pq} \right) ^{\frac{1}{q}} \leq c \int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2 + c \iint_{A(k)} f_{k}^{p} H^2 + c \iint_{A(k)} f_{k}^{p}.
     \end{equation*}
-    provided that $k \geq k_0(S,\Sigma _0,M,T,n,\alpha ,p,\sigma ).$ 
+    provided that $k \geq k_0(S,\Sigma _0,\bar{M},T,n,\alpha ,p,\sigma ).$ 
     Then by adjust the constants to absorb the term $\int_{0}^{T}\int_{\Sigma_t} \left| \nabla f_{k}^{\frac{p}{2}} \right| ^2$, we have that
     \begin{equation*}
     \begin{split}
@@ -564,16 +568,16 @@ where $C'$ depend on $C_1$ and $\left| \Sigma_0 \right| $. Since $C_1=C_1(C,T,\S
     Therefore, by \autoref{SIalg}, $A(k)=0$ for $k>k_1(\alpha , \beta , C)$. 
 \end{proof}
 
-\section{Conclusions and Directions for Future Research}
-This thesis aimed at providing a theoretical foundation for the convergence theory of MCF with free boundary in the Riemannian ambient manifold. By reviewing the classical method by Huisken, we highlight the importance of the iteration scheme for showing the pinching estimate of the traceless second fundamental form. The thesis is ended by the establishment of the iteration scheme in a Riemannian manifold following the argument of Edelen and the computation of the boundary derivative of the second fundamental form.
+\section{Conclusions and directions for future research}
+In this thesis, we first provide a background discussion, including PDE analysis and geometric properties of mean curvature flow. Then we sketch a proof for Huisken’s seminal result in 1984 concerning the convergence of convex hypersurfaces in Euclidean spaces to a round point. In \autoref{chap:fbmcf}, we compute the boundary derivative of the second fundamental form and establish the iteration scheme in Riemannian manifolds following the argument of Edelen.
 
-As discussed at the beginning of this chapter, the boundary derivatives are essential for applying maximum principle to prove the preservation of properties. Cross terms which are impossible to control will appear in the boundary derivatives when the barrier is not umbilic and make the maximum principle not applicable. 
+As discussed at the beginning of this chapter, the boundary derivatives are essential for applying maximum principle to prove that certain inequalities are preserved under the flow. Cross terms which are impossible to control will appear in the boundary derivatives when the barrier is not umbilic and make the maximum principle not applicable. 
 
-To cancel the problematic cross term, a perturbation of the second fundamental form which introduced by Huisken and Sinestrari \cite{huisken_convexity_1999} could be used. When the barrier is in the Euclidean space of dimension three, Hirsch and Li \cite{hirsch2020contracting} defined a perturbation tensor which kills off the cross terms on the boundary and enable them to apply the maximum principle. To obtain information on the original second fundamental form, controlling the perturbed form is necessary. In Hirsch and Li’s work, one major factor influencing the estimates of the perturbed form is the ball curvature of the barrier. Such property can be well defined in the Euclidean space, but in a 3-manifold, we only have locally defined balls. Brendle \cite{brendle2013inscribed} introduced the method of using local balls to define ball curvatures in Riemannian manifolds. By combining ideas from Hirsch and Li, and Brendle, it is believed that the difficulty of estimating boundary derivatives could be overcome.
+To cancel the problematic cross term, a perturbation argument of the second fundamental form which was first introduced by Huisken and Sinestrari~\cite{huisken_convexity_1999} could be used. When the barrier is in the Euclidean space of dimension three, Hirsch and Li~\cite{hirsch2020contracting} defined a perturbation tensor which kills off the cross terms on the boundary and enable them to apply the maximum principle. To obtain information on the original second fundamental form, controlling the perturbed form is necessary. In Hirsch and Li’s work, one major factor influencing the estimates of the perturbed form is the ball curvature of the barrier. Such property can be well defined in the Euclidean space, but in a 3-manifold, we only have locally defined balls. Brendle~\cite{brendle2013inscribed} introduced the method of using local balls to define ball curvatures in Riemannian manifolds. By combining ideas from Hirsch and Li, and Brendle, it is believed that the difficulty of estimating boundary derivatives could be overcome.
 
-Another furture research direction involves the non-convex initial conditions for convergence of free boundary hypersurfaces in the unit ball. For the free boundary MCF with barriers on the standard hypersphere, it is known that any convex free boundary hypersurface will converge to a round half point \cite{stahl_convergence_1996}. Considering Huisken’s study on MCF in spherical spaceforms \cite{huisken_deforming_1987}, it is natural to ask that whether the convexity condition can be replaced by some non-convex curvature pinching condition.
+Another furture research direction involves certain non-convex initial conditions for convergence of free boundary hypersurfaces in the unit ball. For the free boundary MCF with barriers on the standard hypersphere, it is known that any convex free boundary hypersurface will converge to a round half point~\cite{stahl_convergence_1996}. Considering Huisken’s study on MCF in spherical spaceforms~\cite{huisken_deforming_1987}, it is natural to ask that whether the convexity condition can be replaced by some non-convex curvature pinching condition.
 
-The similarities between free boundary minimal surfaces in the unit ball and closed minimal surfaces in the standard sphere are reflected in various research results \cite{almgren_interior_1966,nitsche_stationary_1985,Ros_stabilityof} and would be helpful to this research topic. Moreover, the study of MCF in sphere by Huisken \cite{huisken_deforming_1987} would inspire the proposed research topic greatly by its setting of initial condition which implies the positivity of intrinsic curvature of the surfaces.
+The similarities between free boundary minimal surfaces in the unit ball and closed minimal surfaces in the standard sphere are reflected in various research results~\cite{almgren_interior_1966,nitsche_stationary_1985,Ros_stabilityof,Li2020free} and would be helpful towards this research topic. Moreover, the study of MCF in spheres by Huisken~\cite{huisken_deforming_1987} would inspire the proposed research topic greatly by its setting of initial condition which implies the positivity of intrinsic curvature of the surfaces.
 
 
 

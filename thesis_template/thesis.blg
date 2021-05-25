@@ -1,48 +1,17 @@
-This is BibTeX, Version 0.99d
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: thesis.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
-The style file: amsalpha.bst
-Reallocating 'name_of_file' (item size: 1) to 10 items.
-Database file #1: MyLibrary.bib
-You've used 18 entries,
-            2624 wiz_defined-function locations,
-            672 strings with 7031 characters,
-and the built_in function-call counts, 6519 in all, are:
-= -- 642
-> -- 201
-< -- 12
-+ -- 60
-- -- 57
-* -- 580
-:= -- 1007
-add.period$ -- 18
-call.type$ -- 18
-change.case$ -- 96
-chr.to.int$ -- 17
-cite$ -- 18
-duplicate$ -- 264
-empty$ -- 555
-format.name$ -- 87
-if$ -- 1319
-int.to.chr$ -- 2
-int.to.str$ -- 0
-missing$ -- 34
-newline$ -- 64
-num.names$ -- 51
-pop$ -- 103
-preamble$ -- 1
-purify$ -- 114
-quote$ -- 0
-skip$ -- 179
-stack$ -- 0
-substring$ -- 540
-swap$ -- 18
-text.length$ -- 12
-text.prefix$ -- 12
-top$ -- 0
-type$ -- 144
-warning$ -- 0
-while$ -- 71
-width$ -- 19
-write$ -- 204
+[0] Config.pm:312> INFO - This is Biber 2.15 (beta)
+[0] Config.pm:315> INFO - Logfile is 'thesis.blg'
+[98] biber-MSWIN64:330> INFO - === 
+[121] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[263] Biber.pm:952> INFO - Found 43 citekeys in bib section 0
+[282] Biber.pm:4334> INFO - Processing section 0
+[298] Biber.pm:4523> INFO - Looking for bibtex format file 'MyLibrary.bib' for section 0
+[321] bibtex.pm:1682> INFO - LaTeX decoding ...
+[408] bibtex.pm:1494> INFO - Found BibTeX data source 'MyLibrary.bib'
+[560] Utils.pm:395> WARN - year field '1963-1964' in entry 'SJL_1963-1964___3_1_0' is not an integer - this will probably not sort properly.
+[661] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[661] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[661] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[661] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[716] bbl.pm:651> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[739] bbl.pm:754> INFO - Output to thesis.bbl
+[739] Biber.pm:128> INFO - WARNINGS: 1

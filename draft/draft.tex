@@ -104,6 +104,24 @@ Now we extend the maximum principle to tensors. Let $M_{ij}$ be a symmetric tens
 	Then if $M_{ij }^{} \geq 0$ at $t=0$, it will remain so on $0 \leq t \leq T$.
 \end{theorem}
 
+Let $\delta >0$ be a constant depending only on $\max \left| M_{ij }^{}  \right| $.
+	Set \[\tilde{M}_{ij }^{}  = M_{ij }^{} + \epsilon (\delta +t) g_{ij}^{} \] for some $\epsilon >0$. We claim that $\tilde{M}_{ij }^{} >0$ on $0 \leq t \leq \delta $ for all $\epsilon >0$. It suffices to prove the claim because we can split the interval $[0,T]$ into small intervals with length less that $\delta$ and let $\epsilon \to 0$.
+	
+	Suppose the claim were not true. Then $\tilde{M}_{ij }^{}$ has null eigenvectors for a first time $t_0 \in (0,\delta ]$ at $x_0 \in M_{t_0}$. 
+	The evolution of $\tilde{M}_{ij }$ is given by 
+	\[\frac{\partial }{\partial t} \tilde{M}_{ij }^{} = \frac{\partial }{\partial t} M_{ij }^{} + \epsilon g+\epsilon (\delta +t) \frac{\partial }{\partial t}  g_{ij}^{}.\]
+	Since $\Delta \tilde{M}_{ij}=\Delta M_{ij}$, we have that 
+	\begin{equation*}
+	\begin{split}
+		\frac{\partial }{\partial t} \tilde{M}_{ij }^{} &\geq \Delta M_{ij }^{} + N_{ij }^{}+ \epsilon g+\epsilon (\delta +t) \frac{\partial }{\partial t}  g_{ij}^{}\\
+	&\geq \Delta M_{ij }^{} + \tilde{N}_{ij}+ \left( N_{ij }^{}-\tilde{N}_{ij} \right) + \epsilon g+\epsilon (\delta +t) \frac{\partial }{\partial t}  g_{ij}^{}\\
+	\end{split}
+	\end{equation*}  
+	
+	
+
+	Since $M_{ij}$ is symmetric, we can choose coordinates at $x_0$ such that $g_{ij }^{} =\delta _{ij}$ and $M_{ij }$ is diagonal with eigenvalues $\lambda_1,\ldots,\lambda_n $. Then $\tilde{M}_{ij }^{} $ is also diagonal with eigenvalues $\tilde{\lambda}_1,\ldots,\tilde{\lambda }_n$ where $\tilde{\lambda }_i=\lambda _i+\epsilon (\delta+t)$. Since $\tilde{M}_{ij }^{}$ has null eigenvectors, without loss of generality, we assume that there exists some integer $k \in [1,n]$ such that $\tilde{\lambda }_i=0$ for $1 \leq i \leq k.$ Fixing some $1 \leq l \leq k$, we let $X=\frac{\partial }{\partial x_{l}} $ at $x_0 \in M$. We set $\tilde{N^{} }_{ij }=P(\tilde{M}_{ij }^{} , g_{ij }^{} )$. By the assumption on $N_{ij }^{}=P(M_{ij }^{},g_{ij }^{} )$, $N_{ij }^{} $ is also diagonal at $x_0$ with eigenvalues $q_i(\lambda_1,\ldots,\lambda _n)$ where $q_i$'s are polynomials for $1 \leq i \leq n.$ It follows that $\tilde{N}_{ij }^{} $ is also diagonal at $x_0$ with eigenvalues $q_i(\tilde{\lambda}_1,\ldots,\tilde{\lambda} _n)$.	since $\tilde{M}_{ij }^{} X^j=0$, we have that terms in $\tilde{N^{} }_{ij }X^i X^j$ involving $\tilde{M}_{ij}$ will vanishes  $\tilde{N_{ij }^{}} X^i X^j \geq 0$. Then at $(x_0,t_0)$, 
+
 \begin{proof}
 	Let $\delta >0$ be a constant depending only on $\max \left| M_{ij }^{}  \right| $.
 	Set \[\tilde{M}_{ij }^{}  = M_{ij }^{} + \epsilon (\delta +t) g_{ij}^{} \] for some $\epsilon >0$. Now it suffices to show that $\tilde{M}_{ij }^{} >0$ on $0 \leq t \leq \delta $ for all $\epsilon >0$.
