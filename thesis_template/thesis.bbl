@@ -663,6 +663,7 @@
       \strng{authorbibnamehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
       \strng{authornamehash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
       \strng{authorfullhash}{7ca3405dc8c7bdbb5bb8e72d544fbf73}
+      \field{extraname}{1}
       \field{sortinit}{H}
       \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
       \field{labelnamesource}{author}
@@ -673,6 +674,46 @@
       \field{year}{1997}
       \field{pages}{1\bibrangedash 92}
       \range{pages}{92}
+    \endentry
+    \entry{hamilton_three-manifolds_1982}{article}{}
+      \name{author}{1}{}{%
+        {{hash=926d2cebbebdaec235ec6886686830e2}{%
+           family={Hamilton},
+           familyi={H\bibinitperiod},
+           given={Richard\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{language}{1}{%
+        {en}%
+      }
+      \strng{namehash}{926d2cebbebdaec235ec6886686830e2}
+      \strng{fullhash}{926d2cebbebdaec235ec6886686830e2}
+      \strng{bibnamehash}{926d2cebbebdaec235ec6886686830e2}
+      \strng{authorbibnamehash}{926d2cebbebdaec235ec6886686830e2}
+      \strng{authornamehash}{926d2cebbebdaec235ec6886686830e2}
+      \strng{authorfullhash}{926d2cebbebdaec235ec6886686830e2}
+      \field{extraname}{2}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0022-040X}
+      \field{journaltitle}{J. Differential Geom.}
+      \field{number}{2}
+      \field{title}{Three-manifolds with positive {Ricci} curvature}
+      \field{volume}{17}
+      \field{year}{1982}
+      \field{pages}{255\bibrangedash 306}
+      \range{pages}{52}
+      \verb{doi}
+      \verb 10.4310/jdg/1214436922
+      \endverb
+      \verb{urlraw}
+      \verb https://projecteuclid.org:443/euclid.jdg/1214436922
+      \endverb
+      \verb{url}
+      \verb https://projecteuclid.org:443/euclid.jdg/1214436922
+      \endverb
     \endentry
     \entry{hirsch2020contracting}{misc}{}
       \name{author}{2}{}{%

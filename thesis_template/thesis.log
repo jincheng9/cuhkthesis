@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  26 MAY 2021 01:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  27 MAY 2021 13:56
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
@@ -891,14 +891,14 @@ LaTeX Font Info:    ... okay on input line 126.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(113.82503pt, 369.85782pt, 113.82503pt)
-* v-part:(T,H,B)=(113.82503pt, 617.39679pt, 113.82503pt)
+* h-part:(L,W,R)=(115.63243pt, 402.378pt, 79.49744pt)
+* v-part:(T,H,B)=(101.40665pt, 591.5302pt, 152.11pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=369.85782pt
+* \textwidth=402.378pt
 * \textheight=597.50787pt
-* \oddsidemargin=41.55504pt
-* \evensidemargin=41.55504pt
+* \oddsidemargin=43.36244pt
+* \evensidemargin=43.36244pt
 * \topmargin=0.0pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -1002,7 +1002,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write6
 \openout6 = `thesis.toc'.
 
- [5] (chap1/chap1.tex
+ [5] (Introduction/introduction.tex
 Chapter 1.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
@@ -1010,70 +1010,55 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.11 
       [1
 
-] [2] [3]
-Overfull \hbox (11.26894pt too wide) in paragraph at lines 22--23
-[]\OT1/cmr/m/n/12 More gen-er-ally, for ar-bi-trary fixed con-tact an-gle, Altschuler and Wang [[][]4[][]]
- []
-
-[4]) (chap3/chap3.tex [5]
+] [2] [3] [4]) (ClassicalMCF/classical.tex [5]
 Chapter 2.
 [6
 
 ] [7]
-Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 35.
- [8] [9]
-Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 108.
- [10] [11] [12] [13] [14]
-Overfull \hbox (20.51085pt too wide) detected at line 280
-[]
- []
-
-[15] [16] [17] [18] [19] [20] [21] [22] [23]) (chap2/chap2.tex [24]
+Package hyperref Info: bookmark level for unknown theorem defaults to 0 on input line 51.
+ [8] [9] [10]
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input line 143.
+ [11] [12] [13] [14] [15] [16] [17] [18] [19] [20] [21] [22] [23]) (FreeBoundary/freeboundary.tex [24]
 Chapter 3.
 [25
 
 ] [26]
 Package hyperref Info: bookmark level for unknown definition defaults to 0 on input line 34.
  [27] [28] [29] [30] [31] [32] [33]
-LaTeX Font Info:    Trying to load font information for U+euf on input line 219.
+LaTeX Font Info:    Trying to load font information for U+euf on input line 240.
  (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\ueuf.fd
 File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
-) [34] [35] [36] [37] [38] [39]
-Overfull \hbox (12.84213pt too wide) in paragraph at lines 447--450
-\OT1/cmr/m/n/12 bound-ary in-te-gral $[][] \OML/cmm/m/it/12 f[][]$\OT1/cmr/m/n/12 , we ap-ply the pre-vi-ous es-ti-mate [][]Lemma 3.4.7[][][]
+) [34] [35] [36] [37] [38] [39] [40]
+Overfull \hbox (21.28914pt too wide) in paragraph at lines 500--502
+\OT1/cmr/m/n/12 The con-clu-sion fol-lows by choos-ing the value of $\OML/cmm/m/it/12 p; ; $ \OT1/cmr/m/n/12 as in the proof of [][]Lemma 3.4.8[][][].
  []
 
-[40]
-Overfull \hbox (21.05687pt too wide) in paragraph at lines 482--483
-[]\OT1/cmr/m/n/12 By rewrit-ing the bound-ary in-te-gral in [][]Equa-tion 3.4[][][] us-ing [][]Lemma 3.4.7[][][],
+[41] [42] [43] [44]) [45] [46
+
+] [47] [48]
+Overfull \hbox (10.41547pt too wide) in paragraph at lines 200--200
+[]\OT1/cmr/m/n/10 G. Stam-pac-chia, []\OT1/cmr/m/it/10 Equations el-lip-tiques du sec-ond or-dre a co-ef-fi-cients dis-con-ti-nus\OT1/cmr/m/n/10 , Seminaire
  []
 
-[41]
-Overfull \hbox (44.90807pt too wide) in paragraph at lines 507--509
-\OT1/cmr/m/n/12 stant $\OML/cmm/m/it/12 C$ \OT1/cmr/m/n/12 in $(\OML/cmm/m/it/12 ?\OT1/cmr/m/n/12 )$ de-pends on $(\OML/cmm/m/it/12 S; \OT1/cmr/m/n/12 []\OML/cmm/m/it/12 ; []; T; n; ; p; \OT1/cmr/m/n/12 )$, for $\OML/cmm/m/it/12 k \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 k[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 S; \OT1/cmr/m/n/12 []\OML/cmm/m/it/12 ; []; T; n; ; p; \OT1/cmr/m/n/12 )$ 
- []
-
-[42] [43] [44] [45]) [46] [47
-
-] [48] [49] [50] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
+[49] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: C41060809D4D7BCA4C4ADE6EBB023D32;1817.
+(rerunfilecheck)             Checksum: F28FEB1C8483D9485A175A6CDB7CE3C6;1801.
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 \openout1 = `thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28439 strings out of 479697
- 546444 string characters out of 2867132
- 1482437 words of memory out of 3000000
- 44641 multiletter control sequences out of 15000+200000
+ 28454 strings out of 479697
+ 546947 string characters out of 2867132
+ 1482894 words of memory out of 3000000
+ 44651 multiletter control sequences out of 15000+200000
  433067 words of font info for 138 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 93i,22n,98p,1252b,2030s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 93i,22n,98p,1239b,2030s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu30.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu4e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu50.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu51.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu52.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu53.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu54.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu56.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu57.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu58.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu60.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu62.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu63.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu64.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu65.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu66.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu67.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu68.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6c.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu70.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu71.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu72.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu73.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu74.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu75.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu76.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu77.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu78.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu79.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu81.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu82.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu89.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu90.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu91.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu95.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu97.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu98.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu99.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu9a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu9e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiuff.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (56 pages, 750330 bytes).
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (55 pages, 759746 bytes).
 PDF statistics:
- 1038 PDF objects out of 1200 (max. 8388607)
- 204 named destinations out of 1000 (max. 500000)
+ 1065 PDF objects out of 1200 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 
