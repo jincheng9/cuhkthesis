@@ -16,34 +16,34 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Stampacchia's iteration}{17}{section.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.5}Convergence to a round point}{21}{section.2.5}%
+\contentsline {section}{\numberline {2.5}Convergence to a round point}{22}{section.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.6}Generalizations}{23}{section.2.6}%
+\contentsline {section}{\numberline {2.6}Generalizations}{24}{section.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}MCF with Free Boundary in Riemannian Manifolds}{25}{chapter.3}%
+\contentsline {chapter}{\numberline {3}MCF with Free Boundary in Riemannian Manifolds}{26}{chapter.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Definitions and notations}{26}{section.3.1}%
+\contentsline {section}{\numberline {3.1}Definitions and notations}{27}{section.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.2}Covariant formulation of Mean Curvature Flow}{26}{section.3.2}%
+\contentsline {section}{\numberline {3.2}Covariant formulation of Mean Curvature Flow}{27}{section.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.1}Subbundles.}{27}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.1}Subbundles.}{28}{subsection.3.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.2.2}Time-dependent immersion.}{28}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}Time-dependent immersion.}{29}{subsection.3.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Boundary derivatives}{30}{section.3.3}%
+\contentsline {section}{\numberline {3.3}Boundary derivatives}{31}{section.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Stampacchia's iteration}{33}{section.3.4}%
+\contentsline {section}{\numberline {3.4}Stampacchia's iteration}{34}{section.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.1}Michael--Simon with free boundary.}{33}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.1}Michael--Simon with free boundary.}{34}{subsection.3.4.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof.}{36}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}Main theorem and the idea of proof.}{37}{subsection.3.4.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.3}Boundary integral estimate.}{37}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.3}Boundary integral estimate.}{38}{subsection.3.4.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.4}Higher \(L^p\) bound.}{39}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.4}Higher \(L^p\) bound.}{40}{subsection.3.4.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {3.4.5}Iteration scheme and the uniform bound.}{42}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.5}Iteration scheme and the uniform bound.}{43}{subsection.3.4.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Conclusions and directions for future research}{44}{section.3.5}%
+\contentsline {section}{\numberline {3.5}Conclusions and directions for future research}{45}{section.3.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Bibliography}{46}{section.3.5}%
+\contentsline {chapter}{Bibliography}{47}{section.3.5}%

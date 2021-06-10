@@ -1,0 +1,139 @@
+\documentclass[pdf]{beamer}
+\mode<presentation>{\usetheme{Warsaw}}
+\usepackage{graphicx}
+\graphicspath{ {./figure/} }
+
+
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\hp}{\mathbb{H}}
+
+%List of packages
+%\usepackage{amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Metadata %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup
+{
+	%Separate multiple authors by comma
+	pdfauthor={Yizi Wang},
+	pdftitle={},
+	pdfsubject={Instructions, Tutorials, Guidelines},
+	pdfkeywords={SPSAS19, guidelines, presentation format},
+	colorlinks=false
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title related %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\setbeamertemplate{subsection in toc}[default]
+
+%The contact for one of the authors MUST be embedded on the title (see below)
+\title[Contact: Yizi Wang (yzwang@math.cuhk.edu.hk)]{Convergence Theories of\\ the Mean Curvature Flow}
+%Subtitle (if needed)
+\subtitle{}
+%For LICENSE, we suggest CC-BY-SA, but you are free to choose your own as long
+%as the LICENSE you choose is AT LEAST as permissive as CC-BY-SA
+\date[2021]{June 10, 2021}
+\author[WANG, Yizi]{\texorpdfstring{\textbf{WANG, Yizi}\\Thesis Defense Presentation\\Supervisor: Professor LI Man Chun}{WANG, Yizi}}
+\institute[The Chinese University of Hong Kong]{Department of Mathematics\\The Chinese University of Hong Kong}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Presentation begins here %%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{section}{Background}
+
+    \begin{frame}
+        \frametitle{Mean Curvature Flow}
+        \begin{definition}
+            hypersurfaces $M_t \subset \R^n$ evolving by \[\frac{\partial \vec{x}}{\partial t} =-H \vec{n}\] where $H$ is the mean curvature, $\vec{n}$ is the unit normal of $M_t$ at $\vec{x}$.
+        \end{definition}
+        
+        First studied in material science.\\
+        Applications: Topological sphere theorem, Riemann Penrose inequality.
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Mean Curvature Flow with Free Boundary}
+        We can consider MCF for manifolds with boundary. Here we focus on the free boundary condition where boundary of the evolving manifolds moves freely in a prescribed barrier and the manifolds is orthogonal to the barrier.
+        Let $(\bar{M}, \bar{g})$ be an $(n+1)$-dimensional Riemannian manifold with the Levi-Civita connection $\bar{\nabla }$. Let $\Sigma $ be a two-sided smooth $n$-dimensional manifold with non-empty boundary $\partial \Sigma $. A smooth immersion $F \colon \Sigma \to  \bar{M}$ defines a free boundary hypersurface if $F(\partial \Sigma ) \subset S$ and $F_* N = \nu _S \circ F$ where $N$ is the outward unit normal of $\partial \Sigma \subset \Sigma $ with respect to the metric induced from $\bar{M}$ by $F$.
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Convergence of Mean Curvature Flow}
+        The nonlinear nature of geometric flows leads to the possible appearance of singularities. By Huisken's monotocity formula, singularities are modeled after self-similar solutions. One of the most important models is the shrinker which evolves only homothetically under the flow. For example, the round sphere is an example of shrinkers. There are many examples of shrinkers which make it hard to classify singularity models completely.\\
+        One possible direction is to find certain initial geometric assumption that forces hypersurfaces converge to simple singularities, say, the singularity of shrinking spheres.
+        \begin{theorem}
+            A compact, convex hypersurface in $\R^n$ converges to a round point under MCF.
+        \end{theorem}
+        
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{General Strategies for Proving Convergence}
+        \begin{theorem}
+            A compact, convex hypersurface in $\R^n$ with free boundary on a sphere converges to a round half-point under MCF.
+        \end{theorem}
+        \begin{enumerate}
+            \item Preservation of convexity
+            \item Pinching estimate\\
+            Show that the quantity
+            \[\left| A \right| ^2-\frac{1}{n}H^2=\frac{1}{n}\sum_{i<j}^{n}(\kappa _i-\kappa _j)^2\]
+            which measures the sum of differences between eigenvalues $\kappa _i$ of the second fundamental form $A$ is relatively small.
+        \end{enumerate}
+        
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Main Results}
+        In this thesis, we focus on mean curvature flow with free boundary in an ambient Riemannian manifolds $\bar{M}$ and obtain the following two results:
+        \begin{itemize}
+            \item compute the boundary derivative of the second fundamental form
+            \item establish an iteration scheme for the flow.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Boundary Derivatives}
+        Traditionally, the boundary derivatives are computed by fixing a local coordinate system. Since the boundary is involved, one needs to carefully choose the coordinate system to simplify computations.\\
+        We work with the tangent and normal bundles over the space-time domain $\Sigma \times [0,T)$. In this way, we can compute the boundary derivative of the second fundamental form. The only new term brounght by the ambient geomtry is the last term, so we expect to control the boundary derivative in a similar manner as long as the ambient geometry is assumed to be preserved.
+        \begin{theorem}
+            Let $p \in \partial \Sigma$. For $u,v \in T_p \partial \Sigma $, 
+    \begin{equation*}
+        \begin{split}
+            \nabla _N h(u,v)
+            =& \left( \nabla _{F_*u}A^S(\iota \nu , F_*v)+A^S(\bar{\nabla }^{S}_{F_*u} \iota \nu , F_*v)  \right)   \nu \\
+            & +A^S(F_*u, F_* v)h(N,N)-h(\nabla_u N, v) \\
+            & + A^S(\iota  \nu  , \iota \nu )h(u,v) +\overset{\perp }{\pi} (F^*R_{\nabla }(u,N)(F_* v)).
+    \end{split}
+    \end{equation*}
+        \end{theorem}
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Stampacchia's Iteration}
+        We prove that if a function on the hypersurface evolving under the MCF equation satisfies two special inequalities, then this function can be uniformly bounded in spacetime. Most of the arguments are similar to the proof of Edelen where the major differences are the use of a Michael--Simon type inequality for Riemannian submanifolds and the dependence of the uniform bound on ambient geometry.
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Future Directions---Convergence Theory}
+        The boundary derivatives are essential for applying maximum principles to prove that certain inequalities are preserved under the flow. When the barrier surface is not umbilic, cross terms will appear in the boundary derivatives. These terms are impossible to control; thus making maximum principles not applicable. 
+
+        To cancel problematic cross terms, one could use a perturbation argument of the second fundamental form. We need to examine the requirement on the ambient geometry and the barrier to make a valid perturbation.
+    \end{frame}
+
+    \begin{frame}
+        \frametitle{Future Directions---Higher Codimension}
+        
+        The covariant formulation used to compute boundary derivatives was introduced by Andrews and Baker to study MCF in higher codimensions. They proved that higher-codimension submanifolds satisfying certain non-convex initial condition converge to a round point under MCF.
+
+        We are interested in generalize the above result to the free boundary case. What makes the generalization complicated is that the dimension of the barrier may vary and affects the nature of the problem drastically.
+    \end{frame}
+\end{section}
+
+\end{document}
