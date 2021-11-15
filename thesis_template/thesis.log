@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  8 JUN 2021 11:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.11) (preloaded format=pdflatex 2020.12.11)  2 JUL 2021 11:00
 entering extended mode
 **c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
 (c:/Users/46537/Documents/GitHub/cuhkthesis/thesis_template/thesis.tex
@@ -968,14 +968,26 @@ Package biblatex Info: Reference section=0 on input line 126.
 Package biblatex Info: Reference segment=0 on input line 126.
  [1
 
-{C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map}] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\abstract.tex) [1] (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.bdg
+{C:/Users/46537/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 145.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    Trying to load font information for U+msa on input line 145.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 145.
+ (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\abstract.tex) [1] (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.bdg
 File: UTF8.bdg 2015/04/18 4.8.4
 ) (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.enc
 File: UTF8.enc 2015/04/18 4.8.4
 ) (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\UTF8.chr
 File: UTF8.chr 2015/04/18 4.8.4
 )
-LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 148.
+LaTeX Font Info:    Trying to load font information for C70+bsmi on input line 160.
  (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\c70bsmi.fd
 File: c70bsmi.fd 2015/04/18 4.8.4
 ) (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/cjk/UTF8\c70bsmi.fdx
@@ -984,19 +996,7 @@ File: c70bsmi.fdx 2015/04/18 4.8.4
 
 ] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\acknowledgement.tex) [3
 
-] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 5.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-LaTeX Font Info:    Trying to load font information for U+msa on input line 5.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
- (C:\Users\46537\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [4
+] (c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.toc [4
 
 ])
 \tf@toc=\write6
@@ -1010,7 +1010,11 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.11 
       [1
 
-] [2] [3] [4]) (ClassicalMCF/classical.tex [5]
+]pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 
+      [2] [3] [4]) (ClassicalMCF/classical.tex [5]
 Chapter 2.
 [6
 
@@ -1036,7 +1040,7 @@ Overfull \hbox (21.28914pt too wide) in paragraph at lines 500--502
 [42] [43] [44] [45]) [46] [47
 
 ] [48] [49]
-Overfull \hbox (10.41547pt too wide) in paragraph at lines 200--200
+Overfull \hbox (10.41547pt too wide) in paragraph at lines 212--212
 []\OT1/cmr/m/n/10 G. Stam-pac-chia, []\OT1/cmr/m/it/10 Equations el-lip-tiques du sec-ond or-dre a co-ef-fi-cients dis-con-ti-nus\OT1/cmr/m/n/10 , Seminaire
  []
 
@@ -1056,9 +1060,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  93i,22n,98p,1239b,2030s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu30.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu4e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu4f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu50.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu51.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu52.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu53.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu54.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu56.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu57.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu58.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5c.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu5f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu60.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu62.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu63.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu64.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu65.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu66.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu67.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu68.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6c.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu6f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu70.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu71.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu72.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu73.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu74.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu75.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu76.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu77.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu78.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu79.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu7e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu81.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu82.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu89.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8b.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8d.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu8f.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu90.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu91.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu95.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu97.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu98.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu99.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu9a.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiu9e.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/arphic/bsmiu/bsmiuff.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/Users/46537/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (56 pages, 760470 bytes).
+Output written on c:/Users\46537\Documents\GitHub\cuhkthesis\thesis_template\thesis.pdf (57 pages, 760890 bytes).
 PDF statistics:
- 1069 PDF objects out of 1200 (max. 8388607)
+ 1072 PDF objects out of 1200 (max. 8388607)
  210 named destinations out of 1000 (max. 500000)
  437 words of extra memory for PDF output out of 10000 (max. 10000000)
 

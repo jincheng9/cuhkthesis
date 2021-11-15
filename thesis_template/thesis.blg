@@ -1,17 +1,17 @@
 [0] Config.pm:312> INFO - This is Biber 2.15 (beta)
 [0] Config.pm:315> INFO - Logfile is 'thesis.blg'
-[167] biber-MSWIN64:330> INFO - === 
-[194] Biber.pm:415> INFO - Reading 'thesis.bcf'
-[304] Biber.pm:952> INFO - Found 44 citekeys in bib section 0
-[322] Biber.pm:4334> INFO - Processing section 0
-[339] Biber.pm:4523> INFO - Looking for bibtex format file 'MyLibrary.bib' for section 0
-[371] bibtex.pm:1682> INFO - LaTeX decoding ...
-[479] bibtex.pm:1494> INFO - Found BibTeX data source 'MyLibrary.bib'
-[708] Utils.pm:395> WARN - year field '1963-1964' in entry 'SJL_1963-1964___3_1_0' is not an integer - this will probably not sort properly.
-[917] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[926] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[926] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
-[926] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
-[1051] bbl.pm:651> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
-[1074] bbl.pm:754> INFO - Output to thesis.bbl
-[1075] Biber.pm:128> INFO - WARNINGS: 1
+[99] biber-MSWIN64:330> INFO - === 
+[118] Biber.pm:415> INFO - Reading 'thesis.bcf'
+[237] Biber.pm:952> INFO - Found 44 citekeys in bib section 0
+[255] Biber.pm:4334> INFO - Processing section 0
+[271] Biber.pm:4523> INFO - Looking for bibtex format file 'MyLibrary.bib' for section 0
+[287] bibtex.pm:1682> INFO - LaTeX decoding ...
+[384] bibtex.pm:1494> INFO - Found BibTeX data source 'MyLibrary.bib'
+[631] Utils.pm:395> WARN - year field '1963-1964' in entry 'SJL_1963-1964___3_1_0' is not an integer - this will probably not sort properly.
+[813] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[815] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[815] Biber.pm:4162> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-US'
+[815] Biber.pm:4168> INFO - No sort tailoring available for locale 'en-US'
+[876] bbl.pm:651> INFO - Writing 'thesis.bbl' with encoding 'UTF-8'
+[900] bbl.pm:754> INFO - Output to thesis.bbl
+[901] Biber.pm:128> INFO - WARNINGS: 1

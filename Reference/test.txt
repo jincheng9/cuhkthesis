@@ -1,0 +1,89 @@
+﻿@article{RN29,
+   author = {Andrews, Ben and Baker, Charles},
+   title = {Mean curvature flow of pinched submanifolds to spheres},
+   journal = {Journal of Differential Geometry},
+   volume = {85},
+   number = {3},
+   pages = {357-396, 40},
+   url = {https://doi.org/10.4310/jdg/1292940688},
+   year = {2010},
+   type = {Journal Article}
+}
+
+@article{RN40,
+   author = {Freidin, Brian and Gulian, Mamikon and McGrath, Peter},
+   title = {Free boundary minimal surfaces in the unit ball with low cohomogeneity},
+   journal = {Proceedings of the American Mathematical Society},
+   volume = {145},
+   number = {4},
+   pages = {1671-1683},
+   ISSN = {0002-9939},
+   DOI = {10.1090/proc/13424},
+   url = {https://dx.doi.org/10.1090/proc/13424},
+   year = {2016},
+   type = {Journal Article}
+}
+
+@article{RN38,
+   author = {Hirsch, Sven and Li, Martin},
+   title = {Contracting convex surfaces by mean curvature flow with free boundary on convex barriers},
+   journal = {arXiv pre-print server},
+   DOI = {None
+arxiv:2001.01111},
+   url = {https://arxiv.org/abs/2001.01111},
+   year = {2020},
+   type = {Journal Article}
+}
+
+@article{RN27,
+   author = {Huisken, Gerhard},
+   title = {Flow by mean curvature of convex surfaces into spheres},
+   journal = {J. Differential Geom.},
+   volume = {20},
+   number = {1},
+   pages = {237-266},
+   ISSN = {0022-040X},
+   DOI = {10.4310/jdg/1214438998},
+   url = {https://projecteuclid.org:443/euclid.jdg/1214438998},
+   year = {1984},
+   type = {Journal Article}
+}
+
+@article{RN24,
+   author = {Huisken, Gerhard},
+   title = {Contracting convex hypersurfaces in Riemannian manifolds by their mean curvature},
+   journal = {Inventiones mathematicae},
+   volume = {84},
+   number = {3},
+   pages = {463-480},
+   ISSN = {0020-9910},
+   DOI = {10.1007/BF01388742},
+   year = {1986},
+   type = {Journal Article}
+}
+
+@article{RN41,
+   author = {Huisken, Gerhard},
+   title = {Deforming hypersurfaces of the sphere by their mean curvature},
+   journal = {Mathematische Zeitschrift},
+   volume = {195},
+   number = {2},
+   pages = {205-219},
+   ISSN = {0025-5874},
+   DOI = {10.1007/bf01166458},
+   url = {https://dx.doi.org/10.1007/bf01166458},
+   year = {1987},
+   type = {Journal Article}
+}
+
+@article{RN39,
+   author = {Li, Martin},
+   title = {Free boundary minimal surfaces in the unit ball : recent advances and open questions},
+   journal = {arXiv pre-print server},
+   DOI = {None
+arxiv:1907.05053},
+   url = {https://arxiv.org/abs/1907.05053},
+   year = {2020},
+   type = {Journal Article}
+}
+
